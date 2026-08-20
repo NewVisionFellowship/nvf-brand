@@ -1,0 +1,350 @@
+{
+  "version": "2026.08",
+  "base_url": "https://branding.nvf.life",
+  "updated": "2026-08-20",
+
+  "brand": {
+    "name": "New Vision Fellowship",
+    "short_name": "New Vision",
+    "abbreviation": "NVF",
+    "website": "https://nvf.life",
+    "mission": "To multiply God's glory on the earth.",
+    "vision": "Multitudes shaped and sent for Christ.",
+    "founded": 1997,
+    "denomination": "Southern Baptist Convention",
+    "affiliations": [
+      "Southern Baptist Convention",
+      "NC Baptists",
+      "Triad Church Network"
+    ]
+  },
+
+  "locations": [
+    {
+      "type": "campus",
+      "street": "1135 West Academy Street",
+      "city": "Madison",
+      "state": "NC",
+      "country": "USA",
+      "email": "info@nvf.life",
+      "phone": "336.427.6264"
+    }
+  ],
+
+  "core_values": [
+    "Jesus takes center stage",
+    "God's Word grounds us",
+    "Grace and truth are not rivals",
+    "The gospel transforms how we live",
+    "People matter to God and to us"
+  ],
+
+  "frameworks": {
+    "on_ramps": {
+      "description": "The four on-ramps to a fuller faith, drawn from Acts 2:41-47. Present in this order.",
+      "order": ["gather", "give", "group", "go"],
+      "items": [
+        { "id": "gather", "name": "Gather", "color": "#5d8a3e", "summary": "We gather to worship by attending one service and serving during one — Attend One, Serve One.", "url": "https://nvf.life/serve" },
+        { "id": "give", "name": "Give", "color": "#b3852b", "summary": "Generosity keeps the mission multiplying — and it is first a heart issue.", "url": "https://nvf.life/give" },
+        { "id": "group", "name": "Group", "color": "#347b6f", "summary": "God designed the Christian life to thrive as believers share life together.", "url": "https://nvf.life/life-groups" },
+        { "id": "go", "name": "Go", "color": "#ae5230", "summary": "Multiplication spreads from our neighborhoods to the nations.", "url": "https://nvf.life/one" }
+      ]
+    },
+    "clay_stages": {
+      "description": "Clay in the Potter's Hands — our picture of personal spiritual growth, from Isaiah 64:8. Five ordered stages, each multiplying something.",
+      "items": [
+        { "id": "found",   "name": "Found",   "color": "#5d8a3e", "stage": "Community to Crowd",        "multiplies": "magnifiers of His name" },
+        { "id": "formed",  "name": "Formed",  "color": "#4f7e54", "stage": "Crowd to Changed",          "multiplies": "models of His character" },
+        { "id": "fired",   "name": "Fired",   "color": "#347b6f", "stage": "Changed to Committed",      "multiplies": "members of His family" },
+        { "id": "filled",  "name": "Filled",  "color": "#b3852b", "stage": "Committed to Commissioned", "multiplies": "ministers of His grace" },
+        { "id": "flowing", "name": "Flowing", "color": "#ae5230", "stage": "Commissioned to Carrying",  "multiplies": "messengers of His love" }
+      ]
+    }
+  },
+
+  "color_system": {
+    "palette": {
+      "primary": {
+        "name": "Brand Leaf Green",
+        "hex": "#5f9a32",
+        "rgb": "95, 154, 50",
+        "text_on": "#ffffff",
+        "usage": "Primary brand green on light backgrounds. Rules, kickers, accents, buttons.",
+        "tones": [
+          { "name": "Green Deep",   "hex": "#42701f", "usage": "Small text, links, and labels on light backgrounds where #5f9a32 lacks contrast." },
+          { "name": "Green Bright", "hex": "#74ca33", "usage": "Accent green for DARK backgrounds only. Never on paper." }
+        ]
+      },
+      "secondary": {
+        "name": "Olive",
+        "hex": "#4a5d2f",
+        "rgb": "74, 93, 47",
+        "text_on": "#ffffff",
+        "usage": "Muted supporting green. Scripture rules, eyebrow labels, the road motif.",
+        "tones": [
+          { "name": "Olive Deep", "hex": "#37461f", "usage": "Dark green panels and contrast columns with white text." }
+        ]
+      },
+      "neutral_dark": {
+        "name": "Charcoal",
+        "hex": "#24201d",
+        "rgb": "36, 32, 29",
+        "text_on": "#faf7f1",
+        "usage": "Dark backgrounds — covers, section dividers, action slides. Never pure black.",
+        "tones": [
+          { "name": "Charcoal Lift", "hex": "#2d2823", "usage": "Raised surfaces on dark backgrounds." }
+        ]
+      },
+      "neutral_light": {
+        "name": "Paper",
+        "hex": "#faf7f1",
+        "rgb": "250, 247, 241",
+        "text_on": "#221f1b",
+        "usage": "Primary light background. Warm off-white — never pure white.",
+        "tones": [
+          { "name": "Paper Card", "hex": "#f1ece2", "usage": "Cards, wells, and inset panels on light backgrounds." },
+          { "name": "Paper Deep", "hex": "#e9e2d5", "usage": "Third-level surface for layering." }
+        ]
+      }
+    },
+
+    "text": {
+      "ink":      { "hex": "#221f1b", "usage": "Primary body and heading text on light backgrounds." },
+      "ink_soft": { "hex": "#4a443d", "usage": "Secondary and supporting body text." },
+      "on_dark":  { "hex": "#d9d2c6", "usage": "Body text on charcoal backgrounds." }
+    },
+
+    "lines": {
+      "hairline":      { "hex": "#e1dacc", "usage": "Dividers and card borders on light backgrounds." },
+      "hairline_dark": { "hex": "#433d36", "usage": "Dividers on dark backgrounds." }
+    },
+
+    "accents": {
+      "description": "Four earthy, green-anchored category colors. Used to color-code the four on-ramps and to differentiate sections. Never introduce a fifth.",
+      "gather": { "name": "Gather Green",     "hex": "#5d8a3e", "text_on": "#ffffff" },
+      "group":  { "name": "Group Muted Teal", "hex": "#347b6f", "text_on": "#ffffff" },
+      "give":   { "name": "Give Ochre",       "hex": "#b3852b", "text_on": "#ffffff" },
+      "go":     { "name": "Go Terracotta",    "hex": "#ae5230", "text_on": "#ffffff" }
+    },
+
+    "rules": [
+      "Never use pure black (#000000) or pure white (#ffffff) as a background. Use Charcoal and Paper.",
+      "On light backgrounds use Brand Leaf Green (#5f9a32) or Green Deep (#42701f). On dark backgrounds switch to Green Bright (#74ca33).",
+      "Greens lead. The four accent colors differentiate categories. Warm neutrals carry everything else.",
+      "Limit any single composition to one or two background colors."
+    ]
+  },
+
+  "typography": {
+    "display": {
+      "family": "Archivo",
+      "source": "https://fonts.google.com/specimen/Archivo",
+      "weights": [400, 500, 600, 700, 800, 900],
+      "default_weight": 800,
+      "usage": "All headings, titles, labels, kickers, numbers, and UI. Tight letter-spacing (-0.01em to -0.028em) on large headings; wide tracking (0.12em to 0.34em) on small uppercase labels."
+    },
+    "body": {
+      "family": "Source Serif 4",
+      "fallback": "Georgia, serif",
+      "source": "https://fonts.google.com/specimen/Source+Serif+4",
+      "weights": [400, 500, 600],
+      "default_weight": 400,
+      "usage": "All long-form and body copy. Line-height approximately 1.4 to 1.6. Apply text-wrap: pretty."
+    },
+    "script": {
+      "family": "Kaushan Script",
+      "source": "https://fonts.google.com/specimen/Kaushan+Script",
+      "weights": [400],
+      "usage": "Warm human accents only — a greeting, a value name, a caption lead-in such as 'We are…'. Never for body copy or critical information. One flourish per composition."
+    },
+    "display_alternates": {
+      "description": "Used only in the On-Ramp cover lockup, set in Canva. Not required for general brand work.",
+      "families": ["Tan St. Canard", "Breathing", "DM Sans"]
+    },
+    "scale": {
+      "hero":     { "size_px": 188, "weight": 900, "family": "Archivo" },
+      "title":    { "size_px": 132, "weight": 900, "family": "Archivo" },
+      "section":  { "size_px": 104, "weight": 900, "family": "Archivo" },
+      "subhead":  { "size_px": 52,  "weight": 800, "family": "Archivo" },
+      "lead":     { "size_px": 56,  "weight": 500, "family": "Source Serif 4" },
+      "body":     { "size_px": 46,  "weight": 400, "family": "Source Serif 4" },
+      "kicker":   { "size_px": 36,  "weight": 800, "family": "Archivo", "transform": "uppercase", "letter_spacing": "0.26em" },
+      "note": "Sizes are expressed for a 1920x1080 canvas. Scale proportionally for other media. For print, body copy sits at 12-15px on a Letter page."
+    },
+    "minimums": {
+      "print_body_pt": 12,
+      "projection_note": "For projected media, minimum text size is viewing_distance / 200. At 40 feet that is 2.4 inches. Never smaller."
+    }
+  },
+
+  "radius": {
+    "sm": { "value": "6px",  "usage": "Small images and inline thumbnails." },
+    "md": { "value": "10px", "usage": "Cards, wells, and inset panels. The default." },
+    "lg": { "value": "20px", "usage": "Large panels on projected or oversized media." },
+    "pill": { "value": "60px", "usage": "Chips and tags." }
+  },
+
+  "logos": {
+    "lockups": [
+      {
+        "type": "stacked",
+        "name": "Stacked Lockup",
+        "description": "NEW VISION above FELLOWSHIP with the leaf mark. The primary logo. Prefer this for covers, title cards, and anywhere with vertical room.",
+        "primary": true,
+        "assets": [
+          { "variant": "color", "path": "logos/nvf-stacked-color.svg", "format": "svg", "use_on": "light backgrounds", "colors": ["#231f20", "#569c33", "#74c933"], "note": "The default logo. Charcoal wordmark with the green leaf mark." },
+          { "variant": "color_on_dark", "path": "logos/nvf-stacked-color-dark.svg", "format": "svg", "use_on": "dark backgrounds", "colors": ["#ffffff", "#569c33", "#74c933"], "note": "Two-colour lockup with a white wordmark, for charcoal and photographic backgrounds." },
+          { "variant": "white", "path": "logos/nvf-stacked-white.svg", "format": "svg", "use_on": "dark backgrounds", "colors": ["#ffffff"], "note": "Single-colour white. Use where the green leaf would not reproduce." },
+          { "variant": "black", "path": "logos/nvf-stacked-black.svg", "format": "svg", "use_on": "single-colour print", "colors": ["#231f20"], "note": "Single-colour charcoal. One-ink print and faxable documents." }
+        ]
+      },
+      {
+        "type": "horizontal",
+        "name": "Horizontal Wordmark",
+        "description": "Single-line wordmark. Use in narrow horizontal spaces — headers, footers, corner marks, email signatures.",
+        "primary": false,
+        "assets": [
+          { "variant": "black", "path": "logos/nvf-horizontal-black.svg", "format": "svg", "use_on": "light backgrounds", "colors": ["#000000", "#231f20"], "note": "Single-colour dark wordmark." },
+          { "variant": "color_on_dark", "path": "logos/nvf-horizontal-white.svg", "format": "svg", "use_on": "dark backgrounds", "colors": ["#ffffff", "#569c33", "#74c933"], "note": "White wordmark with the green leaf mark retained." },
+          { "variant": "color", "path": "logos/nvf-horizontal-color.png", "format": "png", "use_on": "light backgrounds" },
+          { "variant": "white_text", "path": "logos/nvf-horizontal-white-text.png", "format": "png", "use_on": "dark backgrounds, retains green leaves" }
+        ]
+      },
+      {
+        "type": "leaf_mark",
+        "name": "Leaf Mark",
+        "description": "The two-leaf icon alone. Use as a small decorative accent, favicon, or avatar — never as a substitute for the full logo in primary placements.",
+        "primary": false,
+        "assets": [
+          { "variant": "color", "path": "logos/nvf-leaf-mark.png", "format": "png", "use_on": "any background" }
+        ]
+      }
+    ],
+    "rules": [
+      "Prefer SVG for all vector and programmatic use.",
+      "Match the variant to the background. Every asset entry carries a use_on field and a colors array — read them before placing a logo.",
+      "On light backgrounds use the color variant (charcoal wordmark). On dark or photographic backgrounds use color_on_dark or white — the charcoal wordmark will not read.",
+      "Maintain clearspace equal to the height of the leaf mark on all sides.",
+      "Never stretch, recolor, rotate, add effects to, or place the logo on a busy background without a darkening veil.",
+      "The stacked lockup is the default choice. Reach for the horizontal wordmark only when vertical space is constrained.",
+      "The horizontal wordmark has an aspect ratio of roughly 22:1. In constrained layouts, size it by width and never let it crowd adjacent navigation or type."
+    ]
+  },
+
+  "sub_brands": [
+    { "id": "the_wheel",      "name": "The Wheel",       "audience": "Children's Ministry — birth through 5th grade", "website": "https://nvf.life/kids",          "assets": [{ "variant": "color", "path": "sub-brands/the-wheel.png", "format": "png" }] },
+    { "id": "the_kiln",       "name": "The Kiln",        "audience": "Student Ministry — grades 6 through 12",        "website": "https://nvf.life/students",      "assets": [{ "variant": "color", "path": "sub-brands/the-kiln.png", "format": "png" }] },
+    { "id": "the_mill",       "name": "The Mill",        "audience": "College & Young Career — through age 25",       "website": "https://nvf.life/young-adults", "assets": [{ "variant": "color", "path": "sub-brands/the-mill.png", "format": "png" }] },
+    { "id": "titus_2_women",  "name": "Titus 2 Women",   "audience": "Women's Ministry — all ages",                   "website": "https://nvf.life/women",        "assets": [{ "variant": "color", "path": "sub-brands/titus-2-women.png", "format": "png" }] },
+    { "id": "men_of_vision",  "name": "Men of Vision",   "audience": "Men's Ministry — all ages",                     "website": "https://nvf.life/men",          "assets": [{ "variant": "color", "path": "sub-brands/men-of-vision.png", "format": "png" }] },
+    { "id": "vintage_visions","name": "Vintage Visions",  "audience": "Senior Ministry — senior-focused, not senior-exclusive", "website": "https://nvf.life/seniors", "assets": [{ "variant": "color", "path": "sub-brands/vintage-visions.png", "format": "png" }] }
+  ],
+
+  "initiatives": [
+    { "id": "life_groups",   "name": "Life Groups",     "description": "8-16 people meeting weekly in host homes across three 10-week trimesters, to Connect, Reflect, and Protect.", "website": "https://nvf.life/life-groups", "assets": [{ "variant": "color", "path": "initiatives/life-groups.png", "format": "png" }] },
+    { "id": "whos_your_one", "name": "Who's Your One?", "description": "Identify one person in your circles who is far from God — pray for them, share the gospel, and invite them to church.", "website": "https://nvf.life/one", "assets": [{ "variant": "color", "path": "initiatives/whos-your-one.png", "format": "png" }, { "variant": "white", "path": "initiatives/whos-your-one-white.png", "format": "png", "use_on": "dark backgrounds" }] }
+  ],
+
+  "voice": {
+    "summary": "New Vision sounds warm, grounded, and hopeful. We are inviting people into something bigger than themselves, so we open doors rather than push. Grace and truth are not rivals — we say hard things kindly and clearly, never hedging them into vagueness. Plain language carries profound ideas. Concrete detail earns trust where superlatives do not. Every piece points to one clear next step.",
+    "statement": "Write like a trusted friend who is a little further down the road: warm, direct, unhurried. Invite people in — never recruit, pressure, or hype. Use plain words for deep things, and say hard truths kindly and clearly. Be specific: real names, real numbers, real next steps. Write to 'you' in active voice, mostly short sentences, with one warm flourish per piece.",
+    "tone": ["warm", "pastoral", "grounded", "hopeful", "plainspoken", "unhurried", "teaching"],
+    "do": [
+      "Write to 'you' in active voice",
+      "Choose the shorter, plainer word; explain any church term a guest would not know",
+      "Be specific — real names, real numbers, real streets earn trust",
+      "Invite warmly: 'There's a seat for you here'",
+      "Say hard truths kindly and plainly; never soften them into vagueness",
+      "End with one concrete next step: verb, what happens, where to go",
+      "Keep sentences mostly short; read aloud and cut anything breathless",
+      "Use Title Case for titles, ALL CAPS for short labels, sentence case elsewhere",
+      "Add exactly one warm human flourish per piece",
+      "Keep paragraphs to one idea, three or four sentences maximum"
+    ],
+    "dont": [
+      "No urgency or FOMO — avoid 'don't miss out', 'limited time', 'last chance'",
+      "No hype words: amazing, incredible, life-changing, unlock",
+      "No corporate speak: leverage, utilize, engagement, onboarding, stakeholders",
+      "No insider shorthand used cold — unpacking, doing life, pouring into, seasons",
+      "No hedging with just, kind of, sort of, maybe",
+      "Never imply anyone is behind, failing, or missing out by not participating",
+      "Do not write about 'people' in third person when you mean the reader",
+      "Do not substitute superlatives for evidence — show the number instead",
+      "No more than one script flourish or exclamation point per piece",
+      "Never use straight quotes or apostrophes; always use curly"
+    ],
+    "example_phrases": [
+      "There's a seat for you here.",
+      "Let's get moving for the Master.",
+      "A doorway, not a gate.",
+      "Serving isn't the finish line, it's the starting line.",
+      "Grace and truth are not rivals.",
+      "If you can find us, you can worship with us."
+    ]
+  },
+
+  "brand_elements": {
+    "kicker_lockup": {
+      "description": "The recurring section-header motif. A small uppercase green kicker, then a large Archivo title, then a short rule bar.",
+      "spec": "Kicker: Archivo 800, uppercase, letter-spacing 0.26em, primary green. Title: Archivo 900, tight tracking. Rule: 104px wide, 7px tall, rounded, primary green."
+    },
+    "card": {
+      "description": "The standard content container.",
+      "spec": "Background Paper Card (#f1ece2), radius 10-20px, generous padding, and frequently a 5-14px left or top accent border in the category color."
+    },
+    "contrast_columns": {
+      "description": "Two side-by-side columns used to contrast ideas — one light, one dark.",
+      "spec": "Left column Paper Card with ink-soft text. Right column Olive Deep (#37461f) with white text and inline bold Green Bright highlights on key phrases."
+    },
+    "image_veil": {
+      "description": "The treatment that makes white text legible over photography.",
+      "spec": "Place a bottom-weighted linear gradient over the image: rgba(36,32,29,0.15) at 0%, rgba(36,32,29,0.05) at 38%, rgba(36,32,29,0.60) at 72%, rgba(36,32,29,0.88) at 100%. Set caption text in white Archivo 900 with a Kaushan Script lead-in above it in Green Bright.",
+      "warning": "Do not use blurred text-shadow for legibility. Print and PDF engines rasterize large-blur shadows into visible rectangles. Use the gradient veil instead."
+    },
+    "road_motif": {
+      "description": "A winding road on dark asphalt, used on covers and back covers to carry the On-Ramp metaphor.",
+      "spec": "Dark charcoal radial base, an olive green road path with a dashed center line, and a subtle noise texture. Always veiled before type is placed on it."
+    },
+    "timeline": {
+      "description": "The history and process timeline.",
+      "spec": "A vertical spine with a gradient from primary green to olive, the year on the left in Archivo 900 green, and alternating filled and outlined dots on the line. Dots sit above the spine."
+    }
+  },
+
+  "usage": {
+    "do": [
+      "Use warm neutrals, confident large headings, and generous whitespace",
+      "Color-code categories with the four accent colors",
+      "Pair real photography with the gradient veil for text legibility",
+      "Lead sections with the kicker-title-rule lockup",
+      "Use flex or grid with gap for all sibling layout"
+    ],
+    "dont": [
+      "No aggressive gradient backgrounds or glassmorphism",
+      "No emoji",
+      "No pure black or pure white, and no cold grays",
+      "No competing accent colors beyond the defined four",
+      "Do not use Inter, Roboto, or Arial — the Archivo and Source Serif 4 pairing is the signature",
+      "No tight, cramped layouts"
+    ]
+  },
+
+  "print": {
+    "bleed_in": 0.125,
+    "resolution_dpi": 350,
+    "color_mode": "CMYK",
+    "trim_size_in": { "width": 8.5, "height": 11 },
+    "bleed_size_in": { "width": 8.625, "height": 11.125 },
+    "note": "Every placed image must meet 350 DPI at its final placed size, not at its native size."
+  },
+
+  "rules": [
+    "Start with this file. It is the single machine-readable source of truth for New Vision Fellowship's brand.",
+    "Resolve every asset path against base_url. All paths are relative to the repository root.",
+    "Use Brand Leaf Green (#5f9a32) as the primary color on light backgrounds and Green Bright (#74ca33) on dark ones.",
+    "Set all headings in Archivo and all body copy in Source Serif 4. Use Kaushan Script only for a single warm accent per composition.",
+    "Prefer the stacked logo lockup. Match the variant to the background using each asset's use_on field: color on light, color_on_dark or white on dark.",
+    "Follow the voice object for all copy. Read brand-guidelines.md for the full tone and usage rules.",
+    "When producing print output, honor the print object: 0.125in bleed, 350 DPI, CMYK."
+  ]
+}

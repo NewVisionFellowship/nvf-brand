@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Vision Fellowship — Brand Kit</title>
+<meta name="description" content="The single source of truth for New Vision Fellowship's brand assets, colors, typography, and voice. Machine-readable for AI agents and automation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Kaushan+Script&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#221f1b;--ink-soft:#4a443d;
+  --charcoal:#24201d;--charcoal-2:#2d2823;
+  --paper:#faf7f1;--paper-2:#f1ece2;--paper-3:#e9e2d5;
+  --line:#e1dacc;--line-dark:#433d36;
+  --green:#5f9a32;--green-deep:#42701f;--green-bright:#74ca33;
+  --olive:#4a5d2f;--olive-deep:#37461f;
+  --gather:#5d8a3e;--group:#347b6f;--give:#b3852b;--go:#ae5230;
+  --display:'Archivo',system-ui,sans-serif;
+  --serif:'Source Serif 4',Georgia,serif;
+  --script:'Kaushan Script',cursive;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+p{margin:0 0 1em}
+p:last-child{margin-bottom:0}
+a{color:var(--green-deep);text-decoration:none;border-bottom:1px solid rgba(66,112,31,.3)}
+a:hover{color:var(--green);border-bottom-color:var(--green)}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;background:var(--paper-2);padding:.15em .45em;border-radius:4px;border:1px solid var(--line)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 32px}
+.kicker{font-family:var(--display);font-weight:800;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--green);margin:0 0 14px}
+h2{font-family:var(--display);font-weight:900;font-size:40px;line-height:1.04;letter-spacing:-.018em;margin:0 0 14px}
+h3{font-family:var(--display);font-weight:800;font-size:21px;line-height:1.2;margin:0 0 8px}
+.rule{height:5px;width:70px;background:var(--green);border:0;border-radius:3px;margin:0 0 34px}
+.lede{font-size:20px;line-height:1.55;color:var(--ink-soft);max-width:66ch}
+section{padding:78px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+
+/* header */
+.top{background:var(--charcoal);color:var(--paper);position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line-dark)}
+.top__in{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 32px;max-width:1120px;margin:0 auto}
+.top img{height:15px;width:auto;max-width:300px;display:block;flex:none}
+.top nav{display:flex;gap:18px;flex-wrap:wrap}
+.top nav a{font-family:var(--display);font-weight:600;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#cabfb0;border:0;white-space:nowrap}
+.top nav a:hover{color:var(--green-bright)}
+
+/* hero */
+.hero{background:var(--charcoal);color:var(--paper);padding:90px 0 96px;position:relative;overflow:hidden}
+.hero svg{position:absolute;inset:0;width:100%;height:100%;opacity:.5}
+.hero__leaf{position:absolute;right:-70px;top:50%;transform:translateY(-50%);height:150%;width:auto;opacity:.09;pointer-events:none;user-select:none}
+.hero__in{position:relative}
+.hero .kicker{color:var(--green-bright)}
+.hero h1{font-family:var(--display);font-weight:900;font-size:76px;line-height:.98;letter-spacing:-.026em;margin:0 0 10px;color:#fff}
+.hero .script{font-family:var(--script);font-size:34px;color:var(--green-bright);line-height:1;margin-bottom:26px}
+.hero p{color:#cabfb0;font-size:20px;line-height:1.55;max-width:62ch}
+.hero__meta{display:flex;gap:32px;flex-wrap:wrap;margin-top:36px;font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#8b8377}
+.hero__meta b{color:var(--green-bright);font-weight:700}
+
+/* agent callout */
+.agent{background:var(--olive-deep);color:#fff;border-radius:14px;padding:38px 42px}
+.agent .kicker{color:var(--green-bright)}
+.agent h3{color:#fff;font-size:26px;margin-bottom:12px}
+.agent p{color:#e7ecdf;font-size:17px}
+.agent code{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.2);color:#fff}
+.agent b{color:var(--green-bright)}
+
+/* file cards */
+.files{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:20px}
+.file{background:var(--paper-2);border-radius:12px;padding:26px 28px;border-top:5px solid var(--green);display:flex;flex-direction:column}
+.file--alt{border-top-color:var(--olive)}
+.file__n{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:var(--green-deep);margin-bottom:10px;word-break:break-all}
+.file p{font-size:15px;color:var(--ink-soft);margin:0}
+.file__tag{font-family:var(--display);font-weight:700;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#a99f8d;margin-top:16px}
+
+/* tables */
+table{width:100%;border-collapse:collapse;font-size:15.5px;margin-top:8px}
+th{font-family:var(--display);font-weight:800;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);text-align:left;padding:0 16px 12px 0;border-bottom:2px solid var(--line)}
+td{padding:13px 16px 13px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink-soft)}
+td:first-child{color:var(--ink)}
+td code{white-space:nowrap}
+
+/* swatches */
+.sw-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(172px,1fr));gap:16px;margin-bottom:34px}
+.sw{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#fff}
+.sw__c{height:104px}
+.sw__b{padding:14px 16px}
+.sw__n{font-family:var(--display);font-weight:800;font-size:14px;line-height:1.15;color:var(--ink)}
+.sw__h{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:var(--ink-soft);margin-top:5px}
+.sw__u{font-size:12.5px;color:#a99f8d;margin-top:7px;line-height:1.35;font-family:var(--display);font-weight:600}
+.sub{font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--olive);margin:0 0 16px}
+
+/* type specimens */
+.spec{background:var(--paper-2);border-radius:12px;padding:32px 34px;margin-bottom:18px;border-left:6px solid var(--green)}
+.spec__h{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+.spec__f{font-family:var(--display);font-weight:900;font-size:24px;color:var(--ink)}
+.spec__r{font-family:var(--display);font-weight:700;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--green-deep)}
+.spec__s{font-size:15px;color:var(--ink-soft);margin-top:14px}
+.d1{font-family:var(--display);font-weight:900;font-size:54px;line-height:1;letter-spacing:-.022em}
+.d2{font-family:var(--serif);font-size:22px;line-height:1.5;color:var(--ink)}
+.d3{font-family:var(--script);font-size:44px;line-height:1;color:var(--green)}
+
+/* logos */
+.logos{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.lg{border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.lg__v{height:170px;display:flex;align-items:center;justify-content:center;padding:32px}
+.lg__v img{max-width:100%;max-height:100%;object-fit:contain}
+.lg__v--l{background:var(--paper-2)}
+.lg__v--d{background:var(--charcoal)}
+.lg__b{padding:16px 20px;background:#fff}
+.lg__n{font-family:var(--display);font-weight:800;font-size:15px}
+.lg__p{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;color:var(--ink-soft);margin-top:6px;word-break:break-all}
+
+/* ministry grid */
+.mins{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.min{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;text-align:center}
+.min__i{height:74px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.min__i img{max-width:100%;max-height:100%;object-fit:contain}
+.min__n{font-family:var(--display);font-weight:800;font-size:15px}
+.min__a{font-size:13px;color:var(--ink-soft);margin-top:5px;line-height:1.35}
+
+/* ramps */
+.ramps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.ramp{border-radius:12px;padding:26px 24px;color:#fff}
+.ramp__n{font-family:var(--display);font-weight:900;font-size:32px;letter-spacing:.01em}
+.ramp__h{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;opacity:.85;margin-top:6px}
+.ramp__s{font-size:14.5px;margin-top:12px;line-height:1.4;opacity:.96}
+
+/* voice */
+.voice{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.vcol{border-radius:12px;padding:30px 32px}
+.vcol--do{background:var(--paper-2);border-top:6px solid var(--green)}
+.vcol--no{background:var(--charcoal);color:#e7e1d6;border-top:6px solid var(--go)}
+.vcol h3{margin-bottom:16px}
+.vcol--no h3{color:#fff}
+.vcol ul{margin:0;padding-left:22px}
+.vcol li{margin-bottom:9px;font-size:15.5px;line-height:1.42}
+.vcol--do li{color:var(--ink-soft)}
+.quotes{margin-top:26px;display:flex;flex-direction:column;gap:12px}
+.quote{font-family:var(--script);font-size:26px;color:var(--green-deep);line-height:1.2}
+
+/* footer */
+footer{background:var(--charcoal);color:#9c9384;padding:56px 0}
+footer img{height:16px;width:auto;max-width:300px;margin-bottom:22px}
+footer p{font-size:15px;line-height:1.6}
+footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
+.fmeta{font-family:var(--display);font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;margin-top:22px;color:#6f675d}
+
+@media(max-width:760px){
+  .hero h1{font-size:46px}
+  .hero__leaf{right:-120px;height:110%;opacity:.06}
+  h2{font-size:30px}
+  .voice{grid-template-columns:1fr}
+  .wrap{padding:0 20px}
+  .top__in{padding:14px 20px}
+  section{padding:52px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top__in">
+    <img src="logos/nvf-horizontal-white.svg" alt="New Vision Fellowship">
+    <nav>
+      <a href="brand-kit.json">brand-kit.json</a>
+      <a href="brand-guidelines.md">Guidelines</a>
+      <a href="#colors">Colors</a>
+      <a href="#type">Type</a>
+      <a href="#logos">Logos</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <svg viewBox="0 0 1400 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs><radialGradient id="g" cx="42%" cy="30%" r="92%"><stop offset="0%" stop-color="#312b26"/><stop offset="60%" stop-color="#24201d"/><stop offset="100%" stop-color="#181512"/></radialGradient></defs>
+    <rect width="1400" height="620" fill="url(#g)"/>
+  </svg>
+  <img class="hero__leaf" src="logos/nvf-leaf-mark.png" alt="" aria-hidden="true">
+  <div class="wrap hero__in">
+    <p class="kicker">nvf.life / brand</p>
+    <h1>Brand Kit</h1>
+    <div class="script">a single source of truth</div>
+    <p>Everything an agent or a designer needs to produce work that looks and sounds like New Vision Fellowship — colors, typography, logos, frameworks, and voice. Structured for machines, readable by people.</p>
+    <div class="hero__meta">
+      <span>Version <b>2026.08</b></span>
+      <span>Primary <b>#5f9a32</b></span>
+      <span>Typeface <b>Archivo</b></span>
+      <span>Mission <b>Multiply God&rsquo;s glory</b></span>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="agent">
+      <p class="kicker">Agent Instructions</p>
+      <h3>Start with <code>brand-kit.json</code></h3>
+      <p>It contains all structured brand data in a single machine-readable file. For tone, logo usage, and writing rules, read <code>brand-guidelines.md</code>. All asset paths in the JSON are relative to the repository root — resolve them against <code>base_url</code>.</p>
+      <p>When producing branded output, use <b>Brand Leaf Green (#5f9a32)</b> as the primary color on light backgrounds and <b>Green Bright (#74ca33)</b> on dark ones. Set headings in <b>Archivo</b> and body copy in <b>Source Serif 4</b>, and follow the <code>voice</code> object. Logos are SVGs in <code>logos/</code> — prefer the stacked lockup in most contexts.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Repository</p>
+    <h2>Key Files</h2>
+    <hr class="rule">
+    <div class="files">
+      <div class="file">
+        <div class="file__n">brand-kit.json</div>
+        <h3>Brand Kit</h3>
+        <p>Machine-readable brand data. Colors, typography, logo paths, sub-brands, frameworks, voice, and print specs. Start here.</p>
+        <div class="file__tag">Primary Reference</div>
+      </div>
+      <div class="file">
+        <div class="file__n">brand-guidelines.md</div>
+        <h3>Brand Guidelines</h3>
+        <p>Human- and agent-readable guidelines covering voice, color rules, logo usage, design patterns, minimum sizes, and print specifications.</p>
+        <div class="file__tag">Voice + Usage</div>
+      </div>
+      <div class="file file--alt">
+        <div class="file__n">logos/</div>
+        <h3>Logo Files</h3>
+        <p>The stacked lockup, horizontal wordmark, and leaf mark — each in color, white, and black variants. SVG preferred.</p>
+        <div class="file__tag">Assets</div>
+      </div>
+      <div class="file file--alt">
+        <div class="file__n">sub-brands/</div>
+        <h3>Ministry Logos</h3>
+        <p>Our six population-focused ministries — the Wheel, the Kiln, the Mill, Titus 2 Women, Men of Vision, and Vintage Visions.</p>
+        <div class="file__tag">Assets</div>
+      </div>
+      <div class="file file--alt">
+        <div class="file__n">initiatives/</div>
+        <h3>Initiative Logos</h3>
+        <p>Life Groups and Who&rsquo;s Your One, including a white variant for use on dark backgrounds.</p>
+        <div class="file__tag">Assets</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">brand-kit.json</p>
+    <h2>JSON Schema</h2>
+    <hr class="rule">
+    <table>
+      <thead><tr><th style="width:26%">Key</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td><code>brand</code></td><td>Name, mission, vision, website, founding year, and denominational affiliations.</td></tr>
+        <tr><td><code>locations</code></td><td>Campus address, email, and phone.</td></tr>
+        <tr><td><code>core_values</code></td><td>The five core values, in canonical order.</td></tr>
+        <tr><td><code>frameworks.on_ramps</code></td><td>The four On-Ramps — Gather, Give, Group, Go — each with its color, summary, and URL. Includes the canonical presentation order.</td></tr>
+        <tr><td><code>frameworks.clay_stages</code></td><td>Clay in the Potter&rsquo;s Hands — the five growth stages, each with its color, transition, and what it multiplies.</td></tr>
+        <tr><td><code>color_system.palette</code></td><td>Primary, secondary, and neutral colors with RGB, <code>text_on</code>, usage notes, and tonal variations.</td></tr>
+        <tr><td><code>color_system.accents</code></td><td>The four On-Ramp category colors. Never extend beyond these.</td></tr>
+        <tr><td><code>typography</code></td><td>Archivo, Source Serif 4, and Kaushan Script with weights, usage rules, a full size scale, and minimum sizes for print and projection.</td></tr>
+        <tr><td><code>logos.lockups</code></td><td>Stacked, horizontal, and leaf mark — each with an <code>assets[]</code> array of variants and the background each is approved for.</td></tr>
+        <tr><td><code>logos.rules</code></td><td>Clearspace, variant selection, and prohibitions.</td></tr>
+        <tr><td><code>sub_brands</code></td><td>Six ministries, each with audience, website, and logo assets.</td></tr>
+        <tr><td><code>initiatives</code></td><td>Life Groups and Who&rsquo;s Your One with descriptions and assets.</td></tr>
+        <tr><td><code>voice</code></td><td>Summary, a short writing statement, tone descriptors, ten dos, ten don&rsquo;ts, and example phrases.</td></tr>
+        <tr><td><code>brand_elements</code></td><td>Specs for the kicker lockup, cards, contrast columns, image veil, road motif, and timeline.</td></tr>
+        <tr><td><code>print</code></td><td>Bleed, resolution, color mode, and trim sizes.</td></tr>
+        <tr><td><code>rules</code></td><td>Top-level directives for agents consuming this kit.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="colors">
+  <div class="wrap">
+    <p class="kicker">Colors</p>
+    <h2>Brand Colors</h2>
+    <hr class="rule">
+    <p class="lede" style="margin-bottom:34px;">Dark, dramatic moments plus light, readable content. Everything is warm — never pure black, never pure white, never a cold gray.</p>
+
+    <p class="sub">Greens</p>
+    <div class="sw-grid">
+      <div class="sw"><div class="sw__c" style="background:#5f9a32"></div><div class="sw__b"><div class="sw__n">Brand Leaf Green</div><div class="sw__h">#5f9a32</div><div class="sw__u">Primary &middot; light bg</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#42701f"></div><div class="sw__b"><div class="sw__n">Green Deep</div><div class="sw__h">#42701f</div><div class="sw__u">Small text &amp; links</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#74ca33"></div><div class="sw__b"><div class="sw__n">Green Bright</div><div class="sw__h">#74ca33</div><div class="sw__u">Dark bg only</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#4a5d2f"></div><div class="sw__b"><div class="sw__n">Olive</div><div class="sw__h">#4a5d2f</div><div class="sw__u">Muted support</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#37461f"></div><div class="sw__b"><div class="sw__n">Olive Deep</div><div class="sw__h">#37461f</div><div class="sw__u">Dark panels</div></div></div>
+    </div>
+
+    <p class="sub">Warm Neutrals</p>
+    <div class="sw-grid">
+      <div class="sw"><div class="sw__c" style="background:#faf7f1;border-bottom:1px solid #e1dacc"></div><div class="sw__b"><div class="sw__n">Paper</div><div class="sw__h">#faf7f1</div><div class="sw__u">Primary light bg</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#f1ece2"></div><div class="sw__b"><div class="sw__n">Paper Card</div><div class="sw__h">#f1ece2</div><div class="sw__u">Cards &amp; wells</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#e9e2d5"></div><div class="sw__b"><div class="sw__n">Paper Deep</div><div class="sw__h">#e9e2d5</div><div class="sw__u">Third layer</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#24201d"></div><div class="sw__b"><div class="sw__n">Charcoal</div><div class="sw__h">#24201d</div><div class="sw__u">Dark surfaces</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#2d2823"></div><div class="sw__b"><div class="sw__n">Charcoal Lift</div><div class="sw__h">#2d2823</div><div class="sw__u">Raised on dark</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#221f1b"></div><div class="sw__b"><div class="sw__n">Ink</div><div class="sw__h">#221f1b</div><div class="sw__u">Body text</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#4a443d"></div><div class="sw__b"><div class="sw__n">Ink Soft</div><div class="sw__h">#4a443d</div><div class="sw__u">Secondary text</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#e1dacc"></div><div class="sw__b"><div class="sw__n">Hairline</div><div class="sw__h">#e1dacc</div><div class="sw__u">Dividers</div></div></div>
+    </div>
+
+    <p class="sub">The Four On-Ramps</p>
+    <div class="ramps">
+      <div class="ramp" style="background:#5d8a3e"><div class="ramp__n">Gather</div><div class="ramp__h">#5d8a3e</div><div class="ramp__s">Attend one service, serve during one.</div></div>
+      <div class="ramp" style="background:#b3852b"><div class="ramp__n">Give</div><div class="ramp__h">#b3852b</div><div class="ramp__s">Generosity keeps the mission multiplying.</div></div>
+      <div class="ramp" style="background:#347b6f"><div class="ramp__n">Group</div><div class="ramp__h">#347b6f</div><div class="ramp__s">We were designed to share life together.</div></div>
+      <div class="ramp" style="background:#ae5230"><div class="ramp__n">Go</div><div class="ramp__h">#ae5230</div><div class="ramp__s">From our neighborhoods to the nations.</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="type">
+  <div class="wrap">
+    <p class="kicker">Typography</p>
+    <h2>Three Families, Three Jobs</h2>
+    <hr class="rule">
+    <div class="spec">
+      <div class="spec__h"><span class="spec__f">Archivo</span><span class="spec__r">Display &middot; 400&ndash;900</span></div>
+      <div class="d1">Multiply God&rsquo;s glory</div>
+      <div class="spec__s">Every heading, title, label, kicker, number, and UI element. Tight letter-spacing on large sizes; wide tracking on small uppercase labels.</div>
+    </div>
+    <div class="spec" style="border-left-color:var(--olive)">
+      <div class="spec__h"><span class="spec__f">Source Serif 4</span><span class="spec__r">Body &middot; 400&ndash;600</span></div>
+      <div class="d2">Attendance says, &ldquo;I go there.&rdquo; Membership says, &ldquo;These are my people, and I am one of them.&rdquo;</div>
+      <div class="spec__s">All body and long-form copy. Line-height 1.4&ndash;1.6, with <code>text-wrap: pretty</code>. Georgia is the fallback.</div>
+    </div>
+    <div class="spec" style="border-left-color:var(--give)">
+      <div class="spec__h"><span class="spec__f">Kaushan Script</span><span class="spec__r">Accent &middot; 400</span></div>
+      <div class="d3">Let&rsquo;s get moving for the Master.</div>
+      <div class="spec__s">One warm accent per composition &mdash; a greeting, a value name, a caption lead-in. Never body copy or critical information.</div>
+    </div>
+  </div>
+</section>
+
+<section id="logos">
+  <div class="wrap">
+    <p class="kicker">Assets</p>
+    <h2>Logos</h2>
+    <hr class="rule">
+    <p class="lede" style="margin-bottom:34px;">The stacked lockup is our primary logo. Match the variant to the background &mdash; the charcoal wordmark will not read on dark, and the white wordmark will not read on paper. Prefer SVG everywhere.</p>
+    <div class="logos">
+      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-stacked-color.svg" alt="Stacked lockup, color for light backgrounds"></div><div class="lg__b"><div class="lg__n">Stacked &middot; Color</div><div class="lg__p">logos/nvf-stacked-color.svg &middot; light bg</div></div></div>
+      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-stacked-color-dark.svg" alt="Stacked lockup, color for dark backgrounds"></div><div class="lg__b"><div class="lg__n">Stacked &middot; Color on Dark</div><div class="lg__p">logos/nvf-stacked-color-dark.svg &middot; dark bg</div></div></div>
+      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-stacked-white.svg" alt="Stacked lockup, single-colour white"></div><div class="lg__b"><div class="lg__n">Stacked &middot; White</div><div class="lg__p">logos/nvf-stacked-white.svg &middot; dark bg</div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-stacked-black.svg" alt="Stacked lockup, single-colour charcoal"></div><div class="lg__b"><div class="lg__n">Stacked &middot; Single Colour</div><div class="lg__p">logos/nvf-stacked-black.svg &middot; one-ink print</div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-horizontal-black.svg" alt="Horizontal wordmark, black"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; Black</div><div class="lg__p">logos/nvf-horizontal-black.svg &middot; light bg</div></div></div>
+      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-horizontal-white.svg" alt="Horizontal wordmark, white"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; White</div><div class="lg__p">logos/nvf-horizontal-white.svg &middot; dark bg</div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l" style="padding:44px"><img src="logos/nvf-leaf-mark.png" alt="Leaf mark"></div><div class="lg__b"><div class="lg__n">Leaf Mark</div><div class="lg__p">logos/nvf-leaf-mark.png &middot; any bg</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Assets</p>
+    <h2>Ministries &amp; Initiatives</h2>
+    <hr class="rule">
+    <div class="mins">
+      <div class="min"><div class="min__i"><img src="sub-brands/the-wheel.png" alt="The Wheel"></div><div class="min__n">The Wheel</div><div class="min__a">Birth&ndash;5th grade</div></div>
+      <div class="min"><div class="min__i"><img src="sub-brands/the-kiln.png" alt="The Kiln"></div><div class="min__n">The Kiln</div><div class="min__a">Grades 6&ndash;12</div></div>
+      <div class="min"><div class="min__i"><img src="sub-brands/the-mill.png" alt="The Mill"></div><div class="min__n">The Mill</div><div class="min__a">Through age 25</div></div>
+      <div class="min"><div class="min__i"><img src="sub-brands/titus-2-women.png" alt="Titus 2 Women"></div><div class="min__n">Titus 2 Women</div><div class="min__a">Women of all ages</div></div>
+      <div class="min"><div class="min__i"><img src="sub-brands/men-of-vision.png" alt="Men of Vision"></div><div class="min__n">Men of Vision</div><div class="min__a">Men of all ages</div></div>
+      <div class="min"><div class="min__i"><img src="sub-brands/vintage-visions.png" alt="Vintage Visions"></div><div class="min__n">Vintage Visions</div><div class="min__a">Senior-focused, all welcome</div></div>
+      <div class="min"><div class="min__i"><img src="initiatives/life-groups.png" alt="Life Groups"></div><div class="min__n">Life Groups</div><div class="min__a">Connect &middot; Reflect &middot; Protect</div></div>
+      <div class="min"><div class="min__i"><img src="initiatives/whos-your-one.png" alt="Who's Your One"></div><div class="min__n">Who&rsquo;s Your One?</div><div class="min__a">Pray, share, invite</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Voice</p>
+    <h2>How We Sound</h2>
+    <hr class="rule">
+    <p class="lede" style="margin-bottom:34px;">Write like a trusted friend who is a little further down the road: warm, direct, unhurried. We invite people in &mdash; we never recruit, pressure, or hype.</p>
+    <div class="voice">
+      <div class="vcol vcol--do">
+        <h3>Do</h3>
+        <ul>
+          <li>Write to &ldquo;you&rdquo; in active voice</li>
+          <li>Choose the shorter, plainer word</li>
+          <li>Be specific &mdash; real names, real numbers</li>
+          <li>Say hard truths kindly and plainly</li>
+          <li>End with one concrete next step</li>
+          <li>One warm flourish per piece</li>
+        </ul>
+      </div>
+      <div class="vcol vcol--no">
+        <h3>Don&rsquo;t</h3>
+        <ul>
+          <li>No urgency or FOMO</li>
+          <li>No hype words &mdash; amazing, life-changing</li>
+          <li>No corporate speak &mdash; leverage, utilize</li>
+          <li>No insider shorthand used cold</li>
+          <li>Never imply anyone is behind or failing</li>
+          <li>Never substitute superlatives for evidence</li>
+        </ul>
+      </div>
+    </div>
+    <div class="quotes">
+      <div class="quote">&ldquo;There&rsquo;s a seat for you here.&rdquo;</div>
+      <div class="quote">&ldquo;Serving isn&rsquo;t the finish line, it&rsquo;s the starting line.&rdquo;</div>
+      <div class="quote">&ldquo;A doorway, not a gate.&rdquo;</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="logos/nvf-horizontal-white.svg" alt="New Vision Fellowship">
+    <p>1135 West Academy Street, Madison, NC &middot; <a href="mailto:info@nvf.life">info@nvf.life</a> &middot; 336.427.6264 &middot; <a href="https://nvf.life">nvf.life</a></p>
+    <p class="fmeta">Multiply God&rsquo;s glory on the earth &middot; Brand Kit v2026.08</p>
+  </div>
+</footer>
+
+</body>
+</html>
