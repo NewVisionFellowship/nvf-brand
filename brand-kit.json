@@ -120,18 +120,30 @@
     },
 
     "accents": {
-      "description": "Four earthy, green-anchored category colors. Used to color-code the four on-ramps and to differentiate sections. Never introduce a fifth.",
-      "gather": { "name": "Gather Green",     "hex": "#5d8a3e", "text_on": "#ffffff" },
-      "group":  { "name": "Group Muted Teal", "hex": "#347b6f", "text_on": "#ffffff" },
-      "give":   { "name": "Give Ochre",       "hex": "#b3852b", "text_on": "#ffffff" },
-      "go":     { "name": "Go Terracotta",    "hex": "#ae5230", "text_on": "#ffffff" }
+      "description": "Four earthy, green-anchored accent colors used to differentiate categories and sections. They happen to color-code the On-Ramps framework (frameworks.on_ramps) in Gather/Give/Group/Go order, but should be referred to by color name — Moss, Teal, Ochre, Terracotta — everywhere outside that specific framework. Never introduce a fifth.",
+      "moss":       { "name": "Moss Green", "hex": "#5d8a3e", "text_on": "#ffffff" },
+      "teal":       { "name": "Muted Teal", "hex": "#347b6f", "text_on": "#ffffff" },
+      "ochre":      { "name": "Ochre",      "hex": "#b3852b", "text_on": "#ffffff" },
+      "terracotta": { "name": "Terracotta", "hex": "#ae5230", "text_on": "#ffffff" }
+    },
+
+    "interactive": {
+      "description": "For on-screen product UI only — logged-in app-like screens, buttons, links, hover states, and small badges on very dark backgrounds, as used on my.nvf.life. Print, booklets, announcement graphics, and other static compositions should keep using the palette and accents above, not these. This tier exists because tiny interactive elements need more lightness and chroma than a printed page does to stay legible and tappable against a near-black screen.",
+      "surface_dark": { "name": "UI Charcoal",             "hex": "#1b1815", "usage": "Primary dark background for app-like screens — a touch darker than Charcoal for extra contrast against the brighter interactive greens below." },
+      "link":         { "name": "Interactive Green",       "hex": "#93d86a", "text_on": "#15240a", "usage": "Links and secondary interactive text on dark UI." },
+      "button":       { "name": "Interactive Green, Bold", "hex": "#7fd142", "text_on": "#15240a", "usage": "Primary buttons and other high-emphasis controls on dark UI." },
+      "alert":        { "name": "Alert Red",                "hex": "#a94442", "text_on": "#ffffff", "usage": "Errors, destructive actions, and required-field warnings. The only red in the system — reserve it for real alerts, never decoration." },
+      "badge_teal":   { "name": "Badge Teal",               "hex": "#45a394", "usage": "Small tags and badges on dark UI, where Muted Teal needs more lift to read at tiny sizes." },
+      "badge_ochre":  { "name": "Badge Ochre",              "hex": "#cf9f3f", "usage": "Small tags and badges on dark UI, where Ochre needs more lift to read at tiny sizes." }
     },
 
     "rules": [
       "Never use pure black (#000000) or pure white (#ffffff) as a background. Use Charcoal and Paper.",
       "On light backgrounds use Brand Leaf Green (#5f9a32) or Green Deep (#42701f). On dark backgrounds switch to Green Bright (#74ca33).",
       "Greens lead. The four accent colors differentiate categories. Warm neutrals carry everything else.",
-      "Limit any single composition to one or two background colors."
+      "Limit any single composition to one or two background colors.",
+      "Avoid neon colors and heavy saturated primaries — keep every hue warm and slightly desaturated.",
+      "Never use color_system.interactive in print or static compositions. It exists only for on-screen product UI."
     ]
   },
 
@@ -192,10 +204,10 @@
         "description": "NEW VISION above FELLOWSHIP with the leaf mark. The primary logo. Prefer this for covers, title cards, and anywhere with vertical room.",
         "primary": true,
         "assets": [
-          { "variant": "color", "path": "logos/nvf-stacked-color.svg", "format": "svg", "use_on": "light backgrounds", "colors": ["#231f20", "#569c33", "#74c933"], "note": "The default logo. Charcoal wordmark with the green leaf mark." },
-          { "variant": "color_on_dark", "path": "logos/nvf-stacked-color-dark.svg", "format": "svg", "use_on": "dark backgrounds", "colors": ["#ffffff", "#569c33", "#74c933"], "note": "Two-colour lockup with a white wordmark, for charcoal and photographic backgrounds." },
-          { "variant": "white", "path": "logos/nvf-stacked-white.svg", "format": "svg", "use_on": "dark backgrounds", "colors": ["#ffffff"], "note": "Single-colour white. Use where the green leaf would not reproduce." },
-          { "variant": "black", "path": "logos/nvf-stacked-black.svg", "format": "svg", "use_on": "single-colour print", "colors": ["#231f20"], "note": "Single-colour charcoal. One-ink print and faxable documents." }
+          { "variant": "black_text", "path": "logos/nvf-stacked-color.svg", "format": "svg", "use_on": "light backgrounds", "colors": ["#231f20", "#569c33", "#74c933"], "note": "The default logo. Charcoal wordmark with the green leaf mark." },
+          { "variant": "white_text", "path": "logos/nvf-stacked-color-dark.svg", "format": "svg", "use_on": "dark backgrounds", "colors": ["#ffffff", "#569c33", "#74c933"], "note": "Two-color lockup with a white wordmark, for charcoal and photographic backgrounds." },
+          { "variant": "all_white", "path": "logos/nvf-stacked-white.svg", "format": "svg", "use_on": "dark backgrounds", "colors": ["#ffffff"], "note": "Single-color white. Use where the green leaf would not reproduce." },
+          { "variant": "all_black", "path": "logos/nvf-stacked-black.svg", "format": "svg", "use_on": "single-color print", "colors": ["#231f20"], "note": "Single-color charcoal. One-ink print and faxable documents." }
         ]
       },
       {
@@ -204,10 +216,11 @@
         "description": "Single-line wordmark. Use in narrow horizontal spaces — headers, footers, corner marks, email signatures.",
         "primary": false,
         "assets": [
-          { "variant": "black", "path": "logos/nvf-horizontal-black.svg", "format": "svg", "use_on": "light backgrounds", "colors": ["#000000", "#231f20"], "note": "Single-colour dark wordmark." },
-          { "variant": "color_on_dark", "path": "logos/nvf-horizontal-white.svg", "format": "svg", "use_on": "dark backgrounds", "colors": ["#ffffff", "#569c33", "#74c933"], "note": "White wordmark with the green leaf mark retained." },
-          { "variant": "color", "path": "logos/nvf-horizontal-color.png", "format": "png", "use_on": "light backgrounds" },
-          { "variant": "white_text", "path": "logos/nvf-horizontal-white-text.png", "format": "png", "use_on": "dark backgrounds, retains green leaves" }
+          { "variant": "all_black", "path": "logos/nvf-horizontal-black.svg", "format": "svg", "use_on": "light backgrounds", "colors": ["#000000", "#231f20"], "note": "Single-color dark wordmark. No green." },
+          { "variant": "white_text", "path": "logos/nvf-horizontal-white.svg", "format": "svg", "use_on": "dark backgrounds", "colors": ["#ffffff", "#569c33", "#74c933"], "note": "White wordmark with the green leaf mark retained." },
+          { "variant": "white_text", "path": "logos/nvf-horizontal-white-text.png", "format": "png", "use_on": "dark backgrounds", "colors": ["#ffffff", "#569c33", "#74c933"], "note": "Same design as the White Text SVG above, in PNG for raster-only contexts." },
+          { "variant": "black_text", "path": "logos/nvf-horizontal-color.png", "format": "png", "use_on": "light backgrounds", "colors": ["#231f20", "#569c33", "#74c933"], "note": "Black wordmark with the green leaf mark retained." },
+          { "variant": "all_white", "path": "logos/nvf-horizontal-all-white.svg", "format": "svg", "use_on": "dark backgrounds", "colors": ["#ffffff"], "note": "Single-color white. No green." }
         ]
       },
       {
@@ -218,6 +231,15 @@
         "assets": [
           { "variant": "color", "path": "logos/nvf-leaf-mark.png", "format": "png", "use_on": "any background" }
         ]
+      },
+      {
+        "type": "cross_mark",
+        "name": "Cross Mark",
+        "description": "The cross alone, in the same two-green pinwheel treatment as the rest of the mark. Use sparingly, the same way as the leaf mark — a small decorative accent, favicon, or a muted background element — never as a substitute for the full logo.",
+        "primary": false,
+        "assets": [
+          { "variant": "color", "path": "logos/nvf-cross-mark.svg", "format": "svg", "use_on": "any background", "colors": ["#569c33", "#74c933"] }
+        ]
       }
     ],
     "rules": [
@@ -227,7 +249,8 @@
       "Maintain clearspace equal to the height of the leaf mark on all sides.",
       "Never stretch, recolor, rotate, add effects to, or place the logo on a busy background without a darkening veil.",
       "The stacked lockup is the default choice. Reach for the horizontal wordmark only when vertical space is constrained.",
-      "The horizontal wordmark has an aspect ratio of roughly 22:1. In constrained layouts, size it by width and never let it crowd adjacent navigation or type."
+      "The horizontal wordmark has an aspect ratio of roughly 22:1. In constrained layouts, size it by width and never let it crowd adjacent navigation or type.",
+      "For the horizontal wordmark: all_black and all_white are single-color, no green — use where the design needs one flat ink. white_text and black_text both keep the green leaf mark, differing only in the wordmark color for light vs. dark backgrounds."
     ]
   },
 
@@ -237,13 +260,27 @@
     { "id": "the_mill",       "name": "The Mill",        "audience": "College & Young Career — through age 25",       "website": "https://nvf.life/young-adults", "assets": [{ "variant": "color", "path": "sub-brands/the-mill.png", "format": "png" }] },
     { "id": "titus_2_women",  "name": "Titus 2 Women",   "audience": "Women's Ministry — all ages",                   "website": "https://nvf.life/women",        "assets": [{ "variant": "color", "path": "sub-brands/titus-2-women.png", "format": "png" }] },
     { "id": "men_of_vision",  "name": "Men of Vision",   "audience": "Men's Ministry — all ages",                     "website": "https://nvf.life/men",          "assets": [{ "variant": "color", "path": "sub-brands/men-of-vision.png", "format": "png" }] },
-    { "id": "vintage_visions","name": "Vintage Visions",  "audience": "Senior Ministry — senior-focused, not senior-exclusive", "website": "https://nvf.life/seniors", "assets": [{ "variant": "color", "path": "sub-brands/vintage-visions.png", "format": "png" }] }
+    { "id": "vintage_visions","name": "Vintage Visions",  "audience": "Senior Ministry — senior-focused, not senior-exclusive", "website": "https://nvf.life/seniors", "assets": [{ "variant": "color", "path": "sub-brands/vintage-visions.png", "format": "png" }] },
+    { "id": "melding_moms",   "name": "Melding Moms",     "audience": "Blended-family and stepmom ministry", "assets": [{ "variant": "color", "path": "sub-brands/melding-moms-color.png", "format": "png", "use_on": "light backgrounds", "note": "Black text, green accent." }, { "variant": "white", "path": "sub-brands/melding-moms-white.png", "format": "png", "use_on": "dark backgrounds", "note": "White text, green accent." }] }
   ],
 
   "initiatives": [
     { "id": "life_groups",   "name": "Life Groups",     "description": "8-16 people meeting weekly in host homes across three 10-week trimesters, to Connect, Reflect, and Protect.", "website": "https://nvf.life/life-groups", "assets": [{ "variant": "color", "path": "initiatives/life-groups.png", "format": "png" }] },
-    { "id": "whos_your_one", "name": "Who's Your One?", "description": "Identify one person in your circles who is far from God — pray for them, share the gospel, and invite them to church.", "website": "https://nvf.life/one", "assets": [{ "variant": "color", "path": "initiatives/whos-your-one.png", "format": "png" }, { "variant": "white", "path": "initiatives/whos-your-one-white.png", "format": "png", "use_on": "dark backgrounds" }] }
+    { "id": "love_my_neighbor_day", "name": "Love My Neighbor Day", "description": "An annual day camp and community outreach day — neighborhood kids and families learn to show God's love to their neighbors, modeled on the Good Samaritan.", "assets": [{ "variant": "dark", "path": "initiatives/love-my-neighbor-day-dark.png", "format": "png", "use_on": "light backgrounds", "note": "Dark-colored artwork." }, { "variant": "light", "path": "initiatives/love-my-neighbor-day-light.png", "format": "png", "use_on": "dark backgrounds", "note": "Light-colored artwork." }] }
   ],
+
+  "outside_partnerships": {
+    "description": "Organizations and initiatives New Vision participates in, supports, or has adopted for our own context — unlike sub_brands and initiatives above, we did not design these or their creative. Text and links only: use each organization's own official logo and brand assets from its resources link rather than reproducing them here.",
+    "items": [
+      { "id": "sbc", "name": "Southern Baptist Convention", "description": "Our denominational convention.", "website": "https://www.sbc.net", "resources": "https://branding.sbc.net/brand/sbc/" },
+      { "id": "imb", "name": "International Mission Board (IMB)", "description": "The SBC's international missions-sending agency.", "website": "https://www.imb.org", "resources": "https://www.imb.org/brand/" },
+      { "id": "namb", "name": "North American Mission Board (NAMB)", "description": "The SBC's North American missions and church-planting agency — originator of Who's Your One.", "website": "https://www.namb.net", "resources": "https://marketing.namb.net/design-guidelines/namb/" },
+      { "id": "nc_baptists", "name": "NC Baptists", "description": "Our state Baptist convention — originator of ServeNC.", "website": "https://ncbaptist.org", "resources": "https://ncbaptist.org/brand-guide/" },
+      { "id": "triad_church_network", "name": "Triad Church Network", "description": "A local network of churches we partner with in the Triad region.", "website": "https://triadchurchnetwork.com" },
+      { "id": "whos_your_one", "name": "Who's Your One?", "from": "North American Mission Board (NAMB)", "description": "Identify one person in your circles who is far from God — pray for them, share the gospel, and invite them to church. We participate and shape the approach for our context; we did not design this initiative or its creative.", "website": "https://www.whosyourone.com", "resources": "https://www.whosyourone.com/resource/whos-your-one-logo/" },
+      { "id": "servenc", "name": "ServeNC", "from": "NC Baptists", "description": "A statewide day of coordinated community service projects. We participate and adapt it locally; NC Baptists design the creative.", "website": "https://ncbaptist.org/servenc/", "resources": "https://ncbaptist.org/resource/servenc/" }
+    ]
+  },
 
   "voice": {
     "summary": "New Vision sounds warm, grounded, and hopeful. We are inviting people into something bigger than themselves, so we open doors rather than push. Grace and truth are not rivals — we say hard things kindly and clearly, never hedging them into vagueness. Plain language carries profound ideas. Concrete detail earns trust where superlatives do not. Every piece points to one clear next step.",
@@ -311,6 +348,48 @@
     }
   },
 
+  "photography": {
+    "description": "Direction for any photograph, video still, or AI-generated image produced for New Vision — booklets, announcements, web, or anything else. Independent of any single project.",
+    "mood": "Warm, cinematic, editorial — grounded, hopeful, and premium, like a well-made print piece. Never garish, clip-arty, or corporate-stock.",
+    "lighting": "Golden-hour warmth and soft natural light, with a gentle film grain. Slightly desaturated, warm-leaning color grade. Charcoal shadows, never crushed to pure black. Cinematic but understated — no HDR, no harsh contrast.",
+    "motifs": [
+      { "name": "Road", "note": "A winding or open road, the journey of faith. See brand_elements.road_motif for the graphic treatment — the same idea applies to photography." },
+      { "name": "Leaf and new growth", "note": "A single leaf or a fresh sprout, echoing the leaf mark. Visual shorthand for growth." },
+      { "name": "Pottery and clay", "note": "Earthen vessels, hands shaping or holding clay, kiln-fired pottery. Our picture of formation, from Isaiah 64:8 — see frameworks.clay_stages. The vessel and the material carry the meaning; a literal potter's wheel in motion is not required." },
+      { "name": "Hands", "note": "Open, giving, or raised in worship." },
+      { "name": "Community", "note": "People gathered, walking together, going out into neighborhoods and nations — Acts 2:41-47." }
+    ],
+    "composition": "Clean and minimal, generous negative space, a strong focal subject at shallow depth of field. When a shot will carry a text overlay, keep roughly one third of the frame open and darker for it — see brand_elements.image_veil for the treatment that finishes the job.",
+    "subject_tone": "Real, candid, diverse, and intergenerational people — never stocky, staged, or generic stock photography of people who are not our people. Authentic worship, service, and hospitality. Reverent and joyful, never cheesy.",
+    "one_liner": "Warm, cinematic, editorial photography in a charcoal-and-green palette — golden light, open roads, growing and shaped things, and authentic community — with minimalist composition and room for clean modern type."
+  },
+
+  "digital_signage": {
+    "description": "A high-impact, read-from-a-distance visual language — bold type, dark charcoal backgrounds, a photo, minimal clutter. Born on the roadside digital sign, but the same mood, typography, motifs, and motion also carry to Sunday-morning presentation slides (1920x1080) and, for some announcements, Facebook/Instagram posts. It is not the definitive design for slides or social — just one strong, on-brand option for them. Shares the mood, palette, and subject_tone of the photography object above, but with its own typography and motion rules specific to this family of high-impact formats. Not for print or general web.",
+    "extended_dark_shades": {
+      "description": "Additional near-black tones for high-contrast, read-from-a-distance use. Use alongside Charcoal (#24201d), not as a replacement for it in other contexts.",
+      "colors": ["#171411", "#0f0e0c"]
+    },
+    "typography": "Archivo at its heaviest weight (900) is the default, mostly uppercase with tight line spacing and strong left alignment — do not use thin weights for main text. When a design calls for an even more condensed, distance-legible headline than Archivo provides, approved alternates are Anton, Bebas Neue, League Spartan, Montserrat ExtraBold, Oswald Heavy, or a Druk-style condensed face — used sparingly, not as a replacement for Archivo elsewhere in the brand. Off-white text on dark; green reserved for emphasis words only. Accent text may use small uppercase tracked-out labels, or — sparingly — a single warm handwritten phrase in Kaushan Script.",
+    "layout": {
+      "description": "The composition principles below are shared across formats; the exact split is specific to the roadside sign's wide canvas. On other canvases, keep the same feel — dominant text, one supporting photo, a dark gradient for legibility, generous negative space — but adapt the split to the aspect ratio rather than forcing 2:1.",
+      "roadside_sign": "A wide, roughly 2:1 billboard composition. Left 55-65% carries the large headline; right 35-45% carries the photographic subject. A dark gradient overlay runs left to right so the text stays readable.",
+      "sunday_slides": "1920x1080 (16:9) presentation slides. The same dark, bold, text-forward feel, but composed for a widescreen frame rather than the sign's 2:1 split — e.g. text over a full-bleed photo with a gradient veil, or a top/bottom split instead of left/right.",
+      "social_posts": "For select Facebook/Instagram announcements only, not every post. Adapt the same mood and typography to the platform's own canvas (square or vertical) rather than the sign's proportions.",
+      "shared": "No more than one photo, no icon clutter, generous negative space. The logo, if used, sits small-to-medium in a corner as an exact flat asset only — never redrawn, distorted, or rearranged."
+    },
+    "background_motifs": "Large, very faint two-leaf shape in dark green or olive; a soft green gradient glow; thin green accent lines; subtle dust or grain texture; an occasional very faint hexagon or geometric pattern; a warm vignette at the edges; charcoal paper texture.",
+    "motion": {
+      "description": "For any animated / video version of a signage slide.",
+      "entrance": "Text enters word-by-word with a quick scale-up-and-settle 'stomp' — slight overshoot, then lock into place. Words appear one at a time over 0.4-0.8 seconds total.",
+      "layers": "Background leaf motif slides or fades in subtly from the left. The photo layer slides in from the right, beneath the text. Light parallax between the background, photo, and text layers. A single green accent line or glow sweeps across once.",
+      "constants": "Gentle film grain or texture remains constant throughout.",
+      "avoid": "No animation of the people themselves. No bouncing, spinning, or excessive effects.",
+      "timing": "Hold the completed slide long enough for easy reading. Transitions between slides are smooth, dark, and understated."
+    },
+    "one_liner": "A bold, high-impact ministry-values look using authentic church photography, large readable typography, dark charcoal backgrounds, green brand accents, subtle leaf motifs, and cinematic editorial motion — born on the roadside sign, at home on Sunday slides and select social posts too — communicating clarity, warmth, conviction, mission, and community."
+  },
+
   "usage": {
     "do": [
       "Use warm neutrals, confident large headings, and generous whitespace",
@@ -345,6 +424,9 @@
     "Set all headings in Archivo and all body copy in Source Serif 4. Use Kaushan Script only for a single warm accent per composition.",
     "Prefer the stacked logo lockup. Match the variant to the background using each asset's use_on field: color on light, color_on_dark or white on dark.",
     "Follow the voice object for all copy. Read brand-guidelines.md for the full tone and usage rules.",
-    "When producing print output, honor the print object: 0.125in bleed, 350 DPI, CMYK."
+    "For any photography or AI-generated imagery, follow the photography object for mood, lighting, motifs, composition, and subject tone.",
+    "For the roadside digital sign, Sunday-morning presentation slides, or a high-impact social announcement, follow the digital_signage object instead — it overrides typography and layout for that family of formats. It is not the only option for slides or social, just a strong on-brand one.",
+    "When producing print output, honor the print object: 0.125in bleed, 350 DPI, CMYK.",
+    "For NC Baptists, SBC, IMB, NAMB, Triad Church Network, Who's Your One, or ServeNC, read outside_partnerships instead of sub_brands or initiatives. Never reproduce their logos here — link out to each entry's resources field for their own official assets."
   ]
 }

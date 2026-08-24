@@ -86,17 +86,36 @@ charcoal for covers, hero bands, and dividers. Keep the bulk of reading on warm 
 | Line | Hairline | `#e1dacc` | Dividers on light |
 | Line, dark | Hairline Dark | `#433d36` | Dividers on dark |
 
-### The four On-Ramp accents
+### The four accent colors
 
-Earthy, green-anchored category colors. They color-code our four on-ramps — and **never grow to a
-fifth.**
+Earthy, green-anchored category colors, used to differentiate sections wherever four categories
+need distinct colors — and **never grow to a fifth.** They happen to also color-code the four
+on-ramps (Gather, Give, Group, Go), but outside that specific framework refer to them by color
+name.
 
-| On-Ramp | Name | Hex |
-| --- | --- | --- |
-| Gather | Gather Green | `#5d8a3e` |
-| Give | Give Ochre | `#b3852b` |
-| Group | Group Muted Teal | `#347b6f` |
-| Go | Go Terracotta | `#ae5230` |
+| Name | Hex |
+| --- | --- |
+| Moss Green | `#5d8a3e` |
+| Ochre | `#b3852b` |
+| Muted Teal | `#347b6f` |
+| Terracotta | `#ae5230` |
+
+### Digital / interactive colors
+
+**For on-screen product UI only** — app-like screens, buttons, links, hover states, and small
+badges on very dark backgrounds, as used on my.nvf.life. Print, booklets, and announcement
+graphics keep using the palette and accents above, not these. Tiny interactive elements need more
+lightness and chroma than a printed page does to stay legible and tappable against a near-black
+screen.
+
+| Role | Name | Hex | Notes |
+| --- | --- | --- | --- |
+| Dark surface | UI Charcoal | `#1b1815` | A touch darker than Charcoal, for contrast against the greens below |
+| Link | Interactive Green | `#93d86a` | Links and secondary interactive text |
+| Button | Interactive Green, Bold | `#7fd142` | Primary buttons and other high-emphasis controls |
+| Alert | Alert Red | `#a94442` | Errors, destructive actions, required-field warnings — the only red in the system |
+| Badge | Badge Teal | `#45a394` | Small tags and badges, where Muted Teal needs more lift |
+| Badge | Badge Ochre | `#cf9f3f` | Small tags and badges, where Ochre needs more lift |
 
 ### Rules
 
@@ -104,6 +123,7 @@ fifth.**
 2. Greens lead. Accents differentiate categories. Warm neutrals carry everything else.
 3. On dark backgrounds, swap Brand Leaf Green for Green Bright.
 4. One or two background colors per composition. No more.
+5. Never use the digital/interactive colors above in print or static compositions.
 
 ---
 
@@ -138,15 +158,15 @@ The **stacked lockup** (NEW VISION over FELLOWSHIP with the leaf mark) is our pr
 **horizontal wordmark** only when vertical space is constrained.
 
 - Prefer SVG everywhere.
-- **Match the variant to the background.** The `color` variant has a **charcoal** wordmark and is for
-  light backgrounds. The `color_on_dark` variant has a **white** wordmark and is for charcoal and
-  photographic backgrounds. Placing either on the wrong background makes the wordmark disappear.
-- Single-colour options: `white` (all white, for dark) and `black` (all charcoal, for one-ink print).
+- **Match the variant to the background.** The `black_text` variant has a **charcoal** wordmark and
+  is for light backgrounds. The `white_text` variant has a **white** wordmark and is for charcoal
+  and photographic backgrounds. Placing either on the wrong background makes the wordmark disappear.
+- Single-color options: `all_white` (for dark) and `all_black` (for one-ink print).
 - Maintain clearspace equal to the height of the leaf mark on all sides.
 - Never stretch, recolor, rotate, or add effects.
 - Never place the logo on a busy photo without a darkening veil beneath it.
-- The **leaf mark** alone works as a favicon, avatar, or small decorative accent — never as a
-  substitute for the full logo in a primary placement.
+- The **leaf mark** and **cross mark** alone work as a favicon, avatar, or small decorative accent
+  — never as a substitute for the full logo in a primary placement.
 - The horizontal wordmark is roughly **22:1**. Size it by width, not height — at 26px tall it runs
   well over 500px wide and will crowd anything beside it.
 
@@ -157,7 +177,25 @@ The **stacked lockup** (NEW VISION over FELLOWSHIP with the leaf mark) is our pr
 | `nvf-stacked-color.svg` | Charcoal + green | Light backgrounds &mdash; **the default** |
 | `nvf-stacked-color-dark.svg` | White + green | Dark and photographic backgrounds |
 | `nvf-stacked-white.svg` | All white | Dark, where green cannot reproduce |
-| `nvf-stacked-black.svg` | All charcoal | Single-colour print |
+| `nvf-stacked-black.svg` | All charcoal | Single-color print |
+
+### Horizontal wordmark variants
+
+All flat, no cross. They vary by whether the wordmark is single-color or keeps the green leaf
+accent.
+
+| File | Colors | Use on |
+| --- | --- | --- |
+| `nvf-horizontal-black.svg` | All black | Light backgrounds &mdash; single-color, no green |
+| `nvf-horizontal-color.png` | Black + green | Light backgrounds &mdash; keeps the green leaf |
+| `nvf-horizontal-white.svg` | White + green | Dark backgrounds &mdash; keeps the green leaf |
+| `nvf-horizontal-all-white.svg` | All white | Dark backgrounds &mdash; single-color, no green |
+
+> `nvf-horizontal-white-text.png` is the same design as `nvf-horizontal-white.svg`, kept as a PNG
+> for raster-only contexts. Prefer the SVG.
+
+**Cross mark.** `nvf-cross-mark.svg` is the cross alone, in the same two-green pinwheel treatment
+as the rest of the mark. Use it sparingly, the same way as the leaf mark.
 
 ---
 
@@ -184,6 +222,107 @@ green, alternating filled and outlined dots sitting on top of the spine.
 
 **Road motif.** A winding road on dark asphalt — our On-Ramp metaphor made visual. Always veiled
 before type goes on top.
+
+---
+
+## Photography & imagery
+
+Direction for any photograph, video still, or AI-generated image — a booklet cover, an
+announcement slide, a web hero, a social graphic, anything. Not scoped to one project.
+
+**Mood.** Warm, cinematic, editorial — grounded, hopeful, and premium, like a well-made print
+piece. Never garish, clip-arty, or corporate-stock.
+
+**Lighting.** Golden-hour warmth and soft natural light, with a gentle film grain. Slightly
+desaturated, warm-leaning color grade. Charcoal shadows, never crushed to pure black. Cinematic
+but understated — no HDR, no harsh contrast.
+
+**Motifs.**
+
+- **Road.** A winding or open road — the journey of faith. Same idea as the road motif above,
+  carried into photography.
+- **Leaf and new growth.** A single leaf or a fresh sprout, echoing the leaf mark — visual
+  shorthand for growth.
+- **Pottery and clay.** Earthen vessels, hands shaping or holding clay, kiln-fired pottery — our
+  picture of formation. The vessel and the material carry the meaning; a literal potter's wheel in
+  motion is not required.
+- **Hands.** Open, giving, or raised in worship.
+- **Community.** People gathered, walking together, going out into neighborhoods and nations
+  (Acts 2:41-47).
+
+> Clay in the Potter's Hands is where our growth framework comes from (`frameworks.clay_stages`
+> in brand-kit.json), rooted in Isaiah 64:8 — "We are the clay, and You our potter." It's literal
+> too: the ground around our campus sits on some of the richest natural clay in the state.
+
+**Composition.** Clean and minimal, with generous negative space and a strong focal subject at
+shallow depth of field. When a shot will carry a text overlay, keep roughly a third of the frame
+open and darker for it — see the image veil above for the treatment that finishes the job.
+
+**Subject tone.** Real, candid, diverse, and intergenerational people — never stocky, staged, or
+generic stock photography of people who are not our people. Authentic worship, service, and
+hospitality. Reverent and joyful, never cheesy.
+
+> Warm, cinematic, editorial photography in a charcoal-and-green palette — golden light, open
+> roads, growing and shaped things, and authentic community — with minimalist composition and room
+> for clean modern type.
+
+---
+
+## Digital signage & motion
+
+A high-impact, read-from-a-distance visual language — bold type, dark charcoal backgrounds, a
+photo, minimal clutter. Born on the roadside digital sign, but the same mood, typography, motifs,
+and motion also carry to Sunday-morning presentation slides (1920x1080) and, for some
+announcements, Facebook/Instagram posts. It is not the definitive design for slides or social —
+just one strong, on-brand option for them. Shares the mood, palette, and subject tone above, but
+has its own typography and motion rules specific to this family of formats. Not for print or
+general web.
+
+**Extended dark shades.** Two additional near-black tones for high-contrast, distance-legible
+signage only — `#171411` and `#0f0e0c`. Use alongside Charcoal, not as a replacement for it
+elsewhere.
+
+**Typography.** Archivo at 900 weight is the default — mostly uppercase, tight line spacing,
+strong left alignment, never a thin weight for main text. When a design calls for an even more
+condensed, distance-legible headline than Archivo provides, approved alternates are Anton, Bebas
+Neue, League Spartan, Montserrat ExtraBold, Oswald Heavy, or a Druk-style condensed face, used
+sparingly — not a replacement for Archivo elsewhere in the brand. Off-white text on dark; green
+reserved for emphasis words only.
+
+**Layout.** The composition principles are shared across formats; the exact split below is
+specific to the roadside sign's wide canvas. On other canvases, keep the same feel — dominant
+text, one supporting photo, a dark gradient for legibility, generous negative space — but adapt
+the split to the aspect ratio rather than forcing 2:1.
+
+- *Roadside sign* — a wide, roughly 2:1 billboard composition. Left 55–65% carries the headline;
+  right 35–45% carries the photographic subject. A dark gradient overlay runs left to right so
+  text stays readable.
+- *Sunday slides* — 1920x1080 (16:9). The same dark, bold, text-forward feel, composed for a
+  widescreen frame rather than the sign's 2:1 split — e.g. text over a full-bleed photo with a
+  gradient veil, or a top/bottom split instead of left/right.
+- *Social posts* — for select Facebook/Instagram announcements only, not every post. Adapt the
+  same mood and typography to the platform's own canvas (square or vertical) rather than the
+  sign's proportions.
+- *Shared* — no more than one photo, no icon clutter, generous negative space. The logo, if used,
+  sits small-to-medium in a corner as an exact flat asset only — never redrawn, distorted, or
+  rearranged.
+
+**Background motifs.** A large, very faint two-leaf shape in dark green or olive; a soft green
+gradient glow; thin green accent lines; subtle dust or grain texture; an occasional very faint
+hexagon or geometric pattern; a warm vignette at the edges; charcoal paper texture.
+
+**Motion (for animated slides).** Text enters word-by-word with a quick scale-up-and-settle
+"stomp" — slight overshoot, then lock into place, each word landing over 0.4–0.8 seconds total.
+The background leaf motif slides or fades in from the left; the photo layer slides in from the
+right, beneath the text; light parallax between the three layers; a single green accent line or
+glow sweeps across once. Gentle film grain stays constant throughout. **Never** animate the people
+themselves, and no bouncing, spinning, or excessive effects. Hold the finished slide long enough to
+read; transitions between slides are smooth, dark, and understated.
+
+> A bold, high-impact ministry-values look using authentic church photography, large readable
+> typography, dark charcoal backgrounds, green brand accents, subtle leaf motifs, and cinematic
+> editorial motion — born on the roadside sign, at home on Sunday slides and select social posts
+> too — communicating clarity, warmth, conviction, mission, and community.
 
 ---
 

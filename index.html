@@ -16,7 +16,7 @@
   --line:#e1dacc;--line-dark:#433d36;
   --green:#5f9a32;--green-deep:#42701f;--green-bright:#74ca33;
   --olive:#4a5d2f;--olive-deep:#37461f;
-  --gather:#5d8a3e;--group:#347b6f;--give:#b3852b;--go:#ae5230;
+  --moss:#5d8a3e;--teal:#347b6f;--ochre:#b3852b;--terracotta:#ae5230;
   --display:'Archivo',system-ui,sans-serif;
   --serif:'Source Serif 4',Georgia,serif;
   --script:'Kaushan Script',cursive;
@@ -131,7 +131,7 @@ td code{white-space:nowrap}
 .voice{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .vcol{border-radius:12px;padding:30px 32px}
 .vcol--do{background:var(--paper-2);border-top:6px solid var(--green)}
-.vcol--no{background:var(--charcoal);color:#e7e1d6;border-top:6px solid var(--go)}
+.vcol--no{background:var(--charcoal);color:#e7e1d6;border-top:6px solid var(--terracotta)}
 .vcol h3{margin-bottom:16px}
 .vcol--no h3{color:#fff}
 .vcol ul{margin:0;padding-left:22px}
@@ -188,7 +188,7 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
       <span>Version <b>2026.08</b></span>
       <span>Primary <b>#5f9a32</b></span>
       <span>Typeface <b>Archivo</b></span>
-      <span>Mission <b>Multiply God&rsquo;s glory</b></span>
+      <span>Mission <b>Multiply God&rsquo;s glory on the earth</b></span>
     </div>
   </div>
 </div>
@@ -258,14 +258,18 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
         <tr><td><code>frameworks.on_ramps</code></td><td>The four On-Ramps — Gather, Give, Group, Go — each with its color, summary, and URL. Includes the canonical presentation order.</td></tr>
         <tr><td><code>frameworks.clay_stages</code></td><td>Clay in the Potter&rsquo;s Hands — the five growth stages, each with its color, transition, and what it multiplies.</td></tr>
         <tr><td><code>color_system.palette</code></td><td>Primary, secondary, and neutral colors with RGB, <code>text_on</code>, usage notes, and tonal variations.</td></tr>
-        <tr><td><code>color_system.accents</code></td><td>The four On-Ramp category colors. Never extend beyond these.</td></tr>
+        <tr><td><code>color_system.accents</code></td><td>Four earthy accent colors — Moss, Teal, Ochre, Terracotta — for differentiating categories. Never extend beyond these.</td></tr>
+        <tr><td><code>color_system.interactive</code></td><td>Brighter greens, an alert red, and lifted badge colors for on-screen product UI only &mdash; never print.</td></tr>
         <tr><td><code>typography</code></td><td>Archivo, Source Serif 4, and Kaushan Script with weights, usage rules, a full size scale, and minimum sizes for print and projection.</td></tr>
-        <tr><td><code>logos.lockups</code></td><td>Stacked, horizontal, and leaf mark — each with an <code>assets[]</code> array of variants and the background each is approved for.</td></tr>
+        <tr><td><code>logos.lockups</code></td><td>Stacked, horizontal, leaf mark, and cross mark — each with an <code>assets[]</code> array of variants and the background each is approved for.</td></tr>
         <tr><td><code>logos.rules</code></td><td>Clearspace, variant selection, and prohibitions.</td></tr>
-        <tr><td><code>sub_brands</code></td><td>Six ministries, each with audience, website, and logo assets.</td></tr>
-        <tr><td><code>initiatives</code></td><td>Life Groups and Who&rsquo;s Your One with descriptions and assets.</td></tr>
+        <tr><td><code>sub_brands</code></td><td>Seven ministries, each with audience, website, and logo assets.</td></tr>
+        <tr><td><code>initiatives</code></td><td>Life Groups and Love My Neighbor Day, with descriptions and assets.</td></tr>
+        <tr><td><code>outside_partnerships</code></td><td>Denominational and adopted-initiative partners we did not design — text and links only, no local logos.</td></tr>
         <tr><td><code>voice</code></td><td>Summary, a short writing statement, tone descriptors, ten dos, ten don&rsquo;ts, and example phrases.</td></tr>
         <tr><td><code>brand_elements</code></td><td>Specs for the kicker lockup, cards, contrast columns, image veil, road motif, and timeline.</td></tr>
+        <tr><td><code>photography</code></td><td>Mood, lighting, motifs, composition, and subject tone for any photo, video still, or AI-generated image.</td></tr>
+        <tr><td><code>digital_signage</code></td><td>Typography, layout, background motifs, and motion rules for the roadside sign, Sunday slides, and select social posts.</td></tr>
         <tr><td><code>print</code></td><td>Bleed, resolution, color mode, and trim sizes.</td></tr>
         <tr><td><code>rules</code></td><td>Top-level directives for agents consuming this kit.</td></tr>
       </tbody>
@@ -301,12 +305,23 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
       <div class="sw"><div class="sw__c" style="background:#e1dacc"></div><div class="sw__b"><div class="sw__n">Hairline</div><div class="sw__h">#e1dacc</div><div class="sw__u">Dividers</div></div></div>
     </div>
 
-    <p class="sub">The Four On-Ramps</p>
+    <p class="sub">Accent Colors</p>
     <div class="ramps">
-      <div class="ramp" style="background:#5d8a3e"><div class="ramp__n">Gather</div><div class="ramp__h">#5d8a3e</div><div class="ramp__s">Attend one service, serve during one.</div></div>
-      <div class="ramp" style="background:#b3852b"><div class="ramp__n">Give</div><div class="ramp__h">#b3852b</div><div class="ramp__s">Generosity keeps the mission multiplying.</div></div>
-      <div class="ramp" style="background:#347b6f"><div class="ramp__n">Group</div><div class="ramp__h">#347b6f</div><div class="ramp__s">We were designed to share life together.</div></div>
-      <div class="ramp" style="background:#ae5230"><div class="ramp__n">Go</div><div class="ramp__h">#ae5230</div><div class="ramp__s">From our neighborhoods to the nations.</div></div>
+      <div class="ramp" style="background:#5d8a3e"><div class="ramp__n">Moss Green</div><div class="ramp__h">#5d8a3e</div><div class="ramp__s">Category accent.</div></div>
+      <div class="ramp" style="background:#b3852b"><div class="ramp__n">Ochre</div><div class="ramp__h">#b3852b</div><div class="ramp__s">Category accent.</div></div>
+      <div class="ramp" style="background:#347b6f"><div class="ramp__n">Muted Teal</div><div class="ramp__h">#347b6f</div><div class="ramp__s">Category accent.</div></div>
+      <div class="ramp" style="background:#ae5230"><div class="ramp__n">Terracotta</div><div class="ramp__h">#ae5230</div><div class="ramp__s">Category accent.</div></div>
+    </div>
+
+    <p class="sub">Digital / Interactive &mdash; UI Only</p>
+    <p class="lede" style="font-size:16px;margin-bottom:20px;">Brighter, higher-chroma variants for on-screen product UI only &mdash; buttons, links, hover states, and badges on very dark app-like screens, as used on my.nvf.life. Never use these in print or static compositions.</p>
+    <div class="sw-grid">
+      <div class="sw"><div class="sw__c" style="background:#1b1815"></div><div class="sw__b"><div class="sw__n">UI Charcoal</div><div class="sw__h">#1b1815</div><div class="sw__u">Dark app screens</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#93d86a"></div><div class="sw__b"><div class="sw__n">Interactive Green</div><div class="sw__h">#93d86a</div><div class="sw__u">Links</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#7fd142"></div><div class="sw__b"><div class="sw__n">Interactive Green, Bold</div><div class="sw__h">#7fd142</div><div class="sw__u">Primary buttons</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#a94442"></div><div class="sw__b"><div class="sw__n">Alert Red</div><div class="sw__h">#a94442</div><div class="sw__u">Errors only</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#45a394"></div><div class="sw__b"><div class="sw__n">Badge Teal</div><div class="sw__h">#45a394</div><div class="sw__u">Small badges</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#cf9f3f"></div><div class="sw__b"><div class="sw__n">Badge Ochre</div><div class="sw__h">#cf9f3f</div><div class="sw__u">Small badges</div></div></div>
     </div>
   </div>
 </section>
@@ -318,7 +333,7 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
     <hr class="rule">
     <div class="spec">
       <div class="spec__h"><span class="spec__f">Archivo</span><span class="spec__r">Display &middot; 400&ndash;900</span></div>
-      <div class="d1">Multiply God&rsquo;s glory</div>
+      <div class="d1">Multiply God&rsquo;s glory on the earth</div>
       <div class="spec__s">Every heading, title, label, kicker, number, and UI element. Tight letter-spacing on large sizes; wide tracking on small uppercase labels.</div>
     </div>
     <div class="spec" style="border-left-color:var(--olive)">
@@ -326,7 +341,7 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
       <div class="d2">Attendance says, &ldquo;I go there.&rdquo; Membership says, &ldquo;These are my people, and I am one of them.&rdquo;</div>
       <div class="spec__s">All body and long-form copy. Line-height 1.4&ndash;1.6, with <code>text-wrap: pretty</code>. Georgia is the fallback.</div>
     </div>
-    <div class="spec" style="border-left-color:var(--give)">
+    <div class="spec" style="border-left-color:var(--ochre)">
       <div class="spec__h"><span class="spec__f">Kaushan Script</span><span class="spec__r">Accent &middot; 400</span></div>
       <div class="d3">Let&rsquo;s get moving for the Master.</div>
       <div class="spec__s">One warm accent per composition &mdash; a greeting, a value name, a caption lead-in. Never body copy or critical information.</div>
@@ -341,13 +356,105 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
     <hr class="rule">
     <p class="lede" style="margin-bottom:34px;">The stacked lockup is our primary logo. Match the variant to the background &mdash; the charcoal wordmark will not read on dark, and the white wordmark will not read on paper. Prefer SVG everywhere.</p>
     <div class="logos">
-      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-stacked-color.svg" alt="Stacked lockup, color for light backgrounds"></div><div class="lg__b"><div class="lg__n">Stacked &middot; Color</div><div class="lg__p">logos/nvf-stacked-color.svg &middot; light bg</div></div></div>
-      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-stacked-color-dark.svg" alt="Stacked lockup, color for dark backgrounds"></div><div class="lg__b"><div class="lg__n">Stacked &middot; Color on Dark</div><div class="lg__p">logos/nvf-stacked-color-dark.svg &middot; dark bg</div></div></div>
-      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-stacked-white.svg" alt="Stacked lockup, single-colour white"></div><div class="lg__b"><div class="lg__n">Stacked &middot; White</div><div class="lg__p">logos/nvf-stacked-white.svg &middot; dark bg</div></div></div>
-      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-stacked-black.svg" alt="Stacked lockup, single-colour charcoal"></div><div class="lg__b"><div class="lg__n">Stacked &middot; Single Colour</div><div class="lg__p">logos/nvf-stacked-black.svg &middot; one-ink print</div></div></div>
-      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-horizontal-black.svg" alt="Horizontal wordmark, black"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; Black</div><div class="lg__p">logos/nvf-horizontal-black.svg &middot; light bg</div></div></div>
-      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-horizontal-white.svg" alt="Horizontal wordmark, white"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; White</div><div class="lg__p">logos/nvf-horizontal-white.svg &middot; dark bg</div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-stacked-color.svg" alt="Stacked lockup, black text with green leaf"></div><div class="lg__b"><div class="lg__n">Stacked &middot; Black Text</div><div class="lg__p">logos/nvf-stacked-color.svg &middot; light bg</div></div></div>
+      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-stacked-color-dark.svg" alt="Stacked lockup, white text with green leaf"></div><div class="lg__b"><div class="lg__n">Stacked &middot; White Text</div><div class="lg__p">logos/nvf-stacked-color-dark.svg &middot; dark bg</div></div></div>
+      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-stacked-white.svg" alt="Stacked lockup, all white"></div><div class="lg__b"><div class="lg__n">Stacked &middot; All White</div><div class="lg__p">logos/nvf-stacked-white.svg &middot; dark bg</div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-stacked-black.svg" alt="Stacked lockup, all black"></div><div class="lg__b"><div class="lg__n">Stacked &middot; All Black</div><div class="lg__p">logos/nvf-stacked-black.svg &middot; one-ink print</div></div></div>
       <div class="lg"><div class="lg__v lg__v--l" style="padding:44px"><img src="logos/nvf-leaf-mark.png" alt="Leaf mark"></div><div class="lg__b"><div class="lg__n">Leaf Mark</div><div class="lg__p">logos/nvf-leaf-mark.png &middot; any bg</div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l" style="padding:44px"><img src="logos/nvf-cross-mark.svg" alt="Cross mark"></div><div class="lg__b"><div class="lg__n">Cross Mark</div><div class="lg__p">logos/nvf-cross-mark.svg &middot; any bg</div></div></div>
+    </div>
+
+    <p class="sub" style="margin-top:34px;">Horizontal Wordmark Variants</p>
+    <p class="lede" style="margin-bottom:34px;font-size:16px;">All flat, no cross. Vary by whether the wordmark is single-color or keeps the green leaf accent.</p>
+    <div class="logos">
+      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-horizontal-black.svg" alt="Horizontal wordmark, all black"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; All Black</div><div class="lg__p">logos/nvf-horizontal-black.svg &middot; light bg</div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-horizontal-color.png" alt="Horizontal wordmark, black text with green leaf"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; Black Text</div><div class="lg__p">logos/nvf-horizontal-color.png &middot; light bg</div></div></div>
+      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-horizontal-white.svg" alt="Horizontal wordmark, white text with green leaf"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; White Text</div><div class="lg__p">logos/nvf-horizontal-white.svg &middot; dark bg</div></div></div>
+      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-horizontal-all-white.svg" alt="Horizontal wordmark, all white"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; All White</div><div class="lg__p">logos/nvf-horizontal-all-white.svg &middot; dark bg</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Imagery</p>
+    <h2>Photography &amp; Imagery</h2>
+    <hr class="rule">
+    <p class="lede" style="margin-bottom:34px;">Direction for any photograph, video still, or AI-generated image &mdash; a booklet cover, an announcement slide, a web hero, anything. Not scoped to one project.</p>
+
+    <p class="sub">Mood &amp; Lighting</p>
+    <p style="max-width:66ch;color:var(--ink-soft);font-size:16px;line-height:1.55;margin-bottom:34px;">Warm, cinematic, editorial &mdash; grounded, hopeful, and premium, like a well-made print piece. Golden-hour warmth and soft natural light, with a gentle film grain. Slightly desaturated, warm-leaning color grade. Charcoal shadows, never crushed to pure black. Cinematic but understated &mdash; no HDR, no harsh contrast.</p>
+
+    <p class="sub">Motifs</p>
+    <div class="files" style="margin-bottom:34px;">
+      <div class="file">
+        <h3>Road</h3>
+        <p>A winding or open road &mdash; the journey of faith. The same idea as the road motif, carried into photography.</p>
+      </div>
+      <div class="file file--alt">
+        <h3>Leaf &amp; New Growth</h3>
+        <p>A single leaf or a fresh sprout, echoing the leaf mark &mdash; visual shorthand for growth.</p>
+      </div>
+      <div class="file">
+        <h3>Pottery &amp; Clay</h3>
+        <p>Earthen vessels, hands shaping or holding clay, kiln-fired pottery &mdash; our picture of formation, from Isaiah 64:8. The vessel and the material carry the meaning; a literal potter&rsquo;s wheel in motion is not required.</p>
+      </div>
+      <div class="file file--alt">
+        <h3>Hands</h3>
+        <p>Open, giving, or raised in worship.</p>
+      </div>
+      <div class="file">
+        <h3>Community</h3>
+        <p>People gathered, walking together, going out into neighborhoods and nations &mdash; Acts 2:41&ndash;47.</p>
+      </div>
+    </div>
+
+    <div class="voice">
+      <div class="vcol vcol--do">
+        <h3>Composition</h3>
+        <p>Clean and minimal, with generous negative space and a strong focal subject at shallow depth of field. When a shot will carry a text overlay, keep roughly a third of the frame open and darker for it.</p>
+      </div>
+      <div class="vcol vcol--do">
+        <h3>Subject Tone</h3>
+        <p>Real, candid, diverse, and intergenerational people &mdash; never stocky, staged, or generic stock photography. Authentic worship, service, and hospitality. Reverent and joyful, never cheesy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Imagery</p>
+    <h2>Digital Signage &amp; Motion</h2>
+    <hr class="rule">
+    <p class="lede" style="margin-bottom:34px;">A high-impact, read-from-a-distance visual language born on the roadside sign, that also carries to Sunday presentation slides (1920x1080) and, for some announcements, Facebook/Instagram posts. Not the definitive design for slides or social &mdash; just one strong, on-brand option for them.</p>
+
+    <p class="sub">Extended Dark Shades &mdash; Signage Only</p>
+    <div class="sw-grid" style="max-width:400px;">
+      <div class="sw"><div class="sw__c" style="background:#171411"></div><div class="sw__b"><div class="sw__n">Near-Black 1</div><div class="sw__h">#171411</div><div class="sw__u">Signage only</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#0f0e0c"></div><div class="sw__b"><div class="sw__n">Near-Black 2</div><div class="sw__h">#0f0e0c</div><div class="sw__u">Signage only</div></div></div>
+    </div>
+
+    <div class="files" style="margin-bottom:34px;">
+      <div class="file">
+        <h3>Typography</h3>
+        <p>Archivo at 900 weight is the default &mdash; uppercase, tight line spacing, strong left alignment, never thin. For an even more condensed, distance-legible headline, Anton, Bebas Neue, League Spartan, Montserrat ExtraBold, Oswald Heavy, or a Druk-style face are approved for this family of formats only. Off-white text on dark; green for emphasis words only.</p>
+      </div>
+      <div class="file file--alt">
+        <h3>Layout</h3>
+        <p>Shared feel across formats: dominant text, one photo, a dark gradient for legibility, generous negative space. The exact split adapts per canvas, not forced to one ratio.</p>
+        <p style="margin-top:10px;"><b>Roadside sign</b> &mdash; roughly 2:1. Left 55&ndash;65% headline, right 35&ndash;45% photo, gradient left to right.</p>
+        <p style="margin-top:8px;"><b>Sunday slides</b> &mdash; 1920x1080. Same feel on a widescreen frame &mdash; e.g. full-bleed photo with a gradient veil, or a top/bottom split.</p>
+        <p style="margin-top:8px;"><b>Social posts</b> &mdash; select Facebook/Instagram announcements only, adapted to that canvas, not every post.</p>
+      </div>
+      <div class="file">
+        <h3>Background Motifs</h3>
+        <p>A large, very faint two-leaf shape in dark green or olive; a soft green gradient glow; thin green accent lines; subtle dust or grain texture; an occasional very faint hexagon pattern; a warm vignette; charcoal paper texture.</p>
+      </div>
+      <div class="file file--alt">
+        <h3>Motion</h3>
+        <p>Text enters word-by-word with a quick scale-up-and-settle stomp, 0.4&ndash;0.8s total. Leaf motif slides in from the left, photo from the right, with light parallax and one green accent sweep. Never animate the people themselves &mdash; no bouncing, spinning, or excess.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -364,8 +471,55 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
       <div class="min"><div class="min__i"><img src="sub-brands/titus-2-women.png" alt="Titus 2 Women"></div><div class="min__n">Titus 2 Women</div><div class="min__a">Women of all ages</div></div>
       <div class="min"><div class="min__i"><img src="sub-brands/men-of-vision.png" alt="Men of Vision"></div><div class="min__n">Men of Vision</div><div class="min__a">Men of all ages</div></div>
       <div class="min"><div class="min__i"><img src="sub-brands/vintage-visions.png" alt="Vintage Visions"></div><div class="min__n">Vintage Visions</div><div class="min__a">Senior-focused, all welcome</div></div>
+      <div class="min"><div class="min__i"><img src="sub-brands/melding-moms-color.png" alt="Melding Moms"></div><div class="min__n">Melding Moms</div><div class="min__a">Blended-family &amp; stepmom ministry</div></div>
       <div class="min"><div class="min__i"><img src="initiatives/life-groups.png" alt="Life Groups"></div><div class="min__n">Life Groups</div><div class="min__a">Connect &middot; Reflect &middot; Protect</div></div>
-      <div class="min"><div class="min__i"><img src="initiatives/whos-your-one.png" alt="Who's Your One"></div><div class="min__n">Who&rsquo;s Your One?</div><div class="min__a">Pray, share, invite</div></div>
+      <div class="min"><div class="min__i"><img src="initiatives/love-my-neighbor-day-dark.png" alt="Love My Neighbor Day"></div><div class="min__n">Love My Neighbor Day</div><div class="min__a">Annual outreach day camp</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Partnerships</p>
+    <h2>Outside Ministries &amp; Partnerships</h2>
+    <hr class="rule">
+    <p class="lede" style="margin-bottom:34px;">Organizations and initiatives we participate in, support, or have adopted for our own context &mdash; unlike the ministries above, we did not design these or their creative. Use each organization&rsquo;s own official logo and brand assets from its resources link; never reproduce them here.</p>
+    <div class="files">
+      <div class="file">
+        <h3>Southern Baptist Convention</h3>
+        <p>Our denominational convention.</p>
+        <p style="margin-top:10px;font-size:13px;"><a href="https://www.sbc.net">sbc.net</a> &middot; <a href="https://branding.sbc.net/brand/sbc/">Brand resources</a></p>
+      </div>
+      <div class="file file--alt">
+        <h3>International Mission Board</h3>
+        <p>The SBC&rsquo;s international missions-sending agency.</p>
+        <p style="margin-top:10px;font-size:13px;"><a href="https://www.imb.org">imb.org</a> &middot; <a href="https://www.imb.org/brand/">Brand resources</a></p>
+      </div>
+      <div class="file">
+        <h3>North American Mission Board</h3>
+        <p>The SBC&rsquo;s North American missions and church-planting agency &mdash; originator of Who&rsquo;s Your One.</p>
+        <p style="margin-top:10px;font-size:13px;"><a href="https://www.namb.net">namb.net</a> &middot; <a href="https://marketing.namb.net/design-guidelines/namb/">Brand resources</a></p>
+      </div>
+      <div class="file file--alt">
+        <h3>NC Baptists</h3>
+        <p>Our state Baptist convention &mdash; originator of ServeNC.</p>
+        <p style="margin-top:10px;font-size:13px;"><a href="https://ncbaptist.org">ncbaptist.org</a> &middot; <a href="https://ncbaptist.org/brand-guide/">Brand resources</a></p>
+      </div>
+      <div class="file">
+        <h3>Triad Church Network</h3>
+        <p>A local network of churches we partner with in the Triad region.</p>
+        <p style="margin-top:10px;font-size:13px;"><a href="https://triadchurchnetwork.com">triadchurchnetwork.com</a></p>
+      </div>
+      <div class="file file--alt">
+        <h3>Who&rsquo;s Your One?</h3>
+        <p>From NAMB. Identify one person far from God, pray for them, share the gospel, invite them to church. We participate and shape the approach for our context; we did not design this initiative or its creative.</p>
+        <p style="margin-top:10px;font-size:13px;"><a href="https://www.whosyourone.com">whosyourone.com</a> &middot; <a href="https://www.whosyourone.com/resource/whos-your-one-logo/">Logo resources</a></p>
+      </div>
+      <div class="file">
+        <h3>ServeNC</h3>
+        <p>From NC Baptists. A statewide day of coordinated community service projects. We participate and adapt it locally; NC Baptists design the creative.</p>
+        <p style="margin-top:10px;font-size:13px;"><a href="https://ncbaptist.org/servenc/">ncbaptist.org/servenc</a> &middot; <a href="https://ncbaptist.org/resource/servenc/">Resources</a></p>
+      </div>
     </div>
   </div>
 </section>
