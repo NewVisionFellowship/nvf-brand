@@ -92,7 +92,7 @@
         "hex": "#24201d",
         "rgb": "36, 32, 29",
         "text_on": "#faf7f1",
-        "usage": "Dark backgrounds — covers, section dividers, action slides. Never pure black.",
+        "usage": "Dark backgrounds — covers, section dividers, action slides. See color_system.rules for the pure-black policy.",
         "tones": [
           { "name": "Charcoal Lift", "hex": "#2d2823", "usage": "Raised surfaces on dark backgrounds." }
         ]
@@ -102,7 +102,7 @@
         "hex": "#faf7f1",
         "rgb": "250, 247, 241",
         "text_on": "#221f1b",
-        "usage": "Primary light background. Warm off-white — never pure white.",
+        "usage": "Primary light background. Warm off-white. See color_system.rules for the pure-white policy.",
         "tones": [
           { "name": "Paper Card", "hex": "#f1ece2", "usage": "Cards, wells, and inset panels on light backgrounds." },
           { "name": "Paper Deep", "hex": "#e9e2d5", "usage": "Third-level surface for layering." }
@@ -176,8 +176,7 @@
     },
 
     "rules": [
-      "Never use pure black (#000000) as a general background color. Use Charcoal instead. Pure black is acceptable only when it is part of an approved, unmodified logo asset or a required one-color reproduction.",
-      "Never use pure white (#ffffff) as a background. Use Paper instead.",
+      "Never use pure black or pure white as general background colors. Use Charcoal and Paper instead. Pure black or white may remain where it is part of approved, unmodified logo artwork or required one-color reproduction.",
       "On light backgrounds use Brand Leaf Green (#5f9a32) or Green Deep (#42701f). On dark backgrounds switch to Green Bright (#74ca33). These are the canonical application-palette greens — distinct from, and not required to match, whatever green is embedded in a given piece of official logo artwork.",
       "Greens lead. The four accent colors differentiate categories. Warm neutrals carry everything else.",
       "Limit any single composition to one or two background colors.",
@@ -246,10 +245,14 @@
         "description": "NEW VISION above FELLOWSHIP with the leaf mark. The primary logo. Prefer this for covers, title cards, and anywhere with vertical room.",
         "primary": true,
         "assets": [
-          { "variant": "black_text", "path": "logos/nvf-stacked-color.svg", "format": "svg", "use_on": "light backgrounds", "ideal_background": "light", "colors": ["#231f20", "#569c33", "#74c933"], "width": 563, "height": 232, "transparent": true, "scalable": true, "available_formats": ["svg"], "note": "The default logo. Charcoal wordmark with the green leaf mark." },
-          { "variant": "white_text", "path": "logos/nvf-stacked-color-dark.svg", "format": "svg", "use_on": "dark backgrounds", "ideal_background": "dark", "colors": ["#ffffff", "#569c33", "#74c933"], "width": 563, "height": 232, "transparent": true, "scalable": true, "available_formats": ["svg"], "note": "Two-color lockup with a white wordmark, for charcoal and photographic backgrounds." },
-          { "variant": "all_white", "path": "logos/nvf-stacked-white.svg", "format": "svg", "use_on": "dark backgrounds", "ideal_background": "dark", "colors": ["#ffffff"], "width": 563, "height": 232, "transparent": true, "scalable": true, "available_formats": ["svg"], "note": "Single-color white. Use where the green leaf would not reproduce." },
-          { "variant": "all_black", "path": "logos/nvf-stacked-black.svg", "format": "svg", "use_on": "single-color print", "ideal_background": "light", "colors": ["#231f20"], "width": 563, "height": 232, "transparent": true, "scalable": true, "available_formats": ["svg"], "note": "Single-color charcoal. One-ink print and faxable documents." }
+          { "variant": "black_text", "path": "logos/nvf-stacked-color.svg", "format": "svg", "use_on": "light backgrounds", "ideal_background": "light", "colors": ["#231f20", "#569c33", "#74c933"], "width": 563, "height": 232, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "The default logo. Charcoal wordmark with the green leaf mark." },
+          { "variant": "black_text", "path": "logos/nvf-stacked-color.png", "format": "png", "use_on": "light backgrounds", "ideal_background": "light", "colors": ["#231f20", "#569c33", "#74c933"], "width": 2048, "height": 844, "transparent": true, "scalable": false, "max_print_width_in": 6.83, "available_formats": ["svg", "png"], "note": "Transparent PNG rendered deterministically from nvf-stacked-color.svg at up to 2048px. Prefer the SVG; use this only where the tool or format cannot accept vector art." },
+          { "variant": "white_text", "path": "logos/nvf-stacked-color-dark.svg", "format": "svg", "use_on": "dark backgrounds", "ideal_background": "dark", "colors": ["#ffffff", "#569c33", "#74c933"], "width": 563, "height": 232, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "Two-color lockup with a white wordmark, for charcoal and photographic backgrounds." },
+          { "variant": "white_text", "path": "logos/nvf-stacked-color-dark.png", "format": "png", "use_on": "dark backgrounds", "ideal_background": "dark", "colors": ["#ffffff", "#569c33", "#74c933"], "width": 2048, "height": 844, "transparent": true, "scalable": false, "max_print_width_in": 6.83, "available_formats": ["svg", "png"], "note": "Transparent PNG rendered deterministically from nvf-stacked-color-dark.svg at up to 2048px. Prefer the SVG; use this only where the tool or format cannot accept vector art." },
+          { "variant": "all_white", "path": "logos/nvf-stacked-white.svg", "format": "svg", "use_on": "dark backgrounds", "ideal_background": "dark", "colors": ["#ffffff"], "width": 563, "height": 232, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "Single-color white. Use where the green leaf would not reproduce." },
+          { "variant": "all_white", "path": "logos/nvf-stacked-white.png", "format": "png", "use_on": "dark backgrounds", "ideal_background": "dark", "colors": ["#ffffff"], "width": 2048, "height": 844, "transparent": true, "scalable": false, "max_print_width_in": 6.83, "available_formats": ["svg", "png"], "note": "Transparent PNG rendered deterministically from nvf-stacked-white.svg at up to 2048px. Prefer the SVG; use this only where the tool or format cannot accept vector art." },
+          { "variant": "all_black", "path": "logos/nvf-stacked-black.svg", "format": "svg", "use_on": "single-color print", "ideal_background": "light", "colors": ["#231f20"], "width": 563, "height": 232, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "Single-color charcoal. One-ink print and faxable documents." },
+          { "variant": "all_black", "path": "logos/nvf-stacked-black.png", "format": "png", "use_on": "single-color print", "ideal_background": "light", "colors": ["#231f20"], "width": 2048, "height": 844, "transparent": true, "scalable": false, "max_print_width_in": 6.83, "available_formats": ["svg", "png"], "note": "Transparent PNG rendered deterministically from nvf-stacked-black.svg at up to 2048px. Prefer the SVG; use this only where the tool or format cannot accept vector art." }
         ]
       },
       {
@@ -258,11 +261,13 @@
         "description": "Single-line wordmark. Use in narrow horizontal spaces — headers, footers, corner marks, email signatures.",
         "primary": false,
         "assets": [
-          { "variant": "all_black", "path": "logos/nvf-horizontal-black.svg", "format": "svg", "use_on": "light backgrounds", "ideal_background": "light", "colors": ["#000000", "#231f20"], "width": 1625, "height": 74, "transparent": true, "scalable": true, "available_formats": ["svg"], "note": "Single-color dark wordmark. No green." },
+          { "variant": "all_black", "path": "logos/nvf-horizontal-black.svg", "format": "svg", "use_on": "light backgrounds", "ideal_background": "light", "colors": ["#000000", "#231f20"], "width": 1625, "height": 74, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "Single-color dark wordmark. No green." },
+          { "variant": "all_black", "path": "logos/nvf-horizontal-black.png", "format": "png", "use_on": "light backgrounds", "ideal_background": "light", "colors": ["#000000", "#231f20"], "width": 2048, "height": 93, "transparent": true, "scalable": false, "max_print_width_in": 6.83, "available_formats": ["svg", "png"], "note": "Transparent PNG rendered deterministically from nvf-horizontal-black.svg at up to 2048px. Prefer the SVG; use this only where the tool or format cannot accept vector art." },
           { "variant": "white_text", "path": "logos/nvf-horizontal-white.svg", "format": "svg", "use_on": "dark backgrounds", "ideal_background": "dark", "colors": ["#ffffff", "#569c33", "#74c933"], "width": 1625, "height": 74, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "White wordmark with the green leaf mark retained." },
           { "variant": "white_text", "path": "logos/nvf-horizontal-white-text.png", "format": "png", "use_on": "dark backgrounds", "ideal_background": "dark", "colors": ["#ffffff", "#569c33", "#74c933"], "width": 1625, "height": 74, "transparent": true, "scalable": false, "max_print_width_in": 5.42, "available_formats": ["svg", "png"], "note": "Same design as the White Text SVG above, in PNG for raster-only contexts. Prefer the SVG; use this only where the tool or format cannot accept vector art." },
           { "variant": "black_text", "path": "logos/nvf-horizontal-color.png", "format": "png", "use_on": "light backgrounds", "ideal_background": "light", "colors": ["#231f20", "#569c33", "#74c933"], "width": 1625, "height": 74, "transparent": true, "scalable": false, "max_print_width_in": 5.42, "available_formats": ["png"], "note": "Black wordmark with the green leaf mark retained. No SVG source currently exists for this variant — request one rather than tracing the PNG." },
-          { "variant": "all_white", "path": "logos/nvf-horizontal-all-white.svg", "format": "svg", "use_on": "dark backgrounds", "ideal_background": "dark", "colors": ["#ffffff"], "width": 1625, "height": 74, "transparent": true, "scalable": true, "available_formats": ["svg"], "note": "Single-color white. No green." }
+          { "variant": "all_white", "path": "logos/nvf-horizontal-all-white.svg", "format": "svg", "use_on": "dark backgrounds", "ideal_background": "dark", "colors": ["#ffffff"], "width": 1625, "height": 74, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "Single-color white. No green." },
+          { "variant": "all_white", "path": "logos/nvf-horizontal-all-white.png", "format": "png", "use_on": "dark backgrounds", "ideal_background": "dark", "colors": ["#ffffff"], "width": 2048, "height": 93, "transparent": true, "scalable": false, "max_print_width_in": 6.83, "available_formats": ["svg", "png"], "note": "Transparent PNG rendered deterministically from nvf-horizontal-all-white.svg at up to 2048px. Prefer the SVG; use this only where the tool or format cannot accept vector art." }
         ]
       },
       {
@@ -280,7 +285,8 @@
         "description": "The cross alone, in the same two-green pinwheel treatment as the rest of the mark. Use sparingly, the same way as the leaf mark — a small decorative accent, favicon, or a muted background element — never as a substitute for the full logo.",
         "primary": false,
         "assets": [
-          { "variant": "color", "path": "logos/nvf-cross-mark.svg", "format": "svg", "use_on": "any background", "ideal_background": "any", "colors": ["#569c33", "#74c933"], "width": 417, "height": 706, "transparent": true, "scalable": true, "available_formats": ["svg"] }
+          { "variant": "color", "path": "logos/nvf-cross-mark.svg", "format": "svg", "use_on": "any background", "ideal_background": "any", "colors": ["#569c33", "#74c933"], "width": 417, "height": 706, "transparent": true, "scalable": true, "available_formats": ["svg", "png"] },
+          { "variant": "color", "path": "logos/nvf-cross-mark.png", "format": "png", "use_on": "any background", "ideal_background": "any", "colors": ["#569c33", "#74c933"], "width": 1210, "height": 2048, "transparent": true, "scalable": false, "max_print_width_in": 4.03, "available_formats": ["svg", "png"], "note": "Transparent PNG rendered deterministically from nvf-cross-mark.svg at up to 2048px. Prefer the SVG; use this only where the tool or format cannot accept vector art." }
         ]
       }
     ],
@@ -533,7 +539,8 @@
     "dont": [
       "No aggressive gradient backgrounds or glassmorphism",
       "No emoji",
-      "No pure black or pure white, and no cold grays",
+      "Never use pure black or pure white as general background colors. Use Charcoal and Paper instead. Pure black or white may remain where it is part of approved, unmodified logo artwork or required one-color reproduction.",
+      "No cold grays",
       "No competing accent colors beyond the defined four",
       "Do not use Inter, Roboto, or Arial — the Archivo and Source Serif 4 pairing is the signature",
       "No tight, cramped layouts"

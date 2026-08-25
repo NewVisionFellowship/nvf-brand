@@ -16,7 +16,8 @@ New Vision Fellowship exists **to multiply God's glory on the earth.** Our visua
 warm, grounded, and editorial — closer to a well-made print piece than a typical church website.
 Deep charcoal for drama, warm off-white paper for reading, and a green palette drawn from the leaf
 in our logo. Strong sans-serif headlines, a readable serif for body copy, and one hand-script
-flourish per piece. Never pure black, never pure white, never cold gray.
+flourish per piece. Charcoal and Paper carry every background — never pure black or pure white
+outside of untouched logo artwork, and never a cold gray.
 
 ---
 
@@ -91,7 +92,7 @@ match this palette. Always use logo files exactly as supplied.
 | Secondary, deep | Olive Deep | `#37461f` | Dark green panels, white text |
 | Dark surface | Charcoal | `#24201d` | Never pure black as a general background — see Rules below |
 | Dark surface, lifted | Charcoal Lift | `#2d2823` | Raised elements on dark |
-| Light surface | Paper | `#faf7f1` | Never pure white |
+| Light surface | Paper | `#faf7f1` | Never pure white as a general background — see Rules below |
 | Light surface, card | Paper Card | `#f1ece2` | Cards and wells |
 | Light surface, deep | Paper Deep | `#e9e2d5` | Third layer |
 | Text | Ink | `#221f1b` | Body and headings on light |
@@ -142,9 +143,9 @@ screen.
 
 ### Rules
 
-1. Never use pure black (`#000000`) as a general background color — use Charcoal instead. Pure
-   black is acceptable only when it's part of an approved, unmodified logo asset or a required
-   one-color reproduction. Never use pure white as a background — use Paper.
+1. Never use pure black or pure white as general background colors. Use Charcoal and Paper
+   instead. Pure black or white may remain where it is part of approved, unmodified logo artwork
+   or required one-color reproduction.
 2. Greens lead. Accents differentiate categories. Warm neutrals carry everything else.
 3. On dark backgrounds, swap Brand Leaf Green for Green Bright.
 4. One or two background colors per composition. No more.
@@ -487,5 +488,6 @@ misleading AI imagery.
 ## Avoid
 
 Aggressive gradient backgrounds · glassmorphism · emoji · drop shadows on text · pure black or
-white · cold grays · a fifth accent color · Inter, Roboto, or Arial · cramped layouts · stock
+white as a general background (untouched logo artwork excepted) · cold grays · a fifth accent
+color · Inter, Roboto, or Arial · cramped layouts · stock
 photography of people who are not our people.

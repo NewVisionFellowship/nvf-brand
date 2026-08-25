@@ -171,7 +171,8 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
 .copy-btn:hover{background:var(--paper-3)}
 .copy-btn[data-copied]{color:#fff;background:var(--green-deep);border-color:var(--green-deep)}
 .sw__b{position:relative}
-.sw .copy-btn{margin-top:10px}
+.copy-group{display:flex;gap:6px;margin-top:10px}
+.copy-group .copy-btn{margin-top:0}
 .dl-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
 .dl-btn{font-family:var(--display);font-weight:700;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:6px;padding:5px 10px;text-decoration:none;line-height:1;border-bottom:1px solid var(--line)}
 .dl-btn:hover{color:#fff;background:var(--green-deep);border-color:var(--green-deep)}
@@ -234,7 +235,7 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
       <span>Typeface <b>Archivo</b></span>
       <span>Mission <b>Multiply God&rsquo;s glory on the earth</b></span>
     </div>
-    <a class="hero__dl" href="downloads/nvf-brand-kit.zip" download>
+    <a class="hero__dl" href="downloads/nvf-brand-kit-2026.08.3.zip" download>
       Download Complete Brand Kit
       <small>.zip &middot; v2026.08.3</small>
     </a>
@@ -305,8 +306,9 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
         <h3 style="margin-bottom:6px;">Complete Brand Kit</h3>
         <p style="color:var(--ink-soft);font-size:15px;max-width:46ch;">JSON, schema, guidelines, CSS tokens, README, and every distributable NVF logo, ministry, and initiative asset. No fonts, no outside-partner logos.</p>
       </div>
-      <a class="hero__dl" style="background:var(--green-deep);" href="downloads/nvf-brand-kit.zip" download>Download ZIP <small>v2026.08.3</small></a>
+      <a class="hero__dl" style="background:var(--green-deep);" href="downloads/nvf-brand-kit-2026.08.3.zip" download>Download ZIP <small>v2026.08.3</small></a>
     </div>
+    <p style="font-size:13px;color:var(--metadata);margin-top:14px;">Stable link for the current version, useful for bookmarks and integrations: <a href="downloads/nvf-brand-kit.zip">downloads/nvf-brand-kit.zip</a>.</p>
     <div class="dl-panel__files" style="margin-top:20px;">
       <a class="dl-btn" href="brand-kit.json" download>brand-kit.json</a>
       <a class="dl-btn" href="brand-kit.schema.json" download>brand-kit.schema.json</a>
@@ -359,56 +361,56 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
     <p class="kicker">Colors</p>
     <h2>Brand Colors</h2>
     <hr class="rule">
-    <p class="lede" style="margin-bottom:34px;">Dark, dramatic moments plus light, readable content. Everything is warm — never pure black, never pure white, never a cold gray.</p>
+    <p class="lede" style="margin-bottom:34px;">Dark, dramatic moments plus light, readable content. Everything is warm — Charcoal and Paper carry every background, never pure black or pure white outside of untouched logo artwork, and never a cold gray.</p>
 
     <p class="sub">Greens</p>
     <p class="lede" style="font-size:15px;margin-bottom:16px;">Primary and Bright are the canonical application-palette greens — for layouts, backgrounds, accents, and new materials. Official logo artwork carries its own, separately-set green(s) baked into each file; those don't need to match this palette and are never edited to match it.</p>
     <div class="sw-grid">
-      <div class="sw"><div class="sw__c" style="background:#5f9a32"></div><div class="sw__b"><div class="sw__n">Brand Leaf Green</div><div class="sw__h">#5f9a32</div><div class="sw__u">Primary &middot; light bg</div><button class="copy-btn" type="button" data-hex="#5f9a32">Copy</button></div></div>
-      <div class="sw"><div class="sw__c" style="background:#42701f"></div><div class="sw__b"><div class="sw__n">Green Deep</div><div class="sw__h">#42701f</div><div class="sw__u">Small text &amp; links</div><button class="copy-btn" type="button" data-hex="#42701f">Copy</button></div></div>
-      <div class="sw"><div class="sw__c" style="background:#74ca33"></div><div class="sw__b"><div class="sw__n">Green Bright</div><div class="sw__h">#74ca33</div><div class="sw__u">Dark bg only</div><button class="copy-btn" type="button" data-hex="#74ca33">Copy</button></div></div>
-      <div class="sw"><div class="sw__c" style="background:#4a5d2f"></div><div class="sw__b"><div class="sw__n">Olive</div><div class="sw__h">#4a5d2f</div><div class="sw__u">Muted support</div><button class="copy-btn" type="button" data-hex="#4a5d2f">Copy</button></div></div>
-      <div class="sw"><div class="sw__c" style="background:#37461f"></div><div class="sw__b"><div class="sw__n">Olive Deep</div><div class="sw__h">#37461f</div><div class="sw__u">Dark panels</div><button class="copy-btn" type="button" data-hex="#37461f">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#5f9a32"></div><div class="sw__b"><div class="sw__n">Brand Leaf Green</div><div class="sw__h">#5f9a32</div><div class="sw__u">Primary &middot; light bg</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#5f9a32" aria-label="Copy Brand Leaf Green hex value, #5f9a32">Hex</button><button class="copy-btn" type="button" data-var="--nvf-green: #5f9a32;" aria-label="Copy Brand Leaf Green CSS variable declaration">CSS Var</button></div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#42701f"></div><div class="sw__b"><div class="sw__n">Green Deep</div><div class="sw__h">#42701f</div><div class="sw__u">Small text &amp; links</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#42701f" aria-label="Copy Green Deep hex value, #42701f">Hex</button><button class="copy-btn" type="button" data-var="--nvf-green-deep: #42701f;" aria-label="Copy Green Deep CSS variable declaration">CSS Var</button></div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#74ca33"></div><div class="sw__b"><div class="sw__n">Green Bright</div><div class="sw__h">#74ca33</div><div class="sw__u">Dark bg only</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#74ca33" aria-label="Copy Green Bright hex value, #74ca33">Hex</button><button class="copy-btn" type="button" data-var="--nvf-green-bright: #74ca33;" aria-label="Copy Green Bright CSS variable declaration">CSS Var</button></div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#4a5d2f"></div><div class="sw__b"><div class="sw__n">Olive</div><div class="sw__h">#4a5d2f</div><div class="sw__u">Muted support</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#4a5d2f" aria-label="Copy Olive hex value, #4a5d2f">Hex</button><button class="copy-btn" type="button" data-var="--nvf-olive: #4a5d2f;" aria-label="Copy Olive CSS variable declaration">CSS Var</button></div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#37461f"></div><div class="sw__b"><div class="sw__n">Olive Deep</div><div class="sw__h">#37461f</div><div class="sw__u">Dark panels</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#37461f" aria-label="Copy Olive Deep hex value, #37461f">Hex</button><button class="copy-btn" type="button" data-var="--nvf-olive-deep: #37461f;" aria-label="Copy Olive Deep CSS variable declaration">CSS Var</button></div></div></div>
     </div>
 
     <p class="sub">Warm Neutrals</p>
     <div class="sw-grid">
-      <div class="sw"><div class="sw__c" style="background:#faf7f1;border-bottom:1px solid #e1dacc"></div><div class="sw__b"><div class="sw__n">Paper</div><div class="sw__h">#faf7f1</div><div class="sw__u">Primary light bg</div><button class="copy-btn" type="button" data-hex="#faf7f1">Copy</button></div></div>
-      <div class="sw"><div class="sw__c" style="background:#f1ece2"></div><div class="sw__b"><div class="sw__n">Paper Card</div><div class="sw__h">#f1ece2</div><div class="sw__u">Cards &amp; wells</div><button class="copy-btn" type="button" data-hex="#f1ece2">Copy</button></div></div>
-      <div class="sw"><div class="sw__c" style="background:#e9e2d5"></div><div class="sw__b"><div class="sw__n">Paper Deep</div><div class="sw__h">#e9e2d5</div><div class="sw__u">Third layer</div><button class="copy-btn" type="button" data-hex="#e9e2d5">Copy</button></div></div>
-      <div class="sw"><div class="sw__c" style="background:#24201d"></div><div class="sw__b"><div class="sw__n">Charcoal</div><div class="sw__h">#24201d</div><div class="sw__u">Dark surfaces</div><button class="copy-btn" type="button" data-hex="#24201d">Copy</button></div></div>
-      <div class="sw"><div class="sw__c" style="background:#2d2823"></div><div class="sw__b"><div class="sw__n">Charcoal Lift</div><div class="sw__h">#2d2823</div><div class="sw__u">Raised on dark</div><button class="copy-btn" type="button" data-hex="#2d2823">Copy</button></div></div>
-      <div class="sw"><div class="sw__c" style="background:#221f1b"></div><div class="sw__b"><div class="sw__n">Ink</div><div class="sw__h">#221f1b</div><div class="sw__u">Body text</div><button class="copy-btn" type="button" data-hex="#221f1b">Copy</button></div></div>
-      <div class="sw"><div class="sw__c" style="background:#4a443d"></div><div class="sw__b"><div class="sw__n">Ink Soft</div><div class="sw__h">#4a443d</div><div class="sw__u">Secondary text</div><button class="copy-btn" type="button" data-hex="#4a443d">Copy</button></div></div>
-      <div class="sw"><div class="sw__c" style="background:#6d675b"></div><div class="sw__b"><div class="sw__n">Metadata</div><div class="sw__h">#6d675b</div><div class="sw__u">Small labels, light bg</div><button class="copy-btn" type="button" data-hex="#6d675b">Copy</button></div></div>
-      <div class="sw"><div class="sw__c" style="background:#e1dacc"></div><div class="sw__b"><div class="sw__n">Hairline</div><div class="sw__h">#e1dacc</div><div class="sw__u">Dividers only, not text</div><button class="copy-btn" type="button" data-hex="#e1dacc">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#faf7f1;border-bottom:1px solid #e1dacc"></div><div class="sw__b"><div class="sw__n">Paper</div><div class="sw__h">#faf7f1</div><div class="sw__u">Primary light bg</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#faf7f1" aria-label="Copy Paper hex value, #faf7f1">Hex</button><button class="copy-btn" type="button" data-var="--nvf-paper: #faf7f1;" aria-label="Copy Paper CSS variable declaration">CSS Var</button></div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#f1ece2"></div><div class="sw__b"><div class="sw__n">Paper Card</div><div class="sw__h">#f1ece2</div><div class="sw__u">Cards &amp; wells</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#f1ece2" aria-label="Copy Paper Card hex value, #f1ece2">Hex</button><button class="copy-btn" type="button" data-var="--nvf-paper-card: #f1ece2;" aria-label="Copy Paper Card CSS variable declaration">CSS Var</button></div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#e9e2d5"></div><div class="sw__b"><div class="sw__n">Paper Deep</div><div class="sw__h">#e9e2d5</div><div class="sw__u">Third layer</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#e9e2d5" aria-label="Copy Paper Deep hex value, #e9e2d5">Hex</button><button class="copy-btn" type="button" data-var="--nvf-paper-deep: #e9e2d5;" aria-label="Copy Paper Deep CSS variable declaration">CSS Var</button></div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#24201d"></div><div class="sw__b"><div class="sw__n">Charcoal</div><div class="sw__h">#24201d</div><div class="sw__u">Dark surfaces</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#24201d" aria-label="Copy Charcoal hex value, #24201d">Hex</button><button class="copy-btn" type="button" data-var="--nvf-charcoal: #24201d;" aria-label="Copy Charcoal CSS variable declaration">CSS Var</button></div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#2d2823"></div><div class="sw__b"><div class="sw__n">Charcoal Lift</div><div class="sw__h">#2d2823</div><div class="sw__u">Raised on dark</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#2d2823" aria-label="Copy Charcoal Lift hex value, #2d2823">Hex</button><button class="copy-btn" type="button" data-var="--nvf-charcoal-lift: #2d2823;" aria-label="Copy Charcoal Lift CSS variable declaration">CSS Var</button></div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#221f1b"></div><div class="sw__b"><div class="sw__n">Ink</div><div class="sw__h">#221f1b</div><div class="sw__u">Body text</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#221f1b" aria-label="Copy Ink hex value, #221f1b">Hex</button><button class="copy-btn" type="button" data-var="--nvf-ink: #221f1b;" aria-label="Copy Ink CSS variable declaration">CSS Var</button></div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#4a443d"></div><div class="sw__b"><div class="sw__n">Ink Soft</div><div class="sw__h">#4a443d</div><div class="sw__u">Secondary text</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#4a443d" aria-label="Copy Ink Soft hex value, #4a443d">Hex</button><button class="copy-btn" type="button" data-var="--nvf-ink-soft: #4a443d;" aria-label="Copy Ink Soft CSS variable declaration">CSS Var</button></div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#6d675b"></div><div class="sw__b"><div class="sw__n">Metadata</div><div class="sw__h">#6d675b</div><div class="sw__u">Small labels, light bg</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#6d675b" aria-label="Copy Metadata hex value, #6d675b">Hex</button><button class="copy-btn" type="button" data-var="--nvf-metadata: #6d675b;" aria-label="Copy Metadata CSS variable declaration">CSS Var</button></div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#e1dacc"></div><div class="sw__b"><div class="sw__n">Hairline</div><div class="sw__h">#e1dacc</div><div class="sw__u">Dividers only, not text</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#e1dacc" aria-label="Copy Hairline hex value, #e1dacc">Hex</button><button class="copy-btn" type="button" data-var="--nvf-hairline: #e1dacc;" aria-label="Copy Hairline CSS variable declaration">CSS Var</button></div></div></div>
     </div>
 
     <p class="sub">Accent Colors</p>
     <p class="lede" style="font-size:15px;margin-bottom:16px;">On a colored card, only large display text (like the name above) is guaranteed to pass WCAG AA in every color — smaller text sits in a light chip instead of directly on the fill. See <code>color_system.accessibility</code> for the full pairing table.</p>
     <div class="ramps">
-      <div class="ramp" style="background:#5d8a3e"><div class="ramp__n">Moss Green</div><div class="ramp__chip"><div class="ramp__h">#5d8a3e</div><div class="ramp__s">Large text and decorative use only &mdash; see Moss Deep for small text.</div></div><button class="copy-btn" type="button" data-hex="#5d8a3e" style="margin-top:12px;">Copy</button></div>
-      <div class="ramp" style="background:#b3852b"><div class="ramp__n">Ochre</div><div class="ramp__chip"><div class="ramp__h">#b3852b</div><div class="ramp__s">Pair with Ink, not white, when used as a background.</div></div><button class="copy-btn" type="button" data-hex="#b3852b" style="margin-top:12px;">Copy</button></div>
-      <div class="ramp" style="background:#347b6f"><div class="ramp__n">Muted Teal</div><div class="ramp__chip"><div class="ramp__h">#347b6f</div><div class="ramp__s">Passes WCAG AA with white text or as text on Paper.</div></div><button class="copy-btn" type="button" data-hex="#347b6f" style="margin-top:12px;">Copy</button></div>
-      <div class="ramp" style="background:#ae5230"><div class="ramp__n">Terracotta</div><div class="ramp__chip"><div class="ramp__h">#ae5230</div><div class="ramp__s">Passes WCAG AA with white text or as text on Paper.</div></div><button class="copy-btn" type="button" data-hex="#ae5230" style="margin-top:12px;">Copy</button></div>
+      <div class="ramp" style="background:#5d8a3e"><div class="ramp__n">Moss Green</div><div class="ramp__chip"><div class="ramp__h">#5d8a3e</div><div class="ramp__s">Large text and decorative use only &mdash; see Moss Deep for small text.</div></div><div class="copy-group" style="margin-top:12px;"><button class="copy-btn" type="button" data-hex="#5d8a3e" aria-label="Copy Moss Green hex value, #5d8a3e">Hex</button><button class="copy-btn" type="button" data-var="--nvf-moss: #5d8a3e;" aria-label="Copy Moss Green CSS variable declaration">CSS Var</button></div></div>
+      <div class="ramp" style="background:#b3852b"><div class="ramp__n">Ochre</div><div class="ramp__chip"><div class="ramp__h">#b3852b</div><div class="ramp__s">Pair with Ink, not white, when used as a background.</div></div><div class="copy-group" style="margin-top:12px;"><button class="copy-btn" type="button" data-hex="#b3852b" aria-label="Copy Ochre hex value, #b3852b">Hex</button><button class="copy-btn" type="button" data-var="--nvf-ochre: #b3852b;" aria-label="Copy Ochre CSS variable declaration">CSS Var</button></div></div>
+      <div class="ramp" style="background:#347b6f"><div class="ramp__n">Muted Teal</div><div class="ramp__chip"><div class="ramp__h">#347b6f</div><div class="ramp__s">Passes WCAG AA with white text or as text on Paper.</div></div><div class="copy-group" style="margin-top:12px;"><button class="copy-btn" type="button" data-hex="#347b6f" aria-label="Copy Muted Teal hex value, #347b6f">Hex</button><button class="copy-btn" type="button" data-var="--nvf-teal: #347b6f;" aria-label="Copy Muted Teal CSS variable declaration">CSS Var</button></div></div>
+      <div class="ramp" style="background:#ae5230"><div class="ramp__n">Terracotta</div><div class="ramp__chip"><div class="ramp__h">#ae5230</div><div class="ramp__s">Passes WCAG AA with white text or as text on Paper.</div></div><div class="copy-group" style="margin-top:12px;"><button class="copy-btn" type="button" data-hex="#ae5230" aria-label="Copy Terracotta hex value, #ae5230">Hex</button><button class="copy-btn" type="button" data-var="--nvf-terracotta: #ae5230;" aria-label="Copy Terracotta CSS variable declaration">CSS Var</button></div></div>
     </div>
 
     <p class="sub" style="margin-top:24px;">Text-Safe Variants</p>
     <p class="lede" style="font-size:15px;margin-bottom:16px;">Moss and Ochre themselves fail WCAG AA as small text on Paper. Use these darker tones instead — the same relationship Green Deep has to Brand Leaf Green.</p>
     <div class="sw-grid">
-      <div class="sw"><div class="sw__c" style="background:#4a6e31"></div><div class="sw__b"><div class="sw__n">Moss Deep</div><div class="sw__h">#4a6e31</div><div class="sw__u">Small text on light bg</div><button class="copy-btn" type="button" data-hex="#4a6e31">Copy</button></div></div>
-      <div class="sw"><div class="sw__c" style="background:#7d5d1e"></div><div class="sw__b"><div class="sw__n">Ochre Deep</div><div class="sw__h">#7d5d1e</div><div class="sw__u">Small text on light bg</div><button class="copy-btn" type="button" data-hex="#7d5d1e">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#4a6e31"></div><div class="sw__b"><div class="sw__n">Moss Deep</div><div class="sw__h">#4a6e31</div><div class="sw__u">Small text on light bg</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#4a6e31" aria-label="Copy Moss Deep hex value, #4a6e31">Hex</button><button class="copy-btn" type="button" data-var="--nvf-moss-deep: #4a6e31;" aria-label="Copy Moss Deep CSS variable declaration">CSS Var</button></div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#7d5d1e"></div><div class="sw__b"><div class="sw__n">Ochre Deep</div><div class="sw__h">#7d5d1e</div><div class="sw__u">Small text on light bg</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#7d5d1e" aria-label="Copy Ochre Deep hex value, #7d5d1e">Hex</button><button class="copy-btn" type="button" data-var="--nvf-ochre-deep: #7d5d1e;" aria-label="Copy Ochre Deep CSS variable declaration">CSS Var</button></div></div></div>
     </div>
 
     <p class="sub">Digital / Interactive &mdash; UI Only</p>
     <p class="lede" style="font-size:16px;margin-bottom:20px;">Brighter, higher-chroma variants for on-screen product UI only &mdash; buttons, links, hover states, and badges on very dark app-like screens, as used on my.nvf.life. Never use these in print or static compositions.</p>
     <div class="sw-grid">
-      <div class="sw"><div class="sw__c" style="background:#1b1815"></div><div class="sw__b"><div class="sw__n">UI Charcoal</div><div class="sw__h">#1b1815</div><div class="sw__u">Dark app screens</div><button class="copy-btn" type="button" data-hex="#1b1815">Copy</button></div></div>
-      <div class="sw"><div class="sw__c" style="background:#93d86a"></div><div class="sw__b"><div class="sw__n">Interactive Green</div><div class="sw__h">#93d86a</div><div class="sw__u">Links</div><button class="copy-btn" type="button" data-hex="#93d86a">Copy</button></div></div>
-      <div class="sw"><div class="sw__c" style="background:#7fd142"></div><div class="sw__b"><div class="sw__n">Interactive Green, Bold</div><div class="sw__h">#7fd142</div><div class="sw__u">Primary buttons</div><button class="copy-btn" type="button" data-hex="#7fd142">Copy</button></div></div>
-      <div class="sw"><div class="sw__c" style="background:#a94442"></div><div class="sw__b"><div class="sw__n">Alert Red</div><div class="sw__h">#a94442</div><div class="sw__u">Errors only</div><button class="copy-btn" type="button" data-hex="#a94442">Copy</button></div></div>
-      <div class="sw"><div class="sw__c" style="background:#45a394"></div><div class="sw__b"><div class="sw__n">Badge Teal</div><div class="sw__h">#45a394</div><div class="sw__u">Small badges</div><button class="copy-btn" type="button" data-hex="#45a394">Copy</button></div></div>
-      <div class="sw"><div class="sw__c" style="background:#cf9f3f"></div><div class="sw__b"><div class="sw__n">Badge Ochre</div><div class="sw__h">#cf9f3f</div><div class="sw__u">Small badges</div><button class="copy-btn" type="button" data-hex="#cf9f3f">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#1b1815"></div><div class="sw__b"><div class="sw__n">UI Charcoal</div><div class="sw__h">#1b1815</div><div class="sw__u">Dark app screens</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#1b1815" aria-label="Copy UI Charcoal hex value, #1b1815">Hex</button><button class="copy-btn" type="button" data-var="--nvf-ui-charcoal: #1b1815;" aria-label="Copy UI Charcoal CSS variable declaration">CSS Var</button></div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#93d86a"></div><div class="sw__b"><div class="sw__n">Interactive Green</div><div class="sw__h">#93d86a</div><div class="sw__u">Links</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#93d86a" aria-label="Copy Interactive Green hex value, #93d86a">Hex</button><button class="copy-btn" type="button" data-var="--nvf-ui-link: #93d86a;" aria-label="Copy Interactive Green CSS variable declaration">CSS Var</button></div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#7fd142"></div><div class="sw__b"><div class="sw__n">Interactive Green, Bold</div><div class="sw__h">#7fd142</div><div class="sw__u">Primary buttons</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#7fd142" aria-label="Copy Interactive Green, Bold hex value, #7fd142">Hex</button><button class="copy-btn" type="button" data-var="--nvf-ui-button: #7fd142;" aria-label="Copy Interactive Green, Bold CSS variable declaration">CSS Var</button></div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#a94442"></div><div class="sw__b"><div class="sw__n">Alert Red</div><div class="sw__h">#a94442</div><div class="sw__u">Errors only</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#a94442" aria-label="Copy Alert Red hex value, #a94442">Hex</button><button class="copy-btn" type="button" data-var="--nvf-ui-alert: #a94442;" aria-label="Copy Alert Red CSS variable declaration">CSS Var</button></div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#45a394"></div><div class="sw__b"><div class="sw__n">Badge Teal</div><div class="sw__h">#45a394</div><div class="sw__u">Small badges</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#45a394" aria-label="Copy Badge Teal hex value, #45a394">Hex</button><button class="copy-btn" type="button" data-var="--nvf-ui-badge-teal: #45a394;" aria-label="Copy Badge Teal CSS variable declaration">CSS Var</button></div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#cf9f3f"></div><div class="sw__b"><div class="sw__n">Badge Ochre</div><div class="sw__h">#cf9f3f</div><div class="sw__u">Small badges</div><div class="copy-group"><button class="copy-btn" type="button" data-hex="#cf9f3f" aria-label="Copy Badge Ochre hex value, #cf9f3f">Hex</button><button class="copy-btn" type="button" data-var="--nvf-ui-badge-ochre: #cf9f3f;" aria-label="Copy Badge Ochre CSS variable declaration">CSS Var</button></div></div></div>
     </div>
   </div>
 </section>
@@ -449,21 +451,21 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
     <hr class="rule">
     <p class="lede" style="margin-bottom:34px;">The stacked lockup is our primary logo. Match the variant to the background &mdash; the charcoal wordmark will not read on dark, and the white wordmark will not read on paper. Prefer SVG everywhere.</p>
     <div class="logos">
-      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-stacked-color.svg" alt="Stacked lockup, black text with green leaf"></div><div class="lg__b"><div class="lg__n">Stacked &middot; Black Text</div><div class="lg__p">logos/nvf-stacked-color.svg &middot; light bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-stacked-color.svg" download>SVG</a></div></div></div>
-      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-stacked-color-dark.svg" alt="Stacked lockup, white text with green leaf"></div><div class="lg__b"><div class="lg__n">Stacked &middot; White Text</div><div class="lg__p">logos/nvf-stacked-color-dark.svg &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-stacked-color-dark.svg" download>SVG</a></div></div></div>
-      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-stacked-white.svg" alt="Stacked lockup, all white"></div><div class="lg__b"><div class="lg__n">Stacked &middot; All White</div><div class="lg__p">logos/nvf-stacked-white.svg &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-stacked-white.svg" download>SVG</a></div></div></div>
-      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-stacked-black.svg" alt="Stacked lockup, all black"></div><div class="lg__b"><div class="lg__n">Stacked &middot; All Black</div><div class="lg__p">logos/nvf-stacked-black.svg &middot; one-ink print</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-stacked-black.svg" download>SVG</a></div></div></div>
-      <div class="lg"><div class="lg__v lg__v--l" style="padding:44px"><img src="logos/nvf-leaf-mark.png" alt="Leaf mark"></div><div class="lg__b"><div class="lg__n">Leaf Mark</div><div class="lg__p">logos/nvf-leaf-mark.png &middot; any bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-leaf-mark.png" download>PNG</a></div></div></div>
-      <div class="lg"><div class="lg__v lg__v--l" style="padding:44px"><img src="logos/nvf-cross-mark.svg" alt="Cross mark"></div><div class="lg__b"><div class="lg__n">Cross Mark</div><div class="lg__p">logos/nvf-cross-mark.svg &middot; any bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-cross-mark.svg" download>SVG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-stacked-color.svg" alt="Stacked lockup, black text with green leaf"></div><div class="lg__b"><div class="lg__n">Stacked &middot; Black Text</div><div class="lg__p">logos/nvf-stacked-color &middot; light bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-stacked-color.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-stacked-color.png" download>PNG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-stacked-color-dark.svg" alt="Stacked lockup, white text with green leaf"></div><div class="lg__b"><div class="lg__n">Stacked &middot; White Text</div><div class="lg__p">logos/nvf-stacked-color-dark &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-stacked-color-dark.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-stacked-color-dark.png" download>PNG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-stacked-white.svg" alt="Stacked lockup, all white"></div><div class="lg__b"><div class="lg__n">Stacked &middot; All White</div><div class="lg__p">logos/nvf-stacked-white &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-stacked-white.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-stacked-white.png" download>PNG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-stacked-black.svg" alt="Stacked lockup, all black"></div><div class="lg__b"><div class="lg__n">Stacked &middot; All Black</div><div class="lg__p">logos/nvf-stacked-black &middot; one-ink print</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-stacked-black.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-stacked-black.png" download>PNG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l" style="padding:44px"><img src="logos/nvf-leaf-mark.png" alt="Leaf mark"></div><div class="lg__b"><div class="lg__n">Leaf Mark</div><div class="lg__p">logos/nvf-leaf-mark &middot; any bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-leaf-mark.png" download>PNG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l" style="padding:44px"><img src="logos/nvf-cross-mark.svg" alt="Cross mark"></div><div class="lg__b"><div class="lg__n">Cross Mark</div><div class="lg__p">logos/nvf-cross-mark &middot; any bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-cross-mark.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-cross-mark.png" download>PNG</a></div></div></div>
     </div>
 
     <p class="sub" style="margin-top:34px;">Horizontal Wordmark Variants</p>
     <p class="lede" style="margin-bottom:34px;font-size:16px;">All flat, no cross. Vary by whether the wordmark is single-color or keeps the green leaf accent.</p>
     <div class="logos">
-      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-horizontal-black.svg" alt="Horizontal wordmark, all black"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; All Black</div><div class="lg__p">logos/nvf-horizontal-black.svg &middot; light bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-horizontal-black.svg" download>SVG</a></div></div></div>
-      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-horizontal-color.png" alt="Horizontal wordmark, black text with green leaf"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; Black Text</div><div class="lg__p">logos/nvf-horizontal-color.png &middot; light bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-horizontal-color.png" download>PNG</a></div></div></div>
-      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-horizontal-white.svg" alt="Horizontal wordmark, white text with green leaf"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; White Text</div><div class="lg__p">logos/nvf-horizontal-white.svg &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-horizontal-white.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-horizontal-white-text.png" download>PNG</a></div></div></div>
-      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-horizontal-all-white.svg" alt="Horizontal wordmark, all white"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; All White</div><div class="lg__p">logos/nvf-horizontal-all-white.svg &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-horizontal-all-white.svg" download>SVG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-horizontal-black.svg" alt="Horizontal wordmark, all black"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; All Black</div><div class="lg__p">logos/nvf-horizontal-black &middot; light bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-horizontal-black.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-horizontal-black.png" download>PNG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-horizontal-color.png" alt="Horizontal wordmark, black text with green leaf"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; Black Text</div><div class="lg__p">logos/nvf-horizontal-color &middot; light bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-horizontal-color.png" download>PNG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-horizontal-white.svg" alt="Horizontal wordmark, white text with green leaf"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; White Text</div><div class="lg__p">logos/nvf-horizontal-white &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-horizontal-white.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-horizontal-white-text.png" download>PNG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-horizontal-all-white.svg" alt="Horizontal wordmark, all white"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; All White</div><div class="lg__p">logos/nvf-horizontal-all-white &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-horizontal-all-white.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-horizontal-all-white.png" download>PNG</a></div></div></div>
     </div>
   </div>
 </section>
@@ -568,9 +570,11 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
       <div class="min"><div class="min__i"><img src="sub-brands/titus-2-women.png" alt="Titus 2 Women"></div><div class="min__n">Titus 2 Women</div><div class="min__a">Women of all ages</div><div class="dl-row"><a class="dl-btn" href="sub-brands/titus-2-women.png" download>PNG</a></div></div>
       <div class="min"><div class="min__i"><img src="sub-brands/men-of-vision.png" alt="Men of Vision"></div><div class="min__n">Men of Vision</div><div class="min__a">Men of all ages</div><div class="dl-row"><a class="dl-btn" href="sub-brands/men-of-vision.png" download>PNG</a></div></div>
       <div class="min"><div class="min__i"><img src="sub-brands/vintage-visions.svg" alt="Vintage Visions"></div><div class="min__n">Vintage Visions</div><div class="min__a">Senior-focused, all welcome</div><div class="dl-row"><a class="dl-btn" href="sub-brands/vintage-visions.svg" download>SVG</a><a class="dl-btn" href="sub-brands/vintage-visions.png" download>PNG</a></div></div>
-      <div class="min"><div class="min__i"><img src="sub-brands/melding-moms-color.svg" alt="Melding Moms"></div><div class="min__n">Melding Moms</div><div class="min__a">Blended-family &amp; stepmom ministry</div><div class="dl-row"><a class="dl-btn" href="sub-brands/melding-moms-color.svg" download>SVG</a><a class="dl-btn" href="sub-brands/melding-moms-color.png" download>PNG</a></div></div>
+      <div class="min"><div class="min__i"><img src="sub-brands/melding-moms-color.svg" alt="Melding Moms, color"></div><div class="min__n">Melding Moms &middot; Color</div><div class="min__a">Blended-family &amp; stepmom ministry &middot; light bg</div><div class="dl-row"><a class="dl-btn" href="sub-brands/melding-moms-color.svg" download>SVG</a><a class="dl-btn" href="sub-brands/melding-moms-color.png" download>PNG</a></div></div>
+      <div class="min" style="background:var(--charcoal)"><div class="min__i"><img src="sub-brands/melding-moms-white.svg" alt="Melding Moms, white"></div><div class="min__n" style="color:#fff">Melding Moms &middot; White</div><div class="min__a" style="color:var(--metadata-dark)">Blended-family &amp; stepmom ministry &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="sub-brands/melding-moms-white.svg" download>SVG</a><a class="dl-btn" href="sub-brands/melding-moms-white.png" download>PNG</a></div></div>
       <div class="min"><div class="min__i"><img src="initiatives/life-groups.png" alt="Life Groups"></div><div class="min__n">Life Groups</div><div class="min__a">Connect &middot; Reflect &middot; Protect</div><div class="dl-row"><a class="dl-btn" href="initiatives/life-groups.png" download>PNG</a></div></div>
-      <div class="min"><div class="min__i"><img src="initiatives/love-my-neighbor-day-dark.png" alt="Love My Neighbor Day"></div><div class="min__n">Love My Neighbor Day</div><div class="min__a">Annual outreach day camp</div><div class="dl-row"><a class="dl-btn" href="initiatives/love-my-neighbor-day-dark.png" download>PNG</a></div></div>
+      <div class="min"><div class="min__i"><img src="initiatives/love-my-neighbor-day-dark.png" alt="Love My Neighbor Day, dark artwork"></div><div class="min__n">Love My Neighbor Day &middot; Dark</div><div class="min__a">Annual outreach day camp &middot; light bg</div><div class="dl-row"><a class="dl-btn" href="initiatives/love-my-neighbor-day-dark.png" download>PNG</a></div></div>
+      <div class="min" style="background:var(--charcoal)"><div class="min__i"><img src="initiatives/love-my-neighbor-day-light.png" alt="Love My Neighbor Day, light artwork"></div><div class="min__n" style="color:#fff">Love My Neighbor Day &middot; Light</div><div class="min__a" style="color:var(--metadata-dark)">Annual outreach day camp &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="initiatives/love-my-neighbor-day-light.png" download>PNG</a></div></div>
     </div>
   </div>
 </section>
@@ -670,12 +674,14 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
   </div>
 </footer>
 
+<div id="copy-status" role="status" aria-live="polite" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;"></div>
+
 <div id="ai-instructions" hidden>New Vision Fellowship — AI Brand Instructions
 
 Source of truth: https://branding.nvf.life/brand-kit.json (structured data)
 Full guidance: https://branding.nvf.life/brand-guidelines.md (expanded rules and voice)
 
-Colors: Primary green #5f9a32 and Bright green #74ca33 are the canonical application-palette colors — use #5f9a32 on light backgrounds, #74ca33 on dark ones only, for layouts, backgrounds, accents, CSS, and new materials. Official logo artwork carries its own, separately-set green(s) baked into each file — those do not need to match this palette and must never be edited to match it; always use logo files exactly as supplied. Never pure black or pure white as a background — use Charcoal #24201d and Paper #faf7f1. Before pairing any color with text, check color_system.accessibility.pairings in brand-kit.json — do not assume white text on green, Moss, or Ochre passes; often it does not.
+Colors: Primary green #5f9a32 and Bright green #74ca33 are the canonical application-palette colors — use #5f9a32 on light backgrounds, #74ca33 on dark ones only, for layouts, backgrounds, accents, CSS, and new materials. Official logo artwork carries its own, separately-set green(s) baked into each file — those do not need to match this palette and must never be edited to match it; always use logo files exactly as supplied. Never use pure black or pure white as general background colors. Use Charcoal #24201d and Paper #faf7f1 instead. Pure black or white may remain where it is part of approved, unmodified logo artwork or required one-color reproduction. Before pairing any color with text, check color_system.accessibility.pairings in brand-kit.json — do not assume white text on green, Moss, or Ochre passes; often it does not.
 
 Typography: Archivo for all headings/labels/UI, Source Serif 4 for body copy, Kaushan Script for a single warm accent per piece only.
 
@@ -691,41 +697,57 @@ Human review required before publishing: doctrinal claims, crisis communication,
 
 <script>
 (function(){
-  function flashCopied(btn, defaultLabel){
+  function announce(msg){
+    var el = document.getElementById('copy-status');
+    el.textContent = '';
+    window.setTimeout(function(){ el.textContent = msg; }, 30);
+  }
+  function flash(btn, label){
     var prev = btn.textContent;
-    btn.textContent = 'Copied!';
+    btn.textContent = label;
     btn.setAttribute('data-copied','');
     setTimeout(function(){ btn.textContent = prev; btn.removeAttribute('data-copied'); }, 1600);
   }
-  function legacyCopy(text, btn){
+  function legacyCopy(text){
     var ta = document.createElement('textarea');
     ta.value = text; ta.style.position='fixed'; ta.style.opacity='0';
     document.body.appendChild(ta); ta.select();
-    try { document.execCommand('copy'); } catch(e) {}
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch(e) { ok = false; }
     document.body.removeChild(ta);
-    flashCopied(btn);
+    return ok;
   }
-  function copyText(text, btn){
+  function copyText(text, btn, what){
+    function succeed(){ flash(btn, 'Copied!'); announce(what + ' copied to clipboard.'); }
+    function fail(){ flash(btn, 'Failed'); announce('Could not copy ' + what + ' — please copy it manually.'); }
     if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(text).then(function(){ flashCopied(btn); }, function(){ legacyCopy(text, btn); });
+      navigator.clipboard.writeText(text).then(succeed, function(){
+        if (legacyCopy(text)) succeed(); else fail();
+      });
     } else {
-      legacyCopy(text, btn);
+      if (legacyCopy(text)) succeed(); else fail();
     }
   }
   document.addEventListener('click', function(e){
     var btn = e.target.closest('.copy-btn');
     if (!btn) return;
     if (btn.dataset.hex) {
-      copyText(btn.dataset.hex, btn);
+      copyText(btn.dataset.hex, btn, 'Hex value ' + btn.dataset.hex);
+      return;
+    }
+    if (btn.dataset.var) {
+      copyText(btn.dataset.var, btn, 'CSS variable declaration');
       return;
     }
     if (btn.dataset.copyTarget === 'css-block') {
-      fetch('brand-tokens.css').then(function(r){ return r.text(); }).then(function(css){ copyText(css, btn); });
+      fetch('brand-tokens.css').then(function(r){ return r.text(); })
+        .then(function(css){ copyText(css, btn, 'Complete CSS variable block'); })
+        .catch(function(){ flash(btn, 'Failed'); announce('Could not load brand-tokens.css to copy.'); });
       return;
     }
     if (btn.dataset.copyTarget === 'ai-instructions') {
       var el = document.getElementById('ai-instructions');
-      copyText(el.textContent.trim(), btn);
+      copyText(el.textContent.trim(), btn, 'AI brand instructions');
       return;
     }
   });
