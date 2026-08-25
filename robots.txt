@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://branding.nvf.life/sitemap.xml

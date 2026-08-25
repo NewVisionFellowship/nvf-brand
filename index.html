@@ -5,18 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>New Vision Fellowship — Brand Kit</title>
 <meta name="description" content="The single source of truth for New Vision Fellowship's brand assets, colors, typography, and voice. Machine-readable for AI agents and automation.">
+<link rel="canonical" href="https://branding.nvf.life/">
+<link rel="icon" type="image/png" href="logos/nvf-leaf-mark.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="New Vision Fellowship Brand Kit">
+<meta property="og:title" content="New Vision Fellowship — Brand Kit">
+<meta property="og:description" content="The single source of truth for New Vision Fellowship's brand assets, colors, typography, and voice. Machine-readable for AI agents and automation.">
+<meta property="og:url" content="https://branding.nvf.life/">
+<meta property="og:image" content="https://branding.nvf.life/social-share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="New Vision Fellowship — Brand Kit">
+<meta name="twitter:description" content="The single source of truth for New Vision Fellowship's brand assets, colors, typography, and voice.">
+<meta name="twitter:image" content="https://branding.nvf.life/social-share.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Kaushan+Script&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#221f1b;--ink-soft:#4a443d;
+  --ink:#221f1b;--ink-soft:#4a443d;--metadata:#6d675b;--metadata-dark:#9a8f81;
   --charcoal:#24201d;--charcoal-2:#2d2823;
   --paper:#faf7f1;--paper-2:#f1ece2;--paper-3:#e9e2d5;
   --line:#e1dacc;--line-dark:#433d36;
-  --green:#5f9a32;--green-deep:#42701f;--green-bright:#74ca33;
+  --green:#569c33;--green-deep:#42701f;--green-bright:#74c933;
   --olive:#4a5d2f;--olive-deep:#37461f;
-  --moss:#5d8a3e;--teal:#347b6f;--ochre:#b3852b;--terracotta:#ae5230;
+  --moss:#5d8a3e;--moss-deep:#4a6e31;--teal:#347b6f;--ochre:#b3852b;--ochre-deep:#7d5d1e;--terracotta:#ae5230;
   --display:'Archivo',system-ui,sans-serif;
   --serif:'Source Serif 4',Georgia,serif;
   --script:'Kaushan Script',cursive;
@@ -27,10 +42,13 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);
 p{margin:0 0 1em}
 p:last-child{margin-bottom:0}
 a{color:var(--green-deep);text-decoration:none;border-bottom:1px solid rgba(66,112,31,.3)}
-a:hover{color:var(--green);border-bottom-color:var(--green)}
+a:hover{border-bottom-color:var(--green)}
+a:focus-visible,button:focus-visible,.copy-btn:focus-visible,.dl-btn:focus-visible{outline:2px solid var(--green);outline-offset:2px;border-radius:3px}
+.skip-link{position:absolute;left:-9999px;top:auto;z-index:100;background:var(--charcoal);color:#fff;font-family:var(--display);font-weight:700;font-size:13px;padding:12px 20px;border-radius:0 0 8px 0}
+.skip-link:focus{left:0;top:0}
 code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;background:var(--paper-2);padding:.15em .45em;border-radius:4px;border:1px solid var(--line)}
 .wrap{max-width:1120px;margin:0 auto;padding:0 32px}
-.kicker{font-family:var(--display);font-weight:800;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--green);margin:0 0 14px}
+.kicker{font-family:var(--display);font-weight:800;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--green-deep);margin:0 0 14px}
 h2{font-family:var(--display);font-weight:900;font-size:40px;line-height:1.04;letter-spacing:-.018em;margin:0 0 14px}
 h3{font-family:var(--display);font-weight:800;font-size:21px;line-height:1.2;margin:0 0 8px}
 .rule{height:5px;width:70px;background:var(--green);border:0;border-radius:3px;margin:0 0 34px}
@@ -55,7 +73,7 @@ section:last-of-type{border-bottom:0}
 .hero h1{font-family:var(--display);font-weight:900;font-size:76px;line-height:.98;letter-spacing:-.026em;margin:0 0 10px;color:#fff}
 .hero .script{font-family:var(--script);font-size:34px;color:var(--green-bright);line-height:1;margin-bottom:26px}
 .hero p{color:#cabfb0;font-size:20px;line-height:1.55;max-width:62ch}
-.hero__meta{display:flex;gap:32px;flex-wrap:wrap;margin-top:36px;font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#8b8377}
+.hero__meta{display:flex;gap:32px;flex-wrap:wrap;margin-top:36px;font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--metadata-dark)}
 .hero__meta b{color:var(--green-bright);font-weight:700}
 
 /* agent callout */
@@ -72,7 +90,7 @@ section:last-of-type{border-bottom:0}
 .file--alt{border-top-color:var(--olive)}
 .file__n{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:var(--green-deep);margin-bottom:10px;word-break:break-all}
 .file p{font-size:15px;color:var(--ink-soft);margin:0}
-.file__tag{font-family:var(--display);font-weight:700;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#a99f8d;margin-top:16px}
+.file__tag{font-family:var(--display);font-weight:700;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--metadata);margin-top:16px}
 
 /* tables */
 table{width:100%;border-collapse:collapse;font-size:15.5px;margin-top:8px}
@@ -88,7 +106,7 @@ td code{white-space:nowrap}
 .sw__b{padding:14px 16px}
 .sw__n{font-family:var(--display);font-weight:800;font-size:14px;line-height:1.15;color:var(--ink)}
 .sw__h{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:var(--ink-soft);margin-top:5px}
-.sw__u{font-size:12.5px;color:#a99f8d;margin-top:7px;line-height:1.35;font-family:var(--display);font-weight:600}
+.sw__u{font-size:12.5px;color:var(--metadata);margin-top:7px;line-height:1.35;font-family:var(--display);font-weight:600}
 .sub{font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--olive);margin:0 0 16px}
 
 /* type specimens */
@@ -124,8 +142,9 @@ td code{white-space:nowrap}
 .ramps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
 .ramp{border-radius:12px;padding:26px 24px;color:#fff}
 .ramp__n{font-family:var(--display);font-weight:900;font-size:32px;letter-spacing:.01em}
-.ramp__h{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;opacity:.85;margin-top:6px}
-.ramp__s{font-size:14.5px;margin-top:12px;line-height:1.4;opacity:.96}
+.ramp__chip{background:rgba(250,247,241,.94);border-radius:8px;padding:10px 14px;margin-top:14px;display:inline-block}
+.ramp__h{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:var(--ink)}
+.ramp__s{font-size:14.5px;margin-top:6px;line-height:1.4;color:var(--ink-soft)}
 
 /* voice */
 .voice{display:grid;grid-template-columns:1fr 1fr;gap:24px}
@@ -145,7 +164,23 @@ footer{background:var(--charcoal);color:#9c9384;padding:56px 0}
 footer img{height:16px;width:auto;max-width:300px;margin-bottom:22px}
 footer p{font-size:15px;line-height:1.6}
 footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
-.fmeta{font-family:var(--display);font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;margin-top:22px;color:#6f675d}
+.fmeta{font-family:var(--display);font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;margin-top:22px;color:var(--metadata-dark)}
+
+/* copy + download controls */
+.copy-btn{font-family:var(--display);font-weight:700;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--green-deep);background:var(--paper-2);border:1px solid var(--line);border-radius:6px;padding:5px 10px;cursor:pointer;line-height:1}
+.copy-btn:hover{background:var(--paper-3)}
+.copy-btn[data-copied]{color:#fff;background:var(--green-deep);border-color:var(--green-deep)}
+.sw__b{position:relative}
+.sw .copy-btn{margin-top:10px}
+.dl-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.dl-btn{font-family:var(--display);font-weight:700;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:6px;padding:5px 10px;text-decoration:none;line-height:1;border-bottom:1px solid var(--line)}
+.dl-btn:hover{color:#fff;background:var(--green-deep);border-color:var(--green-deep)}
+.min .dl-row,.min .dl-btn{justify-content:center}
+.hero__dl{display:inline-flex;align-items:center;gap:10px;margin-top:30px;font-family:var(--display);font-weight:800;font-size:13.5px;letter-spacing:.04em;color:#fff;background:var(--green-deep);border:0;border-radius:60px;padding:15px 28px;text-decoration:none}
+.hero__dl:hover{background:var(--green-bright);color:var(--charcoal)}
+.hero__dl small{display:block;font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:10px;opacity:.85;margin-top:2px}
+.dl-panel{background:var(--paper-2);border-radius:14px;padding:32px 34px;display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between}
+.dl-panel__files{display:flex;flex-wrap:wrap;gap:10px}
 
 @media(max-width:760px){
   .hero h1{font-size:46px}
@@ -153,12 +188,15 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
   h2{font-size:30px}
   .voice{grid-template-columns:1fr}
   .wrap{padding:0 20px}
-  .top__in{padding:14px 20px}
+  .top__in{padding:14px 20px;flex-wrap:wrap;row-gap:10px}
+  .top nav{gap:12px 16px}
   section{padding:52px 0}
 }
 </style>
 </head>
 <body>
+
+<a class="skip-link" href="#main">Skip to content</a>
 
 <header class="top">
   <div class="top__in">
@@ -166,12 +204,18 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
     <nav>
       <a href="brand-kit.json">brand-kit.json</a>
       <a href="brand-guidelines.md">Guidelines</a>
+      <a href="#downloads">Downloads</a>
       <a href="#colors">Colors</a>
-      <a href="#type">Type</a>
+      <a href="#type">Typography</a>
       <a href="#logos">Logos</a>
+      <a href="#imagery">Imagery</a>
+      <a href="#ministries">Ministries</a>
+      <a href="#voice">Voice</a>
     </nav>
   </div>
 </header>
+
+<main id="main">
 
 <div class="hero">
   <svg viewBox="0 0 1400 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
@@ -185,11 +229,15 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
     <div class="script">a single source of truth</div>
     <p>Everything an agent or a designer needs to produce work that looks and sounds like New Vision Fellowship — colors, typography, logos, frameworks, and voice. Structured for machines, readable by people.</p>
     <div class="hero__meta">
-      <span>Version <b>2026.08</b></span>
-      <span>Primary <b>#5f9a32</b></span>
+      <span>Version <b>2026.08.2</b></span>
+      <span>Primary <b>#569c33</b></span>
       <span>Typeface <b>Archivo</b></span>
       <span>Mission <b>Multiply God&rsquo;s glory on the earth</b></span>
     </div>
+    <a class="hero__dl" href="downloads/nvf-brand-kit.zip" download>
+      Download Complete Brand Kit
+      <small>.zip &middot; v2026.08.2</small>
+    </a>
   </div>
 </div>
 
@@ -199,7 +247,9 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
       <p class="kicker">Agent Instructions</p>
       <h3>Start with <code>brand-kit.json</code></h3>
       <p>It contains all structured brand data in a single machine-readable file. For tone, logo usage, and writing rules, read <code>brand-guidelines.md</code>. All asset paths in the JSON are relative to the repository root — resolve them against <code>base_url</code>.</p>
-      <p>When producing branded output, use <b>Brand Leaf Green (#5f9a32)</b> as the primary color on light backgrounds and <b>Green Bright (#74ca33)</b> on dark ones. Set headings in <b>Archivo</b> and body copy in <b>Source Serif 4</b>, and follow the <code>voice</code> object. Logos are SVGs in <code>logos/</code> — prefer the stacked lockup in most contexts.</p>
+      <p>When producing branded output, use <b>Brand Leaf Green (#569c33)</b> as the primary color on light backgrounds and <b>Green Bright (#74c933)</b> on dark ones — both are canonical values taken directly from the official logo artwork. Before pairing any color with text, check <code>color_system.accessibility.pairings</code>. Set headings in <b>Archivo</b> and body copy in <b>Source Serif 4</b>, and follow the <code>voice</code> object. Logos are SVGs in <code>logos/</code> — prefer the stacked lockup in most contexts.</p>
+      <p>Never invent service times, event details, staff names, contact information, or statistics — see <code>ai_content_rules</code>. Never redraw, recolor, or AI-recreate a logo — see <code>governance.logo_modification_policy</code>. For any generated imagery, see <code>ai_imagery</code>.</p>
+      <button class="copy-btn" type="button" id="copyAiInstructions" data-copy-target="ai-instructions">Copy AI Brand Instructions</button>
     </div>
   </div>
 </section>
@@ -244,6 +294,29 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
   </div>
 </section>
 
+<section id="downloads">
+  <div class="wrap">
+    <p class="kicker">Downloads</p>
+    <h2>Get the Whole Kit</h2>
+    <hr class="rule">
+    <p class="lede" style="margin-bottom:34px;">Every file in this kit is versioned together. The ZIP below is the fastest way to get everything at once; the individual files are here too if that&rsquo;s all you need.</p>
+    <div class="dl-panel">
+      <div>
+        <h3 style="margin-bottom:6px;">Complete Brand Kit</h3>
+        <p style="color:var(--ink-soft);font-size:15px;max-width:46ch;">JSON, schema, guidelines, CSS tokens, README, and every distributable NVF logo, ministry, and initiative asset. No fonts, no outside-partner logos.</p>
+      </div>
+      <a class="hero__dl" style="background:var(--green-deep);" href="downloads/nvf-brand-kit.zip" download>Download ZIP <small>v2026.08.2</small></a>
+    </div>
+    <div class="dl-panel__files" style="margin-top:20px;">
+      <a class="dl-btn" href="brand-kit.json" download>brand-kit.json</a>
+      <a class="dl-btn" href="brand-kit.schema.json" download>brand-kit.schema.json</a>
+      <a class="dl-btn" href="brand-guidelines.md" download>brand-guidelines.md</a>
+      <a class="dl-btn" href="brand-tokens.css" download>brand-tokens.css</a>
+      <button class="copy-btn" type="button" data-copy-target="css-block">Copy CSS Variables</button>
+    </div>
+  </div>
+</section>
+
 <section>
   <div class="wrap">
     <p class="kicker">brand-kit.json</p>
@@ -257,20 +330,24 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
         <tr><td><code>core_values</code></td><td>The five core values, in canonical order.</td></tr>
         <tr><td><code>frameworks.on_ramps</code></td><td>The four On-Ramps — Gather, Give, Group, Go — each with its color, summary, and URL. Includes the canonical presentation order.</td></tr>
         <tr><td><code>frameworks.clay_stages</code></td><td>Clay in the Potter&rsquo;s Hands — the five growth stages, each with its color, transition, and what it multiplies.</td></tr>
-        <tr><td><code>color_system.palette</code></td><td>Primary, secondary, and neutral colors with RGB, <code>text_on</code>, usage notes, and tonal variations.</td></tr>
+        <tr><td><code>color_system.palette</code></td><td>Primary, secondary, and neutral colors with RGB, <code>text_on</code>, usage notes, and tonal variations. Canonical greens are taken directly from the official logo artwork.</td></tr>
         <tr><td><code>color_system.accents</code></td><td>Four earthy accent colors — Moss, Teal, Ochre, Terracotta — for differentiating categories. Never extend beyond these.</td></tr>
+        <tr><td><code>color_system.accessibility</code></td><td>Verified WCAG AA contrast ratios for every meaningful text/background pairing, each classified normal, large-only, decorative-only, or prohibited.</td></tr>
         <tr><td><code>color_system.interactive</code></td><td>Brighter greens, an alert red, and lifted badge colors for on-screen product UI only &mdash; never print.</td></tr>
-        <tr><td><code>typography</code></td><td>Archivo, Source Serif 4, and Kaushan Script with weights, usage rules, a full size scale, and minimum sizes for print and projection.</td></tr>
-        <tr><td><code>logos.lockups</code></td><td>Stacked, horizontal, leaf mark, and cross mark — each with an <code>assets[]</code> array of variants and the background each is approved for.</td></tr>
+        <tr><td><code>typography</code></td><td>Archivo, Source Serif 4, and Kaushan Script with weights, usage rules, a full size scale, minimum sizes, and a font-source license note.</td></tr>
+        <tr><td><code>logos.lockups</code></td><td>Stacked, horizontal, leaf mark, and cross mark — each with an <code>assets[]</code> array carrying format, pixel dimensions, transparency, scalability, and approved background.</td></tr>
         <tr><td><code>logos.rules</code></td><td>Clearspace, variant selection, and prohibitions.</td></tr>
-        <tr><td><code>sub_brands</code></td><td>Seven ministries, each with audience, website, and logo assets.</td></tr>
+        <tr><td><code>sub_brands</code></td><td>Seven ministries, each with audience, website, and logo assets with full format metadata.</td></tr>
         <tr><td><code>initiatives</code></td><td>Life Groups and Love My Neighbor Day, with descriptions and assets.</td></tr>
         <tr><td><code>outside_partnerships</code></td><td>Denominational and adopted-initiative partners we did not design — text and links only, no local logos.</td></tr>
+        <tr><td><code>governance</code></td><td>Brand steward, review date, permitted-use policy, logo-modification policy, approval thresholds, and copyright.</td></tr>
         <tr><td><code>voice</code></td><td>Summary, a short writing statement, tone descriptors, ten dos, ten don&rsquo;ts, and example phrases.</td></tr>
+        <tr><td><code>ai_content_rules</code></td><td>What an AI agent must never invent, how to handle missing information, Scripture-translation rules, and human-review triggers.</td></tr>
         <tr><td><code>brand_elements</code></td><td>Specs for the kicker lockup, cards, contrast columns, image veil, road motif, and timeline.</td></tr>
         <tr><td><code>photography</code></td><td>Mood, lighting, motifs, composition, and subject tone for any photo, video still, or AI-generated image.</td></tr>
+        <tr><td><code>ai_imagery</code></td><td>Disclosure, consent, and never-do rules specific to AI-generated or materially AI-altered images.</td></tr>
         <tr><td><code>digital_signage</code></td><td>Typography, layout, background motifs, and motion rules for the roadside sign, Sunday slides, and select social posts.</td></tr>
-        <tr><td><code>print</code></td><td>Bleed, resolution, color mode, and trim sizes.</td></tr>
+        <tr><td><code>print</code></td><td>Body-copy point range. No fixed trim, bleed, resolution, or color mode &mdash; ask the printer for each job's requirements.</td></tr>
         <tr><td><code>rules</code></td><td>Top-level directives for agents consuming this kit.</td></tr>
       </tbody>
     </table>
@@ -285,43 +362,53 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
     <p class="lede" style="margin-bottom:34px;">Dark, dramatic moments plus light, readable content. Everything is warm — never pure black, never pure white, never a cold gray.</p>
 
     <p class="sub">Greens</p>
+    <p class="lede" style="font-size:15px;margin-bottom:16px;">Primary and Bright are canonical values taken directly from the official logo artwork.</p>
     <div class="sw-grid">
-      <div class="sw"><div class="sw__c" style="background:#5f9a32"></div><div class="sw__b"><div class="sw__n">Brand Leaf Green</div><div class="sw__h">#5f9a32</div><div class="sw__u">Primary &middot; light bg</div></div></div>
-      <div class="sw"><div class="sw__c" style="background:#42701f"></div><div class="sw__b"><div class="sw__n">Green Deep</div><div class="sw__h">#42701f</div><div class="sw__u">Small text &amp; links</div></div></div>
-      <div class="sw"><div class="sw__c" style="background:#74ca33"></div><div class="sw__b"><div class="sw__n">Green Bright</div><div class="sw__h">#74ca33</div><div class="sw__u">Dark bg only</div></div></div>
-      <div class="sw"><div class="sw__c" style="background:#4a5d2f"></div><div class="sw__b"><div class="sw__n">Olive</div><div class="sw__h">#4a5d2f</div><div class="sw__u">Muted support</div></div></div>
-      <div class="sw"><div class="sw__c" style="background:#37461f"></div><div class="sw__b"><div class="sw__n">Olive Deep</div><div class="sw__h">#37461f</div><div class="sw__u">Dark panels</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#569c33"></div><div class="sw__b"><div class="sw__n">Brand Leaf Green</div><div class="sw__h">#569c33</div><div class="sw__u">Primary &middot; light bg</div><button class="copy-btn" type="button" data-hex="#569c33">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#42701f"></div><div class="sw__b"><div class="sw__n">Green Deep</div><div class="sw__h">#42701f</div><div class="sw__u">Small text &amp; links</div><button class="copy-btn" type="button" data-hex="#42701f">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#74c933"></div><div class="sw__b"><div class="sw__n">Green Bright</div><div class="sw__h">#74c933</div><div class="sw__u">Dark bg only</div><button class="copy-btn" type="button" data-hex="#74c933">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#4a5d2f"></div><div class="sw__b"><div class="sw__n">Olive</div><div class="sw__h">#4a5d2f</div><div class="sw__u">Muted support</div><button class="copy-btn" type="button" data-hex="#4a5d2f">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#37461f"></div><div class="sw__b"><div class="sw__n">Olive Deep</div><div class="sw__h">#37461f</div><div class="sw__u">Dark panels</div><button class="copy-btn" type="button" data-hex="#37461f">Copy</button></div></div>
     </div>
 
     <p class="sub">Warm Neutrals</p>
     <div class="sw-grid">
-      <div class="sw"><div class="sw__c" style="background:#faf7f1;border-bottom:1px solid #e1dacc"></div><div class="sw__b"><div class="sw__n">Paper</div><div class="sw__h">#faf7f1</div><div class="sw__u">Primary light bg</div></div></div>
-      <div class="sw"><div class="sw__c" style="background:#f1ece2"></div><div class="sw__b"><div class="sw__n">Paper Card</div><div class="sw__h">#f1ece2</div><div class="sw__u">Cards &amp; wells</div></div></div>
-      <div class="sw"><div class="sw__c" style="background:#e9e2d5"></div><div class="sw__b"><div class="sw__n">Paper Deep</div><div class="sw__h">#e9e2d5</div><div class="sw__u">Third layer</div></div></div>
-      <div class="sw"><div class="sw__c" style="background:#24201d"></div><div class="sw__b"><div class="sw__n">Charcoal</div><div class="sw__h">#24201d</div><div class="sw__u">Dark surfaces</div></div></div>
-      <div class="sw"><div class="sw__c" style="background:#2d2823"></div><div class="sw__b"><div class="sw__n">Charcoal Lift</div><div class="sw__h">#2d2823</div><div class="sw__u">Raised on dark</div></div></div>
-      <div class="sw"><div class="sw__c" style="background:#221f1b"></div><div class="sw__b"><div class="sw__n">Ink</div><div class="sw__h">#221f1b</div><div class="sw__u">Body text</div></div></div>
-      <div class="sw"><div class="sw__c" style="background:#4a443d"></div><div class="sw__b"><div class="sw__n">Ink Soft</div><div class="sw__h">#4a443d</div><div class="sw__u">Secondary text</div></div></div>
-      <div class="sw"><div class="sw__c" style="background:#e1dacc"></div><div class="sw__b"><div class="sw__n">Hairline</div><div class="sw__h">#e1dacc</div><div class="sw__u">Dividers</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#faf7f1;border-bottom:1px solid #e1dacc"></div><div class="sw__b"><div class="sw__n">Paper</div><div class="sw__h">#faf7f1</div><div class="sw__u">Primary light bg</div><button class="copy-btn" type="button" data-hex="#faf7f1">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#f1ece2"></div><div class="sw__b"><div class="sw__n">Paper Card</div><div class="sw__h">#f1ece2</div><div class="sw__u">Cards &amp; wells</div><button class="copy-btn" type="button" data-hex="#f1ece2">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#e9e2d5"></div><div class="sw__b"><div class="sw__n">Paper Deep</div><div class="sw__h">#e9e2d5</div><div class="sw__u">Third layer</div><button class="copy-btn" type="button" data-hex="#e9e2d5">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#24201d"></div><div class="sw__b"><div class="sw__n">Charcoal</div><div class="sw__h">#24201d</div><div class="sw__u">Dark surfaces</div><button class="copy-btn" type="button" data-hex="#24201d">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#2d2823"></div><div class="sw__b"><div class="sw__n">Charcoal Lift</div><div class="sw__h">#2d2823</div><div class="sw__u">Raised on dark</div><button class="copy-btn" type="button" data-hex="#2d2823">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#221f1b"></div><div class="sw__b"><div class="sw__n">Ink</div><div class="sw__h">#221f1b</div><div class="sw__u">Body text</div><button class="copy-btn" type="button" data-hex="#221f1b">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#4a443d"></div><div class="sw__b"><div class="sw__n">Ink Soft</div><div class="sw__h">#4a443d</div><div class="sw__u">Secondary text</div><button class="copy-btn" type="button" data-hex="#4a443d">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#6d675b"></div><div class="sw__b"><div class="sw__n">Metadata</div><div class="sw__h">#6d675b</div><div class="sw__u">Small labels, light bg</div><button class="copy-btn" type="button" data-hex="#6d675b">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#e1dacc"></div><div class="sw__b"><div class="sw__n">Hairline</div><div class="sw__h">#e1dacc</div><div class="sw__u">Dividers only, not text</div><button class="copy-btn" type="button" data-hex="#e1dacc">Copy</button></div></div>
     </div>
 
     <p class="sub">Accent Colors</p>
+    <p class="lede" style="font-size:15px;margin-bottom:16px;">On a colored card, only large display text (like the name above) is guaranteed to pass WCAG AA in every color — smaller text sits in a light chip instead of directly on the fill. See <code>color_system.accessibility</code> for the full pairing table.</p>
     <div class="ramps">
-      <div class="ramp" style="background:#5d8a3e"><div class="ramp__n">Moss Green</div><div class="ramp__h">#5d8a3e</div><div class="ramp__s">Category accent.</div></div>
-      <div class="ramp" style="background:#b3852b"><div class="ramp__n">Ochre</div><div class="ramp__h">#b3852b</div><div class="ramp__s">Category accent.</div></div>
-      <div class="ramp" style="background:#347b6f"><div class="ramp__n">Muted Teal</div><div class="ramp__h">#347b6f</div><div class="ramp__s">Category accent.</div></div>
-      <div class="ramp" style="background:#ae5230"><div class="ramp__n">Terracotta</div><div class="ramp__h">#ae5230</div><div class="ramp__s">Category accent.</div></div>
+      <div class="ramp" style="background:#5d8a3e"><div class="ramp__n">Moss Green</div><div class="ramp__chip"><div class="ramp__h">#5d8a3e</div><div class="ramp__s">Large text and decorative use only &mdash; see Moss Deep for small text.</div></div><button class="copy-btn" type="button" data-hex="#5d8a3e" style="margin-top:12px;">Copy</button></div>
+      <div class="ramp" style="background:#b3852b"><div class="ramp__n">Ochre</div><div class="ramp__chip"><div class="ramp__h">#b3852b</div><div class="ramp__s">Pair with Ink, not white, when used as a background.</div></div><button class="copy-btn" type="button" data-hex="#b3852b" style="margin-top:12px;">Copy</button></div>
+      <div class="ramp" style="background:#347b6f"><div class="ramp__n">Muted Teal</div><div class="ramp__chip"><div class="ramp__h">#347b6f</div><div class="ramp__s">Passes WCAG AA with white text or as text on Paper.</div></div><button class="copy-btn" type="button" data-hex="#347b6f" style="margin-top:12px;">Copy</button></div>
+      <div class="ramp" style="background:#ae5230"><div class="ramp__n">Terracotta</div><div class="ramp__chip"><div class="ramp__h">#ae5230</div><div class="ramp__s">Passes WCAG AA with white text or as text on Paper.</div></div><button class="copy-btn" type="button" data-hex="#ae5230" style="margin-top:12px;">Copy</button></div>
+    </div>
+
+    <p class="sub" style="margin-top:24px;">Text-Safe Variants</p>
+    <p class="lede" style="font-size:15px;margin-bottom:16px;">Moss and Ochre themselves fail WCAG AA as small text on Paper. Use these darker tones instead — the same relationship Green Deep has to Brand Leaf Green.</p>
+    <div class="sw-grid">
+      <div class="sw"><div class="sw__c" style="background:#4a6e31"></div><div class="sw__b"><div class="sw__n">Moss Deep</div><div class="sw__h">#4a6e31</div><div class="sw__u">Small text on light bg</div><button class="copy-btn" type="button" data-hex="#4a6e31">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#7d5d1e"></div><div class="sw__b"><div class="sw__n">Ochre Deep</div><div class="sw__h">#7d5d1e</div><div class="sw__u">Small text on light bg</div><button class="copy-btn" type="button" data-hex="#7d5d1e">Copy</button></div></div>
     </div>
 
     <p class="sub">Digital / Interactive &mdash; UI Only</p>
     <p class="lede" style="font-size:16px;margin-bottom:20px;">Brighter, higher-chroma variants for on-screen product UI only &mdash; buttons, links, hover states, and badges on very dark app-like screens, as used on my.nvf.life. Never use these in print or static compositions.</p>
     <div class="sw-grid">
-      <div class="sw"><div class="sw__c" style="background:#1b1815"></div><div class="sw__b"><div class="sw__n">UI Charcoal</div><div class="sw__h">#1b1815</div><div class="sw__u">Dark app screens</div></div></div>
-      <div class="sw"><div class="sw__c" style="background:#93d86a"></div><div class="sw__b"><div class="sw__n">Interactive Green</div><div class="sw__h">#93d86a</div><div class="sw__u">Links</div></div></div>
-      <div class="sw"><div class="sw__c" style="background:#7fd142"></div><div class="sw__b"><div class="sw__n">Interactive Green, Bold</div><div class="sw__h">#7fd142</div><div class="sw__u">Primary buttons</div></div></div>
-      <div class="sw"><div class="sw__c" style="background:#a94442"></div><div class="sw__b"><div class="sw__n">Alert Red</div><div class="sw__h">#a94442</div><div class="sw__u">Errors only</div></div></div>
-      <div class="sw"><div class="sw__c" style="background:#45a394"></div><div class="sw__b"><div class="sw__n">Badge Teal</div><div class="sw__h">#45a394</div><div class="sw__u">Small badges</div></div></div>
-      <div class="sw"><div class="sw__c" style="background:#cf9f3f"></div><div class="sw__b"><div class="sw__n">Badge Ochre</div><div class="sw__h">#cf9f3f</div><div class="sw__u">Small badges</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#1b1815"></div><div class="sw__b"><div class="sw__n">UI Charcoal</div><div class="sw__h">#1b1815</div><div class="sw__u">Dark app screens</div><button class="copy-btn" type="button" data-hex="#1b1815">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#93d86a"></div><div class="sw__b"><div class="sw__n">Interactive Green</div><div class="sw__h">#93d86a</div><div class="sw__u">Links</div><button class="copy-btn" type="button" data-hex="#93d86a">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#7fd142"></div><div class="sw__b"><div class="sw__n">Interactive Green, Bold</div><div class="sw__h">#7fd142</div><div class="sw__u">Primary buttons</div><button class="copy-btn" type="button" data-hex="#7fd142">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#a94442"></div><div class="sw__b"><div class="sw__n">Alert Red</div><div class="sw__h">#a94442</div><div class="sw__u">Errors only</div><button class="copy-btn" type="button" data-hex="#a94442">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#45a394"></div><div class="sw__b"><div class="sw__n">Badge Teal</div><div class="sw__h">#45a394</div><div class="sw__u">Small badges</div><button class="copy-btn" type="button" data-hex="#45a394">Copy</button></div></div>
+      <div class="sw"><div class="sw__c" style="background:#cf9f3f"></div><div class="sw__b"><div class="sw__n">Badge Ochre</div><div class="sw__h">#cf9f3f</div><div class="sw__u">Small badges</div><button class="copy-btn" type="button" data-hex="#cf9f3f">Copy</button></div></div>
     </div>
   </div>
 </section>
@@ -346,6 +433,12 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
       <div class="d3">Let&rsquo;s get moving for the Master.</div>
       <div class="spec__s">One warm accent per composition &mdash; a greeting, a value name, a caption lead-in. Never body copy or critical information.</div>
     </div>
+    <div class="dl-row" style="margin-top:8px;">
+      <a class="dl-btn" href="https://fonts.google.com/specimen/Archivo" target="_blank" rel="noopener">Get Archivo</a>
+      <a class="dl-btn" href="https://fonts.google.com/specimen/Source+Serif+4" target="_blank" rel="noopener">Get Source Serif 4</a>
+      <a class="dl-btn" href="https://fonts.google.com/specimen/Kaushan+Script" target="_blank" rel="noopener">Get Kaushan Script</a>
+    </div>
+    <p style="font-size:13px;color:var(--metadata);margin-top:12px;max-width:60ch;">Fonts are provided by their respective sources. Follow the source&rsquo;s current terms when downloading or distributing them.</p>
   </div>
 </section>
 
@@ -356,26 +449,26 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
     <hr class="rule">
     <p class="lede" style="margin-bottom:34px;">The stacked lockup is our primary logo. Match the variant to the background &mdash; the charcoal wordmark will not read on dark, and the white wordmark will not read on paper. Prefer SVG everywhere.</p>
     <div class="logos">
-      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-stacked-color.svg" alt="Stacked lockup, black text with green leaf"></div><div class="lg__b"><div class="lg__n">Stacked &middot; Black Text</div><div class="lg__p">logos/nvf-stacked-color.svg &middot; light bg</div></div></div>
-      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-stacked-color-dark.svg" alt="Stacked lockup, white text with green leaf"></div><div class="lg__b"><div class="lg__n">Stacked &middot; White Text</div><div class="lg__p">logos/nvf-stacked-color-dark.svg &middot; dark bg</div></div></div>
-      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-stacked-white.svg" alt="Stacked lockup, all white"></div><div class="lg__b"><div class="lg__n">Stacked &middot; All White</div><div class="lg__p">logos/nvf-stacked-white.svg &middot; dark bg</div></div></div>
-      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-stacked-black.svg" alt="Stacked lockup, all black"></div><div class="lg__b"><div class="lg__n">Stacked &middot; All Black</div><div class="lg__p">logos/nvf-stacked-black.svg &middot; one-ink print</div></div></div>
-      <div class="lg"><div class="lg__v lg__v--l" style="padding:44px"><img src="logos/nvf-leaf-mark.png" alt="Leaf mark"></div><div class="lg__b"><div class="lg__n">Leaf Mark</div><div class="lg__p">logos/nvf-leaf-mark.png &middot; any bg</div></div></div>
-      <div class="lg"><div class="lg__v lg__v--l" style="padding:44px"><img src="logos/nvf-cross-mark.svg" alt="Cross mark"></div><div class="lg__b"><div class="lg__n">Cross Mark</div><div class="lg__p">logos/nvf-cross-mark.svg &middot; any bg</div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-stacked-color.svg" alt="Stacked lockup, black text with green leaf"></div><div class="lg__b"><div class="lg__n">Stacked &middot; Black Text</div><div class="lg__p">logos/nvf-stacked-color.svg &middot; light bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-stacked-color.svg" download>SVG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-stacked-color-dark.svg" alt="Stacked lockup, white text with green leaf"></div><div class="lg__b"><div class="lg__n">Stacked &middot; White Text</div><div class="lg__p">logos/nvf-stacked-color-dark.svg &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-stacked-color-dark.svg" download>SVG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-stacked-white.svg" alt="Stacked lockup, all white"></div><div class="lg__b"><div class="lg__n">Stacked &middot; All White</div><div class="lg__p">logos/nvf-stacked-white.svg &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-stacked-white.svg" download>SVG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-stacked-black.svg" alt="Stacked lockup, all black"></div><div class="lg__b"><div class="lg__n">Stacked &middot; All Black</div><div class="lg__p">logos/nvf-stacked-black.svg &middot; one-ink print</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-stacked-black.svg" download>SVG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l" style="padding:44px"><img src="logos/nvf-leaf-mark.png" alt="Leaf mark"></div><div class="lg__b"><div class="lg__n">Leaf Mark</div><div class="lg__p">logos/nvf-leaf-mark.png &middot; any bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-leaf-mark.png" download>PNG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l" style="padding:44px"><img src="logos/nvf-cross-mark.svg" alt="Cross mark"></div><div class="lg__b"><div class="lg__n">Cross Mark</div><div class="lg__p">logos/nvf-cross-mark.svg &middot; any bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-cross-mark.svg" download>SVG</a></div></div></div>
     </div>
 
     <p class="sub" style="margin-top:34px;">Horizontal Wordmark Variants</p>
     <p class="lede" style="margin-bottom:34px;font-size:16px;">All flat, no cross. Vary by whether the wordmark is single-color or keeps the green leaf accent.</p>
     <div class="logos">
-      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-horizontal-black.svg" alt="Horizontal wordmark, all black"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; All Black</div><div class="lg__p">logos/nvf-horizontal-black.svg &middot; light bg</div></div></div>
-      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-horizontal-color.png" alt="Horizontal wordmark, black text with green leaf"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; Black Text</div><div class="lg__p">logos/nvf-horizontal-color.png &middot; light bg</div></div></div>
-      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-horizontal-white.svg" alt="Horizontal wordmark, white text with green leaf"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; White Text</div><div class="lg__p">logos/nvf-horizontal-white.svg &middot; dark bg</div></div></div>
-      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-horizontal-all-white.svg" alt="Horizontal wordmark, all white"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; All White</div><div class="lg__p">logos/nvf-horizontal-all-white.svg &middot; dark bg</div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-horizontal-black.svg" alt="Horizontal wordmark, all black"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; All Black</div><div class="lg__p">logos/nvf-horizontal-black.svg &middot; light bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-horizontal-black.svg" download>SVG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-horizontal-color.png" alt="Horizontal wordmark, black text with green leaf"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; Black Text</div><div class="lg__p">logos/nvf-horizontal-color.png &middot; light bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-horizontal-color.png" download>PNG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-horizontal-white.svg" alt="Horizontal wordmark, white text with green leaf"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; White Text</div><div class="lg__p">logos/nvf-horizontal-white.svg &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-horizontal-white.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-horizontal-white-text.png" download>PNG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-horizontal-all-white.svg" alt="Horizontal wordmark, all white"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; All White</div><div class="lg__p">logos/nvf-horizontal-all-white.svg &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-horizontal-all-white.svg" download>SVG</a></div></div></div>
     </div>
   </div>
 </section>
 
-<section>
+<section id="imagery">
   <div class="wrap">
     <p class="kicker">Imagery</p>
     <h2>Photography &amp; Imagery</h2>
@@ -419,6 +512,10 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
         <p>Real, candid, diverse, and intergenerational people &mdash; never stocky, staged, or generic stock photography. Authentic worship, service, and hospitality. Reverent and joyful, never cheesy.</p>
       </div>
     </div>
+    <div class="agent" style="margin-top:24px;background:var(--charcoal);">
+      <p class="kicker" style="color:var(--green-bright);">AI-Generated Imagery</p>
+      <p style="color:#e7e1d6;font-size:15.5px;">Follow the direction above for any AI-generated image, too. Disclose AI use whenever a viewer might mistake it for a real New Vision person, event, or facility. Never depict a generated person as an actual member, guest, or staff member, and never use AI to redraw or recreate a logo. Full rules in <code>ai_imagery</code>.</p>
+    </div>
   </div>
 </section>
 
@@ -459,21 +556,21 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
   </div>
 </section>
 
-<section>
+<section id="ministries">
   <div class="wrap">
     <p class="kicker">Assets</p>
     <h2>Ministries &amp; Initiatives</h2>
     <hr class="rule">
     <div class="mins">
-      <div class="min"><div class="min__i"><img src="sub-brands/the-wheel.png" alt="The Wheel"></div><div class="min__n">The Wheel</div><div class="min__a">Birth&ndash;5th grade</div></div>
-      <div class="min"><div class="min__i"><img src="sub-brands/the-kiln.png" alt="The Kiln"></div><div class="min__n">The Kiln</div><div class="min__a">Grades 6&ndash;12</div></div>
-      <div class="min"><div class="min__i"><img src="sub-brands/the-mill.png" alt="The Mill"></div><div class="min__n">The Mill</div><div class="min__a">Through age 25</div></div>
-      <div class="min"><div class="min__i"><img src="sub-brands/titus-2-women.png" alt="Titus 2 Women"></div><div class="min__n">Titus 2 Women</div><div class="min__a">Women of all ages</div></div>
-      <div class="min"><div class="min__i"><img src="sub-brands/men-of-vision.png" alt="Men of Vision"></div><div class="min__n">Men of Vision</div><div class="min__a">Men of all ages</div></div>
-      <div class="min"><div class="min__i"><img src="sub-brands/vintage-visions.png" alt="Vintage Visions"></div><div class="min__n">Vintage Visions</div><div class="min__a">Senior-focused, all welcome</div></div>
-      <div class="min"><div class="min__i"><img src="sub-brands/melding-moms-color.png" alt="Melding Moms"></div><div class="min__n">Melding Moms</div><div class="min__a">Blended-family &amp; stepmom ministry</div></div>
-      <div class="min"><div class="min__i"><img src="initiatives/life-groups.png" alt="Life Groups"></div><div class="min__n">Life Groups</div><div class="min__a">Connect &middot; Reflect &middot; Protect</div></div>
-      <div class="min"><div class="min__i"><img src="initiatives/love-my-neighbor-day-dark.png" alt="Love My Neighbor Day"></div><div class="min__n">Love My Neighbor Day</div><div class="min__a">Annual outreach day camp</div></div>
+      <div class="min"><div class="min__i"><img src="sub-brands/the-wheel.png" alt="The Wheel"></div><div class="min__n">The Wheel</div><div class="min__a">Birth&ndash;5th grade</div><div class="dl-row"><a class="dl-btn" href="sub-brands/the-wheel.png" download>PNG</a></div></div>
+      <div class="min"><div class="min__i"><img src="sub-brands/the-kiln.png" alt="The Kiln"></div><div class="min__n">The Kiln</div><div class="min__a">Grades 6&ndash;12</div><div class="dl-row"><a class="dl-btn" href="sub-brands/the-kiln.png" download>PNG</a></div></div>
+      <div class="min"><div class="min__i"><img src="sub-brands/the-mill.png" alt="The Mill"></div><div class="min__n">The Mill</div><div class="min__a">Through age 25</div><div class="dl-row"><a class="dl-btn" href="sub-brands/the-mill.png" download>PNG</a></div></div>
+      <div class="min"><div class="min__i"><img src="sub-brands/titus-2-women.png" alt="Titus 2 Women"></div><div class="min__n">Titus 2 Women</div><div class="min__a">Women of all ages</div><div class="dl-row"><a class="dl-btn" href="sub-brands/titus-2-women.png" download>PNG</a></div></div>
+      <div class="min"><div class="min__i"><img src="sub-brands/men-of-vision.png" alt="Men of Vision"></div><div class="min__n">Men of Vision</div><div class="min__a">Men of all ages</div><div class="dl-row"><a class="dl-btn" href="sub-brands/men-of-vision.png" download>PNG</a></div></div>
+      <div class="min"><div class="min__i"><img src="sub-brands/vintage-visions.svg" alt="Vintage Visions"></div><div class="min__n">Vintage Visions</div><div class="min__a">Senior-focused, all welcome</div><div class="dl-row"><a class="dl-btn" href="sub-brands/vintage-visions.svg" download>SVG</a><a class="dl-btn" href="sub-brands/vintage-visions.png" download>PNG</a></div></div>
+      <div class="min"><div class="min__i"><img src="sub-brands/melding-moms-color.svg" alt="Melding Moms"></div><div class="min__n">Melding Moms</div><div class="min__a">Blended-family &amp; stepmom ministry</div><div class="dl-row"><a class="dl-btn" href="sub-brands/melding-moms-color.svg" download>SVG</a><a class="dl-btn" href="sub-brands/melding-moms-color.png" download>PNG</a></div></div>
+      <div class="min"><div class="min__i"><img src="initiatives/life-groups.png" alt="Life Groups"></div><div class="min__n">Life Groups</div><div class="min__a">Connect &middot; Reflect &middot; Protect</div><div class="dl-row"><a class="dl-btn" href="initiatives/life-groups.png" download>PNG</a></div></div>
+      <div class="min"><div class="min__i"><img src="initiatives/love-my-neighbor-day-dark.png" alt="Love My Neighbor Day"></div><div class="min__n">Love My Neighbor Day</div><div class="min__a">Annual outreach day camp</div><div class="dl-row"><a class="dl-btn" href="initiatives/love-my-neighbor-day-dark.png" download>PNG</a></div></div>
     </div>
   </div>
 </section>
@@ -524,7 +621,7 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
   </div>
 </section>
 
-<section>
+<section id="voice">
   <div class="wrap">
     <p class="kicker">Voice</p>
     <h2>How We Sound</h2>
@@ -562,13 +659,78 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
   </div>
 </section>
 
+</main>
+
 <footer>
   <div class="wrap">
     <img src="logos/nvf-horizontal-white.svg" alt="New Vision Fellowship">
     <p>1135 West Academy Street, Madison, NC &middot; <a href="mailto:info@nvf.life">info@nvf.life</a> &middot; 336.427.6264 &middot; <a href="https://nvf.life">nvf.life</a></p>
-    <p class="fmeta">Multiply God&rsquo;s glory on the earth &middot; Brand Kit v2026.08</p>
+    <p style="font-size:13.5px;color:#9c9384;max-width:64ch;margin-top:14px;">Brand steward: Pastor Jeremy Parker and/or the church&rsquo;s Ministry Leadership Team. Original New Vision Fellowship brand assets are &copy; 2026 New Vision Fellowship, provided for authorized NVF ministry use. See <code>governance</code> in brand-kit.json for the full permitted-use policy.</p>
+    <p class="fmeta">Multiply God&rsquo;s glory on the earth &middot; Brand Kit v2026.08.2 &middot; Reviewed 2026-08-24</p>
   </div>
 </footer>
+
+<div id="ai-instructions" hidden>New Vision Fellowship — AI Brand Instructions
+
+Source of truth: https://branding.nvf.life/brand-kit.json (structured data)
+Full guidance: https://branding.nvf.life/brand-guidelines.md (expanded rules and voice)
+
+Colors: Primary green #569c33 and Bright green #74c933 are canonical, taken from the official logo. Use #569c33 on light backgrounds, #74c933 on dark ones only. Never pure black or pure white as a background — use Charcoal #24201d and Paper #faf7f1. Before pairing any color with text, check color_system.accessibility.pairings in brand-kit.json — do not assume white text on green, Moss, or Ochre passes; often it does not.
+
+Typography: Archivo for all headings/labels/UI, Source Serif 4 for body copy, Kaushan Script for a single warm accent per piece only.
+
+Logos: Use files from logos/, sub-brands/, initiatives/ exactly as supplied. Never redraw, trace, recolor, distort, rotate, crop, or AI-recreate a logo. If a needed format doesn't exist, ask for it — don't approximate it.
+
+Voice: Warm, direct, unhurried, plainspoken. Invite, never pressure or hype. Be specific — real names, numbers, next steps. See the voice object for full do/don't lists.
+
+Missing information: Never invent service times, event details, staff names, contact info, statistics, testimonies, or ministry claims. Ask a clarifying question instead. If asked for an incomplete draft anyway, mark placeholders visibly (e.g. [NEEDS EVENT DATE]) and say the draft is not publication-ready.
+
+Scripture: Preferred translation is NASB 2020 unless the author specifies otherwise. Never blend translations or invent wording — use exact supplied or verified text, and always name the translation.
+
+Human review required before publishing: doctrinal claims, crisis communication, political/sensitive subjects, legal matters, pastoral-care communication, children's materials, claims about real people or events, and any AI imagery that could be mistaken for real.</div>
+
+<script>
+(function(){
+  function flashCopied(btn, defaultLabel){
+    var prev = btn.textContent;
+    btn.textContent = 'Copied!';
+    btn.setAttribute('data-copied','');
+    setTimeout(function(){ btn.textContent = prev; btn.removeAttribute('data-copied'); }, 1600);
+  }
+  function legacyCopy(text, btn){
+    var ta = document.createElement('textarea');
+    ta.value = text; ta.style.position='fixed'; ta.style.opacity='0';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); } catch(e) {}
+    document.body.removeChild(ta);
+    flashCopied(btn);
+  }
+  function copyText(text, btn){
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function(){ flashCopied(btn); }, function(){ legacyCopy(text, btn); });
+    } else {
+      legacyCopy(text, btn);
+    }
+  }
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('.copy-btn');
+    if (!btn) return;
+    if (btn.dataset.hex) {
+      copyText(btn.dataset.hex, btn);
+      return;
+    }
+    if (btn.dataset.copyTarget === 'css-block') {
+      fetch('brand-tokens.css').then(function(r){ return r.text(); }).then(function(css){ copyText(css, btn); });
+      return;
+    }
+    if (btn.dataset.copyTarget === 'ai-instructions') {
+      var el = document.getElementById('ai-instructions');
+      copyText(el.textContent.trim(), btn);
+      return;
+    }
+  });
+})();
+</script>
 
 </body>
 </html>

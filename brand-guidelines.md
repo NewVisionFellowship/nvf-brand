@@ -1,7 +1,12 @@
 # New Vision Fellowship — Brand Guidelines
 
 Human- and agent-readable guidelines. For structured data (hex values, font weights, asset
-paths), read [`brand-kit.json`](brand-kit.json) — it is the source of truth.
+paths), read [`brand-kit.json`](brand-kit.json) — it is the source of truth. Its structure is
+defined in [`brand-kit.schema.json`](brand-kit.schema.json) (JSON Schema, Draft 2020-12). Ready-
+to-use CSS custom properties matching the JSON's canonical values live in
+[`brand-tokens.css`](brand-tokens.css). A versioned ZIP of the complete kit — JSON, schema,
+this file, the CSS tokens, a README, and every distributable NVF logo, ministry, and initiative
+asset — is available from the brand kit site's Downloads section.
 
 ---
 
@@ -71,19 +76,21 @@ charcoal for covers, hero bands, and dividers. Keep the bulk of reading on warm 
 
 | Role | Name | Hex | Notes |
 | --- | --- | --- | --- |
-| Primary | Brand Leaf Green | `#5f9a32` | On light backgrounds |
+| Primary | Brand Leaf Green | `#569c33` | On light backgrounds. Canonical — taken directly from the official logo artwork |
 | Primary, deep | Green Deep | `#42701f` | Small text and links on light |
-| Primary, bright | Green Bright | `#74ca33` | **Dark backgrounds only** |
+| Primary, bright | Green Bright | `#74c933` | **Dark backgrounds only.** Canonical — taken directly from the official logo artwork |
 | Secondary | Olive | `#4a5d2f` | Muted supporting green |
 | Secondary, deep | Olive Deep | `#37461f` | Dark green panels, white text |
-| Dark surface | Charcoal | `#24201d` | Never pure black |
+| Dark surface | Charcoal | `#24201d` | Never pure black as a general background — see Rules below |
 | Dark surface, lifted | Charcoal Lift | `#2d2823` | Raised elements on dark |
 | Light surface | Paper | `#faf7f1` | Never pure white |
 | Light surface, card | Paper Card | `#f1ece2` | Cards and wells |
 | Light surface, deep | Paper Deep | `#e9e2d5` | Third layer |
 | Text | Ink | `#221f1b` | Body and headings on light |
 | Text, soft | Ink Soft | `#4a443d` | Secondary copy |
-| Line | Hairline | `#e1dacc` | Dividers on light |
+| Text, metadata | Metadata | `#6d675b` | Small uppercase labels and swatch metadata on light backgrounds — passes WCAG AA where Ink Soft reads too heavy |
+| Text, metadata on dark | Metadata Dark | `#9a8f81` | Small labels and metadata on Charcoal |
+| Line | Hairline | `#e1dacc` | Dividers on light — decorative only, never text |
 | Line, dark | Hairline Dark | `#433d36` | Dividers on dark |
 
 ### The four accent colors
@@ -93,12 +100,20 @@ need distinct colors — and **never grow to a fifth.** They happen to also colo
 on-ramps (Gather, Give, Group, Go), but outside that specific framework refer to them by color
 name.
 
-| Name | Hex |
-| --- | --- |
-| Moss Green | `#5d8a3e` |
-| Ochre | `#b3852b` |
-| Muted Teal | `#347b6f` |
-| Terracotta | `#ae5230` |
+| Name | Hex | As a background, pair with |
+| --- | --- | --- |
+| Moss Green | `#5d8a3e` | Neither white nor Ink passes WCAG AA for normal text — large text, or border/rule/icon use only |
+| Ochre | `#b3852b` | Ink (`#221f1b`) — white fails normal-text contrast on Ochre |
+| Muted Teal | `#347b6f` | White |
+| Terracotta | `#ae5230` | White |
+
+**Text-safe variants.** Moss and Ochre themselves fail WCAG AA as small text on Paper — use these
+darker tones instead, the same relationship Green Deep has to Brand Leaf Green:
+
+| Name | Hex | Use |
+| --- | --- | --- |
+| Moss Deep | `#4a6e31` | Small text, labels, and links on light backgrounds |
+| Ochre Deep | `#7d5d1e` | Small text, labels, and links on light backgrounds |
 
 ### Digital / interactive colors
 
@@ -119,11 +134,35 @@ screen.
 
 ### Rules
 
-1. Never pure black or pure white as a background.
+1. Never use pure black (`#000000`) as a general background color — use Charcoal instead. Pure
+   black is acceptable only when it's part of an approved, unmodified logo asset or a required
+   one-color reproduction. Never use pure white as a background — use Paper.
 2. Greens lead. Accents differentiate categories. Warm neutrals carry everything else.
 3. On dark backgrounds, swap Brand Leaf Green for Green Bright.
 4. One or two background colors per composition. No more.
 5. Never use the digital/interactive colors above in print or static compositions.
+6. Before pairing any text color with any background color, check the accessibility table below.
+   Never place normal-size text in a pairing that isn't marked safe for normal text.
+
+### Accessibility
+
+Every meaningful text/background pairing in this system has been checked against WCAG 2.1 AA
+(4.5:1 for normal text, 3:1 for large text — 18pt/24px+ regular or 14pt/18.66px+ bold). Small
+uppercase tracked labels count as normal text, not large text. The full, current table — with
+exact ratios — lives in `color_system.accessibility.pairings` in `brand-kit.json`; a few of the
+non-obvious ones:
+
+- **Brand Leaf Green as a background** passes with Ink (`#221f1b`) text, not white — white only
+  clears the large-text minimum.
+- **Ochre as a background** passes with Ink text, not white — the same white-text instinct that
+  works on Terracotta and Muted Teal does not work on Ochre.
+- **Moss as a background** doesn't clear normal-text contrast with *either* white or Ink text —
+  reserve it for large text, borders, rules, icons, or other decorative use, or set small text in
+  a light chip instead of directly on the fill.
+- **Green Bright never goes on Paper** — it fails even the large-text minimum there.
+
+If a pairing you need isn't in the table, calculate the WCAG contrast ratio — don't guess from how
+a color looks.
 
 ---
 
@@ -141,9 +180,18 @@ Three families, each with one job.
 > The On-Ramp cover lockup also uses **Tan St. Canard**, **Breathing**, and **DM Sans**, set in
 > Canva. Those are specific to that lockup and are not needed for general brand work.
 
+### Font sources
+
+- **Archivo** — [fonts.google.com/specimen/Archivo](https://fonts.google.com/specimen/Archivo)
+- **Source Serif 4** — [fonts.google.com/specimen/Source+Serif+4](https://fonts.google.com/specimen/Source+Serif+4)
+- **Kaushan Script** — [fonts.google.com/specimen/Kaushan+Script](https://fonts.google.com/specimen/Kaushan+Script)
+
+Fonts are provided by their respective sources. Follow the source's current terms when
+downloading or distributing them. This kit does not host font files.
+
 ### Minimum sizes
 
-- **Print:** body copy no smaller than 12pt.
+- **Print:** body copy between 12pt and 15pt.
 - **Projected:** minimum text height is `viewing distance ÷ 200`. At 40 feet that is 2.4 inches —
   on a 1920px canvas across a 130in screen, roughly 36px. Comfortable is `÷ 150`.
 - **QR codes on screen:** a code must be roughly 12–15× its width away to scan. At 40 feet that
@@ -266,6 +314,24 @@ hospitality. Reverent and joyful, never cheesy.
 > roads, growing and shaped things, and authentic community — with minimalist composition and room
 > for clean modern type.
 
+### AI-generated imagery
+
+Everything above applies to AI-generated images too — they follow the same mood, lighting,
+motifs, composition, and subject tone. On top of that:
+
+- Keep an internal record whenever final, published imagery is AI-generated or materially
+  AI-altered.
+- **Disclose AI use publicly** whenever a reasonable viewer might mistake the image for a real
+  New Vision person, event, facility, ministry activity, mission trip, testimony, or historical
+  moment.
+- Never portray a generated person as an actual member, guest, employee, missionary, ministry
+  recipient, or community resident.
+- Never create an identifiable depiction of a real person without that person's permission.
+- Never generate an image of a minor that implies it documents an actual New Vision activity.
+- Never use AI to recreate, repair, extend, or redesign a logo — see Logo modification, below.
+- Clearly label conceptual or illustrative AI imagery wherever the surrounding context could
+  otherwise mislead a viewer into thinking it's documentary.
+
 ---
 
 ## Digital signage & motion
@@ -328,17 +394,82 @@ read; transitions between slides are smooth, dark, and understated.
 
 ## Print specifications
 
-| Setting | Value |
-| --- | --- |
-| Trim | 8.5 × 11 in |
-| With bleed | 8.625 × 11.125 in |
-| Bleed | 0.125 in |
-| Resolution | 350 DPI |
-| Color mode | CMYK |
+There is no single fixed trim size, bleed, resolution, or color mode for New Vision print work —
+those depend on the specific piece and the specific printer. An earlier version of this file
+listed one project's numbers (Letter trim, 350 DPI, CMYK) as if they were universal; they were
+not.
 
-**Measure DPI at placed size, not native size.** A 1500px photo is plenty at 1 inch wide and
-badly short at 8 inches wide. Keep important content — faces, text, logos — at least 0.25in inside
-the trim line so nothing critical is lost to the cut.
+**Before sending a file to print, ask the printer for that job's trim size, bleed, minimum
+resolution, color mode, and accepted file format**, and design to those numbers. Body copy runs
+12–15pt regardless of the specific job.
+
+Whatever the resolution turns out to be, measure it at the image's *placed* size, not its native
+size — a 1500px photo is plenty at 1 inch wide and badly short at 8 inches wide. Keep important
+content — faces, text, logos — safely inside the trim line so nothing critical is lost to the cut.
+
+---
+
+## Brand governance
+
+**Brand steward:** Pastor Jeremy Parker and/or the church's Ministry Leadership Team.
+**Contact:** 336.427.6264. **Last reviewed:** 2026-08-24.
+
+**Permitted use.** New Vision Fellowship staff, volunteers, contractors, vendors, and ministry
+partners may use these assets for authorized New Vision Fellowship communications and ministry
+work. Permission is limited to the assigned NVF purpose and does not permit resale,
+redistribution as a standalone asset collection, unrelated commercial use, political endorsement,
+or an implication that NVF endorses an outside organization.
+
+**Logo modification.** Use official logo files exactly as supplied. Proportional resizing and
+normal placement (with clearspace, per Logo usage above) is fine. Never redraw, trace, regenerate,
+approximate, rearrange, distort, rotate, recolor, crop, add effects to, or AI-recreate a logo, and
+never type the church name in a font to imitate a missing logo. If a format you need doesn't exist
+in this kit, request it from the brand steward rather than recreating it.
+
+**No approval needed** for routine communications that use approved assets, verified facts, and
+established formats.
+
+**Approval required** from Pastor Jeremy Parker and/or the Ministry Leadership Team for:
+
+- Any proposed logo or lockup modification
+- Permanent signage
+- Merchandise made for sale
+- Paid advertising
+- New co-branded lockups or prominent partner-logo arrangements
+- Sensitive doctrinal, political, crisis, legal, or pastoral communications
+- AI imagery that could be mistaken for a real NVF person, service, event, facility, or
+  historical moment
+
+**Copyright.** Unless otherwise identified, original New Vision Fellowship brand assets are
+© 2026 New Vision Fellowship and are provided for authorized NVF ministry use. Third-party names,
+logos, fonts, and partner marks remain the property of their respective owners and are governed
+by their owners' terms.
+
+---
+
+## AI content rules
+
+On top of the Voice section above, an AI agent drafting New Vision copy should never invent:
+service times · event dates, times, prices, registration details, or locations · staff names or
+titles · contact information · statistics or attendance figures · testimonies or quotations ·
+ministry claims · facts about actual members, photographs, or events.
+
+**When information is missing,** ask a concise clarifying question rather than guessing. If the
+author explicitly asks for an incomplete draft anyway, use a visible placeholder such as
+`[NEEDS EVENT DATE]`, list every unresolved placeholder at the end, and never represent the draft
+as publication-ready.
+
+**Scripture.** Preferred translation is the **NASB 2020**, unless the author specifies otherwise
+— NASB95, CSB, and ESV are also acceptable in some cases when the author requests them. Never
+blend translations or invent wording: use the exact text supplied by the author, or text verified
+from an authorized source. If the wording can't be verified, ask for the passage text or cite the
+reference only, without quoting it. Always name the translation (usually NASB 2020) when quoting
+Scripture.
+
+**Human review is required before publishing:** doctrinal claims · crisis communication ·
+political or culturally sensitive subjects · allegations or legal matters · pastoral-care or
+safety communication · children's materials · claims about real people or events · potentially
+misleading AI imagery.
 
 ---
 

@@ -13,21 +13,30 @@ machine-readable file. For tone, logo usage, and writing rules, read **`brand-gu
 
 All asset paths in the JSON are relative to the repository root; resolve them against `base_url`.
 
-When producing branded output, use **Brand Leaf Green (`#5f9a32`)** as the primary color on light
-backgrounds and **Green Bright (`#74ca33`)** on dark ones, set headings in **Archivo** and body
-copy in **Source Serif 4**, and follow the voice object. Logos are SVGs in `logos/` — prefer the
-stacked lockup in most contexts.
+Never redraw, recolor, or AI-recreate a logo — see `governance.logo_modification_policy`. Never
+invent service times, event details, staff names, contact info, or statistics — see
+`ai_content_rules`. For AI-generated imagery, see `ai_imagery`.
+
+When producing branded output, use **Brand Leaf Green (`#569c33`)** as the primary color on light
+backgrounds and **Green Bright (`#74c933`)** on dark ones — both canonical values taken directly
+from the official logo artwork — set headings in **Archivo** and body copy in **Source Serif 4**,
+and follow the voice object. Before pairing any color with text, check
+`color_system.accessibility.pairings`. Logos are SVGs in `logos/` — prefer the stacked lockup in
+most contexts.
 
 ## Repository structure
 
 | Path | Description |
 | --- | --- |
-| `brand-kit.json` | Machine-readable brand data — colors, typography, logos, frameworks, voice. **Start here.** |
-| `brand-guidelines.md` | Human- and agent-readable guidelines — voice, color, logo usage, design patterns, print specs |
-| `index.html` | Visual reference page for all brand assets |
-| `logos/` | Primary logo lockups — stacked, horizontal wordmark, and leaf mark |
-| `sub-brands/` | Population-focused ministry logos — the Wheel, the Kiln, the Mill, Titus 2 Women, Men of Vision, Vintage Visions |
-| `initiatives/` | Initiative logos — Life Groups and Who's Your One |
+| `brand-kit.json` | Machine-readable brand data — colors, typography, logos, frameworks, voice, governance, AI rules. **Start here.** |
+| `brand-kit.schema.json` | JSON Schema (Draft 2020-12) describing the structure of `brand-kit.json` |
+| `brand-guidelines.md` | Human- and agent-readable guidelines — voice, color, accessibility, logo usage, design patterns, governance |
+| `brand-tokens.css` | CSS custom properties matching the JSON's canonical color, type, and radius values |
+| `index.html` | Visual reference page for all brand assets, with copy and download controls |
+| `downloads/nvf-brand-kit.zip` | The complete kit — JSON, schema, guidelines, CSS tokens, this README, and every distributable asset below |
+| `logos/` | Primary logo lockups — stacked, horizontal wordmark, leaf mark, and cross mark |
+| `sub-brands/` | Population-focused ministry logos — the Wheel, the Kiln, the Mill, Titus 2 Women, Men of Vision, Vintage Visions, Melding Moms |
+| `initiatives/` | Initiative logos — Life Groups and Love My Neighbor Day |
 
 ## Asset conventions
 

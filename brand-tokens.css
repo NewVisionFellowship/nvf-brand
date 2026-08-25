@@ -1,0 +1,59 @@
+/*
+  New Vision Fellowship — Brand Tokens
+  Generated from brand-kit.json — do not hand-edit values here without updating brand-kit.json to match.
+  https://branding.nvf.life/brand-kit.json
+*/
+
+:root {
+  /* Greens */
+  --nvf-green: #569c33;
+  --nvf-green-deep: #42701f;
+  --nvf-green-bright: #74c933;
+  --nvf-olive: #4a5d2f;
+  --nvf-olive-deep: #37461f;
+
+  /* Warm neutrals */
+  --nvf-paper: #faf7f1;
+  --nvf-paper-card: #f1ece2;
+  --nvf-paper-deep: #e9e2d5;
+  --nvf-charcoal: #24201d;
+  --nvf-charcoal-lift: #2d2823;
+
+  /* Text */
+  --nvf-ink: #221f1b;
+  --nvf-ink-soft: #4a443d;
+  --nvf-on-dark: #d9d2c6;
+  --nvf-metadata: #6d675b;
+  --nvf-metadata-on-dark: #9a8f81;
+
+  /* Lines */
+  --nvf-hairline: #e1dacc;
+  --nvf-hairline-dark: #433d36;
+
+  /* Accents */
+  --nvf-moss: #5d8a3e;
+  --nvf-moss-deep: #4a6e31;
+  --nvf-teal: #347b6f;
+  --nvf-ochre: #b3852b;
+  --nvf-ochre-deep: #7d5d1e;
+  --nvf-terracotta: #ae5230;
+
+  /* Digital / interactive — on-screen product UI only, never print or static compositions */
+  --nvf-ui-charcoal: #1b1815;
+  --nvf-ui-link: #93d86a;
+  --nvf-ui-button: #7fd142;
+  --nvf-ui-alert: #a94442;
+  --nvf-ui-badge-teal: #45a394;
+  --nvf-ui-badge-ochre: #cf9f3f;
+
+  /* Type */
+  --nvf-font-display: 'Archivo', system-ui, sans-serif;
+  --nvf-font-serif: 'Source Serif 4', Georgia, serif;
+  --nvf-font-script: 'Kaushan Script', cursive;
+
+  /* Radius */
+  --nvf-radius-sm: 6px;
+  --nvf-radius-md: 10px;
+  --nvf-radius-lg: 20px;
+  --nvf-radius-pill: 60px;
+}

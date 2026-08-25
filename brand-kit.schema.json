@@ -1,0 +1,372 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://branding.nvf.life/brand-kit.schema.json",
+  "title": "New Vision Fellowship Brand Kit",
+  "description": "Schema for brand-kit.json, the machine-readable source of truth for New Vision Fellowship's brand. Validates structure, required fields, and value formats (hex colors, URLs, dates) without being unnecessarily rigid — most objects allow additional descriptive fields beyond what is listed here.",
+  "type": "object",
+  "required": ["version", "base_url", "brand", "color_system", "typography", "logos", "voice", "rules"],
+
+  "$defs": {
+    "hexColor": {
+      "type": "string",
+      "pattern": "^#[0-9a-fA-F]{6}$"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "isoDate": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "assetFormat": {
+      "type": "string",
+      "enum": ["svg", "png", "jpg", "pdf"]
+    },
+    "idealBackground": {
+      "type": "string",
+      "enum": ["light", "dark", "any"]
+    },
+    "contrastClassification": {
+      "type": "string",
+      "enum": ["normal", "large_only", "decorative_only", "prohibited"]
+    },
+    "colorEntry": {
+      "type": "object",
+      "required": ["hex"],
+      "properties": {
+        "name": { "type": "string" },
+        "hex": { "$ref": "#/$defs/hexColor" },
+        "rgb": { "type": "string" },
+        "text_on": {
+          "anyOf": [{ "$ref": "#/$defs/hexColor" }, { "type": "null" }]
+        },
+        "usage": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "asset": {
+      "type": "object",
+      "required": ["path", "format"],
+      "properties": {
+        "variant": { "type": "string" },
+        "path": { "type": "string" },
+        "format": { "$ref": "#/$defs/assetFormat" },
+        "use_on": { "type": "string" },
+        "ideal_background": { "$ref": "#/$defs/idealBackground" },
+        "colors": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/hexColor" }
+        },
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 },
+        "transparent": { "type": "boolean" },
+        "scalable": { "type": "boolean" },
+        "max_print_width_in": { "type": "number", "exclusiveMinimum": 0 },
+        "available_formats": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/assetFormat" }
+        },
+        "note": { "type": "string" }
+      },
+      "additionalProperties": true,
+      "allOf": [
+        {
+          "if": { "properties": { "format": { "const": "svg" } } },
+          "then": {
+            "properties": {
+              "scalable": { "const": true }
+            }
+          }
+        }
+      ]
+    },
+    "sponsoredEntity": {
+      "type": "object",
+      "required": ["id", "name"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "audience": { "type": "string" },
+        "description": { "type": "string" },
+        "website": { "$ref": "#/$defs/url" },
+        "assets": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/asset" }
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+
+  "properties": {
+    "$schema": { "type": "string" },
+    "schema_version": { "type": "string" },
+    "version": { "type": "string" },
+    "base_url": { "$ref": "#/$defs/url" },
+    "updated": { "$ref": "#/$defs/isoDate" },
+
+    "brand": {
+      "type": "object",
+      "required": ["name", "mission"],
+      "properties": {
+        "name": { "type": "string" },
+        "short_name": { "type": "string" },
+        "abbreviation": { "type": "string" },
+        "website": { "$ref": "#/$defs/url" },
+        "mission": { "type": "string" },
+        "vision": { "type": "string" },
+        "founded": { "type": "integer" },
+        "denomination": { "type": "string" },
+        "affiliations": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+
+    "locations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": { "type": "string" },
+          "street": { "type": "string" },
+          "city": { "type": "string" },
+          "state": { "type": "string" },
+          "country": { "type": "string" },
+          "email": { "type": "string", "format": "email" },
+          "phone": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+
+    "core_values": { "type": "array", "items": { "type": "string" } },
+
+    "frameworks": { "type": "object", "additionalProperties": true },
+
+    "color_system": {
+      "type": "object",
+      "required": ["palette", "text", "accents", "rules"],
+      "properties": {
+        "palette": {
+          "type": "object",
+          "additionalProperties": {
+            "allOf": [{ "$ref": "#/$defs/colorEntry" }],
+            "properties": {
+              "tones": {
+                "type": "array",
+                "items": { "$ref": "#/$defs/colorEntry" }
+              }
+            }
+          }
+        },
+        "text": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/$defs/colorEntry" }
+        },
+        "lines": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/$defs/colorEntry" }
+        },
+        "accents": {
+          "type": "object",
+          "properties": {
+            "description": { "type": "string" }
+          },
+          "additionalProperties": {
+            "allOf": [{ "$ref": "#/$defs/colorEntry" }],
+            "properties": {
+              "tones": {
+                "type": "array",
+                "items": { "$ref": "#/$defs/colorEntry" }
+              }
+            }
+          }
+        },
+        "interactive": { "type": "object", "additionalProperties": true },
+        "accessibility": {
+          "type": "object",
+          "properties": {
+            "description": { "type": "string" },
+            "pairings": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["foreground", "background", "ratio", "classification"],
+                "properties": {
+                  "foreground": { "$ref": "#/$defs/hexColor" },
+                  "background": { "$ref": "#/$defs/hexColor" },
+                  "ratio": { "type": "number", "minimum": 1, "maximum": 21 },
+                  "classification": { "$ref": "#/$defs/contrastClassification" },
+                  "note": { "type": "string" }
+                },
+                "additionalProperties": false
+              }
+            }
+          },
+          "additionalProperties": true
+        },
+        "rules": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+
+    "typography": { "type": "object", "additionalProperties": true },
+    "radius": { "type": "object", "additionalProperties": true },
+
+    "logos": {
+      "type": "object",
+      "required": ["lockups"],
+      "properties": {
+        "lockups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["type", "name", "assets"],
+            "properties": {
+              "type": { "type": "string" },
+              "name": { "type": "string" },
+              "description": { "type": "string" },
+              "primary": { "type": "boolean" },
+              "assets": {
+                "type": "array",
+                "items": { "$ref": "#/$defs/asset" }
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "rules": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+
+    "sub_brands": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/sponsoredEntity" }
+    },
+    "initiatives": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/sponsoredEntity" }
+    },
+
+    "outside_partnerships": {
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "name"],
+            "properties": {
+              "id": { "type": "string" },
+              "name": { "type": "string" },
+              "from": { "type": "string" },
+              "description": { "type": "string" },
+              "website": { "$ref": "#/$defs/url" },
+              "resources": { "$ref": "#/$defs/url" }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+
+    "governance": {
+      "type": "object",
+      "properties": {
+        "brand_steward": { "type": "string" },
+        "contact_phone": { "type": "string" },
+        "last_reviewed": { "$ref": "#/$defs/isoDate" },
+        "permitted_use_policy": { "type": "string" },
+        "logo_modification_policy": {
+          "type": "object",
+          "properties": {
+            "allowed": { "type": "array", "items": { "type": "string" } },
+            "never": { "type": "array", "items": { "type": "string" } },
+            "missing_formats": { "type": "string" }
+          },
+          "additionalProperties": true
+        },
+        "approval_not_required_for": { "type": "string" },
+        "approval_required_for": { "type": "array", "items": { "type": "string" } },
+        "approval_contact": { "type": "string" },
+        "copyright": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+
+    "voice": {
+      "type": "object",
+      "required": ["summary", "tone", "do", "dont"],
+      "properties": {
+        "summary": { "type": "string" },
+        "statement": { "type": "string" },
+        "tone": { "type": "array", "items": { "type": "string" } },
+        "do": { "type": "array", "items": { "type": "string" } },
+        "dont": { "type": "array", "items": { "type": "string" } },
+        "example_phrases": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+
+    "ai_content_rules": {
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" },
+        "never_invent": { "type": "array", "items": { "type": "string" } },
+        "when_info_is_missing": { "type": "string" },
+        "scripture": {
+          "type": "object",
+          "properties": {
+            "preferred_translation": { "type": "string" },
+            "never_blend_translations": { "type": "boolean" },
+            "never_invent_wording": { "type": "string" },
+            "always_identify_translation": { "type": "string" }
+          },
+          "additionalProperties": true
+        },
+        "human_review_required_for": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+
+    "ai_imagery": {
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" },
+        "internal_record": { "type": "string" },
+        "public_disclosure": { "type": "string" },
+        "never": { "type": "array", "items": { "type": "string" } },
+        "style_direction": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+
+    "brand_elements": { "type": "object", "additionalProperties": true },
+    "photography": { "type": "object", "additionalProperties": true },
+    "digital_signage": { "type": "object", "additionalProperties": true },
+
+    "usage": {
+      "type": "object",
+      "properties": {
+        "do": { "type": "array", "items": { "type": "string" } },
+        "dont": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+
+    "print": { "type": "object", "additionalProperties": true },
+
+    "rules": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    }
+  },
+
+  "additionalProperties": true
+}
