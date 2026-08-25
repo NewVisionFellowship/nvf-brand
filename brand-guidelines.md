@@ -74,11 +74,19 @@ recognize us in it?*
 **The governing principle: dark, dramatic moments plus light, readable content.** Use deep
 charcoal for covers, hero bands, and dividers. Keep the bulk of reading on warm off-white paper.
 
+**Application palette vs. logo colors.** The greens below are the canonical
+**application-palette** colors — used for layouts, backgrounds, accents, CSS tokens, website
+styling, and newly created branded materials. Official logo artwork carries its own,
+separately-set green(s) baked into each file (see each asset's `colors` field in
+`brand-kit.json`). The two are deliberately allowed to differ slightly — logo colors are
+immutable, asset-specific values read from the artwork itself, and must **never** be edited to
+match this palette. Always use logo files exactly as supplied.
+
 | Role | Name | Hex | Notes |
 | --- | --- | --- | --- |
-| Primary | Brand Leaf Green | `#569c33` | On light backgrounds. Canonical — taken directly from the official logo artwork |
+| Primary | Brand Leaf Green | `#5f9a32` | On light backgrounds. Canonical application-palette green |
 | Primary, deep | Green Deep | `#42701f` | Small text and links on light |
-| Primary, bright | Green Bright | `#74c933` | **Dark backgrounds only.** Canonical — taken directly from the official logo artwork |
+| Primary, bright | Green Bright | `#74ca33` | **Dark backgrounds only.** Canonical application-palette green |
 | Secondary | Olive | `#4a5d2f` | Muted supporting green |
 | Secondary, deep | Olive Deep | `#37461f` | Dark green panels, white text |
 | Dark surface | Charcoal | `#24201d` | Never pure black as a general background — see Rules below |
@@ -211,7 +219,10 @@ The **stacked lockup** (NEW VISION over FELLOWSHIP with the leaf mark) is our pr
   and photographic backgrounds. Placing either on the wrong background makes the wordmark disappear.
 - Single-color options: `all_white` (for dark) and `all_black` (for one-ink print).
 - Maintain clearspace equal to the height of the leaf mark on all sides.
-- Never stretch, recolor, rotate, or add effects.
+- Never stretch, recolor, rotate, or add effects. The green(s) baked into each logo file are
+  immutable, asset-specific colors — they do not need to match, and must never be edited to
+  match, the application palette in the Color section above. Always use logo files exactly as
+  supplied.
 - Never place the logo on a busy photo without a darkening veil beneath it.
 - The **leaf mark** and **cross mark** alone work as a favicon, avatar, or small decorative accent
   — never as a substitute for the full logo in a primary placement.

@@ -17,12 +17,15 @@ Never redraw, recolor, or AI-recreate a logo — see `governance.logo_modificati
 invent service times, event details, staff names, contact info, or statistics — see
 `ai_content_rules`. For AI-generated imagery, see `ai_imagery`.
 
-When producing branded output, use **Brand Leaf Green (`#569c33`)** as the primary color on light
-backgrounds and **Green Bright (`#74c933`)** on dark ones — both canonical values taken directly
-from the official logo artwork — set headings in **Archivo** and body copy in **Source Serif 4**,
-and follow the voice object. Before pairing any color with text, check
-`color_system.accessibility.pairings`. Logos are SVGs in `logos/` — prefer the stacked lockup in
-most contexts.
+When producing branded output, use **Brand Leaf Green (`#5f9a32`)** as the primary color on light
+backgrounds and **Green Bright (`#74ca33`)** on dark ones — these are the canonical
+application-palette colors for layouts, backgrounds, accents, CSS tokens, website styling, and new
+materials. Official logo artwork carries its own, separately-set green(s) baked into each file
+(see each asset's `colors` field) — those do not need to match this palette and must never be
+edited to match it; always use logo files exactly as supplied. Set headings in **Archivo** and
+body copy in **Source Serif 4**, and follow the voice object. Before pairing any color with text,
+check `color_system.accessibility.pairings`. Logos are SVGs in `logos/` — prefer the stacked
+lockup in most contexts.
 
 ## Repository structure
 

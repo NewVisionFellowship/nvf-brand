@@ -2,13 +2,17 @@
   New Vision Fellowship — Brand Tokens
   Generated from brand-kit.json — do not hand-edit values here without updating brand-kit.json to match.
   https://branding.nvf.life/brand-kit.json
+
+  These are the application-palette colors (layouts, backgrounds, accents, website styling, new
+  materials). Official logo artwork carries its own, separately-set green(s) baked into each file
+  — those are not represented here and must never be edited to match this palette.
 */
 
 :root {
   /* Greens */
-  --nvf-green: #569c33;
+  --nvf-green: #5f9a32;
   --nvf-green-deep: #42701f;
-  --nvf-green-bright: #74c933;
+  --nvf-green-bright: #74ca33;
   --nvf-olive: #4a5d2f;
   --nvf-olive-deep: #37461f;
 

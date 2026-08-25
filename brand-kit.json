@@ -1,7 +1,7 @@
 {
   "$schema": "https://branding.nvf.life/brand-kit.schema.json",
   "schema_version": "2.0.0",
-  "version": "2026.08.2",
+  "version": "2026.08.3",
   "base_url": "https://branding.nvf.life",
   "updated": "2026-08-24",
 
@@ -68,13 +68,13 @@
     "palette": {
       "primary": {
         "name": "Brand Leaf Green",
-        "hex": "#569c33",
-        "rgb": "86, 156, 51",
+        "hex": "#5f9a32",
+        "rgb": "95, 154, 50",
         "text_on": "#221f1b",
-        "usage": "Primary brand green on light backgrounds. Canonical value taken directly from the official logo artwork (logos.lockups colors). Rules, large kickers, accents, buttons, icon fills. As a text color it only reaches WCAG AA at large-text sizes (see color_system.accessibility) — for small text and labels use Green Deep instead, and when this green is a solid background behind text, set the text in Ink (#221f1b), not white.",
+        "usage": "Primary brand green on light backgrounds. This is the canonical application-palette green — used for layouts, backgrounds, accents, CSS tokens, website styling, and newly created branded materials. It is deliberately distinct from the green(s) embedded in official logo artwork (see logos.lockups colors and the note below) — the two do not need to match exactly. Rules, large kickers, accents, buttons, icon fills. As a text color it only reaches WCAG AA at large-text sizes (see color_system.accessibility) — for small text and labels use Green Deep instead, and when this green is a solid background behind text, set the text in Ink (#221f1b), not white.",
         "tones": [
-          { "name": "Green Deep",   "hex": "#42701f", "usage": "Small text, links, and labels on light backgrounds where #569c33 lacks contrast. Passes WCAG AA for normal text on Paper." },
-          { "name": "Green Bright", "hex": "#74c933", "usage": "Accent green for DARK backgrounds only. Canonical value taken directly from the official logo artwork. Never on paper — fails contrast badly at any text size on light backgrounds." }
+          { "name": "Green Deep",   "hex": "#42701f", "usage": "Small text, links, and labels on light backgrounds where #5f9a32 lacks contrast. Passes WCAG AA for normal text on Paper." },
+          { "name": "Green Bright", "hex": "#74ca33", "usage": "Accent green for DARK backgrounds only. Canonical application-palette green for dark backgrounds — see the note above about logo artwork carrying its own, separate green. Never on paper — fails contrast badly at any text size on light backgrounds." }
         ]
       },
       "secondary": {
@@ -144,11 +144,11 @@
     "accessibility": {
       "description": "Verified WCAG 2.1 AA contrast ratios (4.5:1 normal text, 3:1 large text — 18pt/24px+ regular or 14pt/18.66px+ bold) for every meaningful text/background pairing in this system. 'normal' means safe for body copy, small labels, and small uppercase tracked text. 'large_only' means safe only at large-text sizes — do not use for body copy, captions, or small labels. 'decorative_only' means the pairing does not clear even the large-text minimum and must not carry any text — border, rule, icon, or fill use only. Standard is WCAG 2.1 Level AA.",
       "pairings": [
-        { "foreground": "#221f1b", "background": "#569c33", "ratio": 4.84, "classification": "normal", "note": "Ink text on Primary Green background." },
-        { "foreground": "#ffffff", "background": "#569c33", "ratio": 3.39, "classification": "large_only", "note": "White text on Primary Green background — headings/kickers at large sizes only." },
+        { "foreground": "#221f1b", "background": "#5f9a32", "ratio": 4.81, "classification": "normal", "note": "Ink text on Primary Green background." },
+        { "foreground": "#ffffff", "background": "#5f9a32", "ratio": 3.41, "classification": "large_only", "note": "White text on Primary Green background — headings/kickers at large sizes only." },
         { "foreground": "#42701f", "background": "#faf7f1", "ratio": 5.50, "classification": "normal", "note": "Green Deep as text on Paper." },
-        { "foreground": "#74c933", "background": "#24201d", "ratio": 7.81, "classification": "normal", "note": "Green Bright as text on Charcoal." },
-        { "foreground": "#74c933", "background": "#faf7f1", "ratio": 1.94, "classification": "prohibited", "note": "Green Bright on Paper. Fails even the large-text minimum — never use on light backgrounds, per color_system.rules." },
+        { "foreground": "#74ca33", "background": "#24201d", "ratio": 7.88, "classification": "normal", "note": "Green Bright as text on Charcoal." },
+        { "foreground": "#74ca33", "background": "#faf7f1", "ratio": 1.92, "classification": "prohibited", "note": "Green Bright on Paper. Fails even the large-text minimum — never use on light backgrounds, per color_system.rules." },
         { "foreground": "#ffffff", "background": "#4a5d2f", "ratio": 7.25, "classification": "normal", "note": "White text on Olive background." },
         { "foreground": "#ffffff", "background": "#37461f", "ratio": 10.20, "classification": "normal", "note": "White text on Olive Deep background." },
         { "foreground": "#faf7f1", "background": "#24201d", "ratio": 15.11, "classification": "normal", "note": "Paper text on Charcoal background." },
@@ -178,7 +178,7 @@
     "rules": [
       "Never use pure black (#000000) as a general background color. Use Charcoal instead. Pure black is acceptable only when it is part of an approved, unmodified logo asset or a required one-color reproduction.",
       "Never use pure white (#ffffff) as a background. Use Paper instead.",
-      "On light backgrounds use Brand Leaf Green (#569c33) or Green Deep (#42701f). On dark backgrounds switch to Green Bright (#74c933).",
+      "On light backgrounds use Brand Leaf Green (#5f9a32) or Green Deep (#42701f). On dark backgrounds switch to Green Bright (#74ca33). These are the canonical application-palette greens — distinct from, and not required to match, whatever green is embedded in a given piece of official logo artwork.",
       "Greens lead. The four accent colors differentiate categories. Warm neutrals carry everything else.",
       "Limit any single composition to one or two background colors.",
       "Avoid neon colors and heavy saturated primaries — keep every hue warm and slightly desaturated.",
@@ -290,6 +290,7 @@
       "On light backgrounds use the color variant (charcoal wordmark). On dark or photographic backgrounds use color_on_dark or white — the charcoal wordmark will not read.",
       "Maintain clearspace equal to the height of the leaf mark on all sides.",
       "Never stretch, recolor, rotate, add effects to, or place the logo on a busy background without a darkening veil.",
+      "The green(s) embedded in each logo asset (see each asset's colors field) are immutable, asset-specific logo colors, not the application palette. They do not need to match color_system.palette.primary or Green Bright exactly, and must never be edited to match them. Official logo artwork must always be used exactly as supplied.",
       "The stacked lockup is the default choice. Reach for the horizontal wordmark only when vertical space is constrained.",
       "The horizontal wordmark has an aspect ratio of roughly 22:1. In constrained layouts, size it by width and never let it crowd adjacent navigation or type.",
       "For the horizontal wordmark: all_black and all_white are single-color, no green — use where the design needs one flat ink. white_text and black_text both keep the green leaf mark, differing only in the wordmark color for light vs. dark backgrounds."
@@ -548,7 +549,7 @@
   "rules": [
     "Start with this file. It is the single machine-readable source of truth for New Vision Fellowship's brand. See $schema / schema_version for the file's structure, and governance.brand_steward for who to ask when something here is unclear or missing.",
     "Resolve every asset path against base_url. All paths are relative to the repository root.",
-    "Use Brand Leaf Green (#569c33) as the primary color on light backgrounds and Green Bright (#74c933) on dark ones — both are canonical values taken directly from the official logo artwork. Before pairing any color with text, check color_system.accessibility.pairings; do not assume white-on-brand-green or white-on-Ochre is safe for normal-size text — it is not.",
+    "Use Brand Leaf Green (#5f9a32) as the primary color on light backgrounds and Green Bright (#74ca33) on dark ones — these are the canonical application-palette colors for layouts, backgrounds, accents, CSS tokens, website styling, and new branded materials. Official logo artwork carries its own, separately-set green(s) (see each asset's colors field) that do not need to match this palette and must never be edited to match it — use logo files exactly as supplied. Before pairing any color with text, check color_system.accessibility.pairings; do not assume white-on-brand-green or white-on-Ochre is safe for normal-size text — it is not.",
     "Set all headings in Archivo and all body copy in Source Serif 4. Use Kaushan Script only for a single warm accent per composition.",
     "Prefer the stacked logo lockup. Match the variant to the background using each asset's use_on field: color on light, color_on_dark or white on dark.",
     "Follow the voice object for all copy. Read brand-guidelines.md for the full tone and usage rules.",
