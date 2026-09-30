@@ -230,14 +230,14 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
     <div class="script">a single source of truth</div>
     <p>Everything an agent or a designer needs to produce work that looks and sounds like New Vision Fellowship — colors, typography, logos, frameworks, and voice. Structured for machines, readable by people.</p>
     <div class="hero__meta">
-      <span>Version <b>2026.09.4</b></span>
+      <span>Version <b>2026.09.5</b></span>
       <span>Primary <b>#5f9a32</b></span>
       <span>Typeface <b>Archivo</b></span>
       <span>Mission <b>Multiply God&rsquo;s glory on the earth</b></span>
     </div>
-    <a class="hero__dl" href="downloads/nvf-brand-kit-2026.09.4.zip" download>
+    <a class="hero__dl" href="downloads/nvf-brand-kit-2026.09.5.zip" download>
       Download Complete Brand Kit
-      <small>.zip &middot; v2026.09.4</small>
+      <small>.zip &middot; v2026.09.5</small>
     </a>
   </div>
 </div>
@@ -248,8 +248,8 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
       <p class="kicker">Agent Instructions</p>
       <h3>Start with <code>brand-kit.json</code></h3>
       <p>It contains all structured brand data in a single machine-readable file. For tone, logo usage, and writing rules, read <code>brand-guidelines.md</code>. All asset paths in the JSON are relative to the repository root — resolve them against <code>base_url</code>.</p>
-      <p>When producing branded output, use <b>Brand Leaf Green (#5f9a32)</b> as the primary color on light backgrounds and <b>Green Bright (#74ca33)</b> on dark ones — these are the canonical application-palette greens for layouts, backgrounds, accents, and new materials. Official logo artwork carries its own, separately-set green(s) baked into each file (see each asset's <code>colors</code> field) — those do not need to match this palette and must never be edited to match it. Before pairing any color with text, check <code>color_system.accessibility.pairings</code>. Set headings in <b>Archivo</b> and body copy in <b>Source Serif 4</b>, and follow the <code>voice</code> object. Logos are SVGs in <code>logos/</code> — prefer the stacked lockup in most contexts.</p>
-      <p>Never invent service times, event details, staff names, contact information, or statistics — see <code>ai_content_rules</code>. Never redraw, recolor, or AI-recreate a logo — see <code>governance.logo_modification_policy</code>. For any generated imagery, see <code>ai_imagery</code>.</p>
+      <p>When producing branded output, use <b>Brand Leaf Green (#5f9a32)</b> as the primary color on light backgrounds and <b>Green Bright (#74ca33)</b> on dark ones — these are the canonical application-palette greens for layouts, backgrounds, accents, and new materials. Official logo artwork carries its own, separately-set green(s) baked into each file (see each asset's <code>colors</code> field) — those do not need to match this palette. Before pairing any color with text, check <code>color_system.accessibility.pairings</code>. Set headings in <b>Archivo</b> and body copy in <b>Source Serif 4</b>, and follow the <code>voice</code> object. Logos are SVGs in <code>logos/</code> — prefer the stacked lockup in most contexts.</p>
+      <p>Never invent service times, event details, staff names, contact information, or statistics — see <code>ai_content_rules</code>. Never redraw, trace, or AI-recreate a logo's shape — recoloring within reason is allowed, see <code>governance.logo_modification_policy.color_policy</code>. For any generated imagery, see <code>ai_imagery</code>.</p>
       <button class="copy-btn" type="button" id="copyAiInstructions" data-copy-target="ai-instructions">Copy AI Brand Instructions</button>
     </div>
   </div>
@@ -306,7 +306,7 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
         <h3 style="margin-bottom:6px;">Complete Brand Kit</h3>
         <p style="color:var(--ink-soft);font-size:15px;max-width:46ch;">JSON, schema, guidelines, CSS tokens, README, and every distributable NVF logo, ministry, and initiative asset. No fonts, no outside-partner logos.</p>
       </div>
-      <a class="hero__dl" style="background:var(--green-deep);" href="downloads/nvf-brand-kit-2026.09.4.zip" download>Download ZIP <small>v2026.09.4</small></a>
+      <a class="hero__dl" style="background:var(--green-deep);" href="downloads/nvf-brand-kit-2026.09.5.zip" download>Download ZIP <small>v2026.09.5</small></a>
     </div>
     <p style="font-size:13px;color:var(--metadata);margin-top:14px;">Stable link for the current version, useful for bookmarks and integrations: <a href="downloads/nvf-brand-kit.zip">downloads/nvf-brand-kit.zip</a>.</p>
     <div class="dl-panel__files" style="margin-top:20px;">
@@ -677,7 +677,7 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
     <img src="logos/nvf-horizontal-white.svg" alt="New Vision Fellowship">
     <p>1135 West Academy Street, Madison, NC &middot; <a href="mailto:info@nvf.life">info@nvf.life</a> &middot; 336.427.6264 &middot; <a href="https://nvf.life">nvf.life</a></p>
     <p style="font-size:13.5px;color:#9c9384;max-width:64ch;margin-top:14px;">Brand steward: Pastor Jeremy Parker and/or the church&rsquo;s Ministry Leadership Team. Original New Vision Fellowship brand assets are &copy; 2026 New Vision Fellowship, provided for authorized NVF ministry use. See <code>governance</code> in brand-kit.json for the full permitted-use policy.</p>
-    <p class="fmeta">Multiply God&rsquo;s glory on the earth &middot; Brand Kit v2026.09.4 &middot; Reviewed 2026-09-30</p>
+    <p class="fmeta">Multiply God&rsquo;s glory on the earth &middot; Brand Kit v2026.09.5 &middot; Reviewed 2026-09-30</p>
   </div>
 </footer>
 
@@ -688,11 +688,11 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
 Source of truth: https://branding.nvf.life/brand-kit.json (structured data)
 Full guidance: https://branding.nvf.life/brand-guidelines.md (expanded rules and voice)
 
-Colors: Primary green #5f9a32 and Bright green #74ca33 are the canonical application-palette colors — use #5f9a32 on light backgrounds, #74ca33 on dark ones only, for layouts, backgrounds, accents, CSS, and new materials. Official logo artwork carries its own, separately-set green(s) baked into each file — those do not need to match this palette and must never be edited to match it; always use logo files exactly as supplied. Never use pure black or pure white as general background colors. Use Charcoal #24201d and Paper #faf7f1 instead. Pure black or white may remain where it is part of approved, unmodified logo artwork or required one-color reproduction. Before pairing any color with text, check color_system.accessibility.pairings in brand-kit.json — do not assume white text on green, Moss, or Ochre passes; often it does not.
+Colors: Primary green #5f9a32 and Bright green #74ca33 are the canonical application-palette colors — use #5f9a32 on light backgrounds, #74ca33 on dark ones only, for layouts, backgrounds, accents, CSS, and new materials. Official logo artwork carries its own, separately-set green(s) baked into each file — those do not need to match this palette. Never use pure black or pure white as general background colors. Use Charcoal #24201d and Paper #faf7f1 instead. Pure black or white may remain where it is part of approved, unmodified logo artwork or required one-color reproduction. Before pairing any color with text, check color_system.accessibility.pairings in brand-kit.json — do not assume white text on green, Moss, or Ochre passes; often it does not.
 
 Typography: Archivo for all headings/labels/UI, Source Serif 4 for body copy, Kaushan Script for a single warm accent per piece only.
 
-Logos: Use files from logos/, sub-brands/, initiatives/ exactly as supplied. Never redraw, trace, recolor, distort, rotate, crop, or AI-recreate a logo. If a needed format doesn't exist, ask for it — don't approximate it.
+Logos: Use files from logos/, sub-brands/, initiatives/ exactly as supplied. Never redraw, trace, distort, rotate, crop, or AI-recreate a logo's shape. Recoloring a logo's flat color fields is allowed within reason when the artwork calls for it — shape, proportions, and composition must stay untouched. If a needed format doesn't exist, ask for it — don't approximate it.
 
 Voice: Warm, direct, unhurried, plainspoken. Invite, never pressure or hype. Be specific — real names, numbers, next steps. See the voice object for full do/don't lists.
 

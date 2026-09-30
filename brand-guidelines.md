@@ -79,9 +79,10 @@ charcoal for covers, hero bands, and dividers. Keep the bulk of reading on warm 
 **application-palette** colors — used for layouts, backgrounds, accents, CSS tokens, website
 styling, and newly created branded materials. Official logo artwork carries its own,
 separately-set green(s) baked into each file (see each asset's `colors` field in
-`brand-kit.json`). The two are deliberately allowed to differ slightly — logo colors are
-immutable, asset-specific values read from the artwork itself, and must **never** be edited to
-match this palette. Always use logo files exactly as supplied.
+`brand-kit.json`). The two are deliberately allowed to differ — logo colors don't need to match
+this palette, and shouldn't be changed to match it by reflex. Recoloring a logo is allowed within
+reason when the artwork calls for it — see Logo modification, below — but its shape,
+proportions, and composition must always stay exactly as supplied.
 
 | Role | Name | Hex | Notes |
 | --- | --- | --- | --- |
@@ -220,10 +221,11 @@ The **stacked lockup** (NEW VISION over FELLOWSHIP with the leaf mark) is our pr
   and photographic backgrounds. Placing either on the wrong background makes the wordmark disappear.
 - Single-color options: `all_white` (for dark) and `all_black` (for one-ink print).
 - Maintain clearspace equal to the height of the leaf mark on all sides.
-- Never stretch, recolor, rotate, or add effects. The green(s) baked into each logo file are
-  immutable, asset-specific colors — they do not need to match, and must never be edited to
-  match, the application palette in the Color section above. Always use logo files exactly as
-  supplied.
+- Never stretch, rotate, or add effects, and never change a logo's shape, proportions, or
+  composition. The green(s) baked into each logo file are that asset's own colors — they don't
+  need to match the application palette in the Color section above, and shouldn't be changed to
+  match it by reflex. Recoloring a logo's flat color fields is allowed within reason when the
+  artwork calls for it — see Logo modification, below.
 - Never place the logo on a busy photo without a darkening veil beneath it.
 - The **leaf mark** and **cross mark** alone work as a favicon, avatar, or small decorative accent
   — never as a substitute for the full logo in a primary placement.
@@ -434,16 +436,22 @@ or an implication that NVF endorses an outside organization.
 
 **Logo modification.** Use official logo files exactly as supplied. Proportional resizing and
 normal placement (with clearspace, per Logo usage above) is fine. Never redraw, trace, regenerate,
-approximate, rearrange, distort, rotate, recolor, crop, add effects to, or AI-recreate a logo, and
+approximate, rearrange, distort, rotate, crop, add effects to, or AI-recreate a logo's shape, and
 never type the church name in a font to imitate a missing logo. If a format you need doesn't exist
 in this kit, request it from the brand steward rather than recreating it.
 
-**No approval needed** for routine communications that use approved assets, verified facts, and
-established formats.
+**Logo color.** Default logo colors should be preferred where they don't clash with the
+surrounding design. When the artwork calls for a different treatment, recoloring a logo's flat
+color fields is permitted within reason — swap one approved flat hue for another, not gradients,
+textures, or effects — as long as shape, proportions, and composition are left completely
+untouched.
+
+**No approval needed** for routine communications that use approved assets, verified facts,
+established formats, and reasonable recoloring per the color policy above.
 
 **Approval required** from Pastor Jeremy Parker and/or the Ministry Leadership Team for:
 
-- Any proposed logo or lockup modification
+- Any proposed change to a logo's shape, proportions, or composition
 - Permanent signage
 - Merchandise made for sale
 - Paid advertising

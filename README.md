@@ -13,19 +13,19 @@ machine-readable file. For tone, logo usage, and writing rules, read **`brand-gu
 
 All asset paths in the JSON are relative to the repository root; resolve them against `base_url`.
 
-Never redraw, recolor, or AI-recreate a logo — see `governance.logo_modification_policy`. Never
-invent service times, event details, staff names, contact info, or statistics — see
-`ai_content_rules`. For AI-generated imagery, see `ai_imagery`.
+Never redraw, trace, or AI-recreate a logo's shape — recoloring within reason is allowed, see
+`governance.logo_modification_policy.color_policy`. Never invent service times, event details,
+staff names, contact info, or statistics — see `ai_content_rules`. For AI-generated imagery, see
+`ai_imagery`.
 
 When producing branded output, use **Brand Leaf Green (`#5f9a32`)** as the primary color on light
 backgrounds and **Green Bright (`#74ca33`)** on dark ones — these are the canonical
 application-palette colors for layouts, backgrounds, accents, CSS tokens, website styling, and new
 materials. Official logo artwork carries its own, separately-set green(s) baked into each file
-(see each asset's `colors` field) — those do not need to match this palette and must never be
-edited to match it; always use logo files exactly as supplied. Set headings in **Archivo** and
-body copy in **Source Serif 4**, and follow the voice object. Before pairing any color with text,
-check `color_system.accessibility.pairings`. Logos are SVGs in `logos/` — prefer the stacked
-lockup in most contexts.
+(see each asset's `colors` field) — those do not need to match this palette. Set headings in
+**Archivo** and body copy in **Source Serif 4**, and follow the voice object. Before pairing any
+color with text, check `color_system.accessibility.pairings`. Logos are SVGs in `logos/` — prefer
+the stacked lockup in most contexts.
 
 ## Repository structure
 
@@ -36,7 +36,7 @@ lockup in most contexts.
 | `brand-guidelines.md` | Human- and agent-readable guidelines — voice, color, accessibility, logo usage, design patterns, governance |
 | `brand-tokens.css` | CSS custom properties matching the JSON's canonical color, type, and radius values |
 | `index.html` | Visual reference page for all brand assets, with copy and download controls |
-| `downloads/nvf-brand-kit-2026.09.4.zip` | The complete kit, versioned — JSON, schema, guidelines, CSS tokens, a handoff README, and every distributable asset below |
+| `downloads/nvf-brand-kit-2026.09.5.zip` | The complete kit, versioned — JSON, schema, guidelines, CSS tokens, a handoff README, and every distributable asset below |
 | `downloads/nvf-brand-kit.zip` | Stable alias for the current version of the file above — same contents, unversioned filename for bookmarks and integrations |
 | `logos/` | Primary logo lockups — stacked, horizontal wordmark, leaf mark, and cross mark |
 | `sub-brands/` | Population-focused ministry logos — the Wheel, the Kiln, the Mill, Titus 2 Women, Men of Vision, Vintage Visions, Melding Moms |

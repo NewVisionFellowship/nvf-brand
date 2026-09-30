@@ -1,6 +1,6 @@
 # New Vision Fellowship — Brand Kit
 
-Version 2026.09.4
+Version 2026.09.5
 
 This is the complete New Vision Fellowship brand kit: structured data, guidelines, CSS tokens,
 and official logo, ministry, and initiative assets. It's meant to be handed to a designer, an
@@ -42,8 +42,12 @@ and `available_formats` fields in `brand-kit.json` rather than assuming a file t
 
 Use official logo files exactly as supplied. Proportional resizing and normal placement (with
 clearspace) is fine. Never redraw, trace, regenerate, approximate, rearrange, distort, rotate,
-recolor, crop, add effects to, or AI-recreate a logo. If a format you need isn't in this package,
+crop, add effects to, or AI-recreate a logo's shape. If a format you need isn't in this package,
 **request it — don't recreate it.**
+
+Default logo colors should be preferred where they don't clash with the surrounding design. When
+the artwork calls for a different treatment, recoloring a logo's flat color fields is permitted
+within reason, as long as its shape, proportions, and composition are left completely untouched.
 
 ## Fonts
 
