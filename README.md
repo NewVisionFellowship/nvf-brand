@@ -36,7 +36,7 @@ the stacked lockup in most contexts.
 | `brand-guidelines.md` | Human- and agent-readable guidelines — voice, color, accessibility, logo usage, design patterns, governance |
 | `brand-tokens.css` | CSS custom properties matching the JSON's canonical color, type, and radius values |
 | `index.html` | Visual reference page for all brand assets, with copy and download controls |
-| `downloads/nvf-brand-kit-2026.09.5.zip` | The complete kit, versioned — JSON, schema, guidelines, CSS tokens, a handoff README, and every distributable asset below |
+| `downloads/nvf-brand-kit-2026.09.6.zip` | The complete kit, versioned — JSON, schema, guidelines, CSS tokens, a handoff README, and every distributable asset below |
 | `downloads/nvf-brand-kit.zip` | Stable alias for the current version of the file above — same contents, unversioned filename for bookmarks and integrations |
 | `logos/` | Primary logo lockups — stacked, horizontal wordmark, leaf mark, and cross mark |
 | `sub-brands/` | Population-focused ministry logos — the Wheel, the Kiln, the Mill, Titus 2 Women, Men of Vision, Vintage Visions, Melding Moms |

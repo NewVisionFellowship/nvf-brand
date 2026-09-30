@@ -215,6 +215,14 @@ downloading or distributing them. This kit does not host font files.
 The **stacked lockup** (NEW VISION over FELLOWSHIP with the leaf mark) is our primary logo. Use the
 **horizontal wordmark** only when vertical space is constrained.
 
+**Recoloring.** The main lockups, the horizontal wordmark, and the cross mark each carry
+`recolor_slots` in `brand-kit.json` — a labeled list of that file's flat-color regions (e.g.
+"Wordmark," "Leaf Dark," "Leaf Bright") and their current hex values. The website's Logos section
+has an interactive "Recolor" tool for these that opens a live preview, lets you pick a new color
+per region (native color picker or typed hex) within the policy above, and download the result as
+SVG or PNG. An AI agent can do the same thing directly from the metadata — substitute a
+`recolor_slots` hex for a new one in the SVG source — without needing the tool.
+
 - Prefer SVG everywhere.
 - **Match the variant to the background.** The `black_text` variant has a **charcoal** wordmark and
   is for light backgrounds. The `white_text` variant has a **white** wordmark and is for charcoal

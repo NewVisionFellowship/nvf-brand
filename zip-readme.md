@@ -1,6 +1,6 @@
 # New Vision Fellowship — Brand Kit
 
-Version 2026.09.5
+Version 2026.09.6
 
 This is the complete New Vision Fellowship brand kit: structured data, guidelines, CSS tokens,
 and official logo, ministry, and initiative assets. It's meant to be handed to a designer, an

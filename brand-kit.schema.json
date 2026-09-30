@@ -61,7 +61,7 @@
         "colors": {
           "type": "array",
           "items": { "$ref": "#/$defs/hexColor" },
-          "description": "The color(s) actually embedded in this logo file — immutable, asset-specific values read from the artwork itself. They do not need to match, and must never be edited to match, color_system.palette's application colors. Official logo artwork must always be used exactly as supplied."
+          "description": "The color(s) currently present in this logo file, as supplied. They don't need to match color_system.palette's application colors. This reflects the file as it stands — see recolor_slots for which of these colors can be changed, and governance.logo_modification_policy.color_policy for when that's appropriate. Shape, proportions, and composition must always stay exactly as supplied regardless of color."
         },
         "width": { "type": "integer", "minimum": 1 },
         "height": { "type": "integer", "minimum": 1 },
@@ -71,6 +71,19 @@
         "available_formats": {
           "type": "array",
           "items": { "$ref": "#/$defs/assetFormat" }
+        },
+        "recolor_slots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["label", "hex"],
+            "properties": {
+              "label": { "type": "string" },
+              "hex": { "$ref": "#/$defs/hexColor" }
+            },
+            "additionalProperties": false
+          },
+          "description": "For SVG assets only: the independently-recolorable flat-fill regions in this file, each with a label and its current hex value. A recoloring tool (or an AI agent) can match elements by their current hex and substitute a new one — see the site's Logos section for the interactive version. Only listed for assets confirmed to use plain inline fills, no gradients or raster content."
         },
         "note": { "type": "string" }
       },

@@ -183,6 +183,27 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
 .dl-panel{background:var(--paper-2);border-radius:14px;padding:32px 34px;display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between}
 .dl-panel__files{display:flex;flex-wrap:wrap;gap:10px}
 
+/* recolor modal */
+.lg__b{position:relative}
+.recolor-btn{font-family:var(--display);font-weight:700;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--olive);border:0;border-radius:6px;padding:5px 10px;cursor:pointer;line-height:1}
+.recolor-btn:hover{background:var(--olive-deep)}
+.recolor-backdrop{position:fixed;inset:0;background:rgba(36,32,29,.72);z-index:200;display:flex;align-items:center;justify-content:center;padding:24px}
+.recolor-backdrop[hidden]{display:none}
+.recolor-modal{background:var(--paper);border-radius:16px;max-width:640px;width:100%;max-height:90vh;overflow-y:auto;padding:32px}
+.recolor-modal__head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:20px}
+.recolor-modal__title{font-family:var(--display);font-weight:900;font-size:22px;margin:0}
+.recolor-modal__close{background:none;border:0;font-family:var(--display);font-weight:700;font-size:13px;color:var(--ink-soft);cursor:pointer;padding:6px 10px;border-radius:6px}
+.recolor-modal__close:hover{background:var(--paper-2)}
+.recolor-modal__preview{background:var(--paper-2);border-radius:12px;padding:32px;display:flex;align-items:center;justify-content:center;min-height:160px;margin-bottom:24px}
+.recolor-modal__preview svg{max-width:100%;max-height:280px;height:auto;width:auto}
+.recolor-slot{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.recolor-slot__label{font-family:var(--display);font-weight:700;font-size:13.5px;color:var(--ink);flex:1}
+.recolor-slot__color{width:40px;height:36px;padding:2px;border:1px solid var(--line);border-radius:6px;cursor:pointer;background:#fff}
+.recolor-slot__hex{width:100px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--ink)}
+.recolor-modal__actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
+.recolor-modal__actions .dl-btn,.recolor-modal__actions .copy-btn{font-size:11.5px;padding:9px 16px}
+.recolor-modal__reset{margin-left:auto}
+
 @media(max-width:760px){
   .hero h1{font-size:46px}
   .hero__leaf{right:-120px;height:110%;opacity:.06}
@@ -192,6 +213,11 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
   .top__in{padding:14px 20px;flex-wrap:wrap;row-gap:10px}
   .top nav{gap:12px 16px}
   section{padding:52px 0}
+  .recolor-backdrop{padding:12px}
+  .recolor-modal{padding:20px}
+  .recolor-slot{flex-wrap:wrap}
+  .recolor-slot__label{min-width:100%}
+  .recolor-slot__hex{flex:1;width:auto;min-width:0}
 }
 </style>
 </head>
@@ -230,14 +256,14 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
     <div class="script">a single source of truth</div>
     <p>Everything an agent or a designer needs to produce work that looks and sounds like New Vision Fellowship — colors, typography, logos, frameworks, and voice. Structured for machines, readable by people.</p>
     <div class="hero__meta">
-      <span>Version <b>2026.09.5</b></span>
+      <span>Version <b>2026.09.6</b></span>
       <span>Primary <b>#5f9a32</b></span>
       <span>Typeface <b>Archivo</b></span>
       <span>Mission <b>Multiply God&rsquo;s glory on the earth</b></span>
     </div>
-    <a class="hero__dl" href="downloads/nvf-brand-kit-2026.09.5.zip" download>
+    <a class="hero__dl" href="downloads/nvf-brand-kit-2026.09.6.zip" download>
       Download Complete Brand Kit
-      <small>.zip &middot; v2026.09.5</small>
+      <small>.zip &middot; v2026.09.6</small>
     </a>
   </div>
 </div>
@@ -306,7 +332,7 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
         <h3 style="margin-bottom:6px;">Complete Brand Kit</h3>
         <p style="color:var(--ink-soft);font-size:15px;max-width:46ch;">JSON, schema, guidelines, CSS tokens, README, and every distributable NVF logo, ministry, and initiative asset. No fonts, no outside-partner logos.</p>
       </div>
-      <a class="hero__dl" style="background:var(--green-deep);" href="downloads/nvf-brand-kit-2026.09.5.zip" download>Download ZIP <small>v2026.09.5</small></a>
+      <a class="hero__dl" style="background:var(--green-deep);" href="downloads/nvf-brand-kit-2026.09.6.zip" download>Download ZIP <small>v2026.09.6</small></a>
     </div>
     <p style="font-size:13px;color:var(--metadata);margin-top:14px;">Stable link for the current version, useful for bookmarks and integrations: <a href="downloads/nvf-brand-kit.zip">downloads/nvf-brand-kit.zip</a>.</p>
     <div class="dl-panel__files" style="margin-top:20px;">
@@ -337,7 +363,7 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
         <tr><td><code>color_system.accessibility</code></td><td>Verified WCAG AA contrast ratios for every meaningful text/background pairing, each classified normal, large-only, decorative-only, or prohibited.</td></tr>
         <tr><td><code>color_system.interactive</code></td><td>Brighter greens, an alert red, and lifted badge colors for on-screen product UI only &mdash; never print.</td></tr>
         <tr><td><code>typography</code></td><td>Archivo, Source Serif 4, and Kaushan Script with weights, usage rules, a full size scale, minimum sizes, and a font-source license note.</td></tr>
-        <tr><td><code>logos.lockups</code></td><td>Stacked, horizontal, leaf mark, and cross mark — each with an <code>assets[]</code> array carrying format, pixel dimensions, transparency, scalability, and approved background.</td></tr>
+        <tr><td><code>logos.lockups</code></td><td>Stacked, horizontal, leaf mark, and cross mark — each with an <code>assets[]</code> array carrying format, pixel dimensions, transparency, scalability, approved background, and (for flat-color SVGs) <code>recolor_slots</code>.</td></tr>
         <tr><td><code>logos.rules</code></td><td>Clearspace, variant selection, and prohibitions.</td></tr>
         <tr><td><code>sub_brands</code></td><td>Seven ministries, each with audience, website, and logo assets with full format metadata.</td></tr>
         <tr><td><code>initiatives</code></td><td>Life Groups and Love My Neighbor Day, with descriptions and assets.</td></tr>
@@ -449,23 +475,23 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
     <p class="kicker">Assets</p>
     <h2>Logos</h2>
     <hr class="rule">
-    <p class="lede" style="margin-bottom:34px;">The stacked lockup is our primary logo. Match the variant to the background &mdash; the charcoal wordmark will not read on dark, and the white wordmark will not read on paper. Prefer SVG everywhere.</p>
+    <p class="lede" style="margin-bottom:34px;">The stacked lockup is our primary logo. Match the variant to the background &mdash; the charcoal wordmark will not read on dark, and the white wordmark will not read on paper. Prefer SVG everywhere. Cards marked <b>Recolor</b> let you pick a new color for each flat-color region and download the result &mdash; shape and composition stay exactly as supplied.</p>
     <div class="logos">
-      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-stacked-color.svg" alt="Stacked lockup, black text with green leaf"></div><div class="lg__b"><div class="lg__n">Stacked &middot; Black Text</div><div class="lg__p">logos/nvf-stacked-color &middot; light bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-stacked-color.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-stacked-color.png" download>PNG</a></div></div></div>
-      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-stacked-color-dark.svg" alt="Stacked lockup, white text with green leaf"></div><div class="lg__b"><div class="lg__n">Stacked &middot; White Text</div><div class="lg__p">logos/nvf-stacked-color-dark &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-stacked-color-dark.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-stacked-color-dark.png" download>PNG</a></div></div></div>
-      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-stacked-white.svg" alt="Stacked lockup, all white"></div><div class="lg__b"><div class="lg__n">Stacked &middot; All White</div><div class="lg__p">logos/nvf-stacked-white &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-stacked-white.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-stacked-white.png" download>PNG</a></div></div></div>
-      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-stacked-black.svg" alt="Stacked lockup, all black"></div><div class="lg__b"><div class="lg__n">Stacked &middot; All Black</div><div class="lg__p">logos/nvf-stacked-black &middot; one-ink print</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-stacked-black.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-stacked-black.png" download>PNG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-stacked-color.svg" alt="Stacked lockup, black text with green leaf"></div><div class="lg__b"><div class="lg__n">Stacked &middot; Black Text</div><div class="lg__p">logos/nvf-stacked-color &middot; light bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-stacked-color.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-stacked-color.png" download>PNG</a><button class="recolor-btn" type="button" data-recolor-path="logos/nvf-stacked-color.svg" data-recolor-name="Stacked &middot; Black Text" data-recolor-slots='[{"label":"Wordmark","hex":"#231f20"},{"label":"Leaf Dark","hex":"#569c33"},{"label":"Leaf Bright","hex":"#74c933"}]'>Recolor</button></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-stacked-color-dark.svg" alt="Stacked lockup, white text with green leaf"></div><div class="lg__b"><div class="lg__n">Stacked &middot; White Text</div><div class="lg__p">logos/nvf-stacked-color-dark &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-stacked-color-dark.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-stacked-color-dark.png" download>PNG</a><button class="recolor-btn" type="button" data-recolor-path="logos/nvf-stacked-color-dark.svg" data-recolor-name="Stacked &middot; White Text" data-recolor-slots='[{"label":"Wordmark","hex":"#ffffff"},{"label":"Leaf Dark","hex":"#569c33"},{"label":"Leaf Bright","hex":"#74c933"}]'>Recolor</button></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-stacked-white.svg" alt="Stacked lockup, all white"></div><div class="lg__b"><div class="lg__n">Stacked &middot; All White</div><div class="lg__p">logos/nvf-stacked-white &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-stacked-white.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-stacked-white.png" download>PNG</a><button class="recolor-btn" type="button" data-recolor-path="logos/nvf-stacked-white.svg" data-recolor-name="Stacked &middot; All White" data-recolor-slots='[{"label":"Mark","hex":"#ffffff"}]'>Recolor</button></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-stacked-black.svg" alt="Stacked lockup, all black"></div><div class="lg__b"><div class="lg__n">Stacked &middot; All Black</div><div class="lg__p">logos/nvf-stacked-black &middot; one-ink print</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-stacked-black.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-stacked-black.png" download>PNG</a><button class="recolor-btn" type="button" data-recolor-path="logos/nvf-stacked-black.svg" data-recolor-name="Stacked &middot; All Black" data-recolor-slots='[{"label":"Mark","hex":"#231f20"}]'>Recolor</button></div></div></div>
       <div class="lg"><div class="lg__v lg__v--l" style="padding:44px"><img src="logos/nvf-leaf-mark.png" alt="Leaf mark"></div><div class="lg__b"><div class="lg__n">Leaf Mark</div><div class="lg__p">logos/nvf-leaf-mark &middot; any bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-leaf-mark.png" download>PNG</a></div></div></div>
-      <div class="lg"><div class="lg__v lg__v--l" style="padding:44px"><img src="logos/nvf-cross-mark.svg" alt="Cross mark"></div><div class="lg__b"><div class="lg__n">Cross Mark</div><div class="lg__p">logos/nvf-cross-mark &middot; any bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-cross-mark.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-cross-mark.png" download>PNG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l" style="padding:44px"><img src="logos/nvf-cross-mark.svg" alt="Cross mark"></div><div class="lg__b"><div class="lg__n">Cross Mark</div><div class="lg__p">logos/nvf-cross-mark &middot; any bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-cross-mark.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-cross-mark.png" download>PNG</a><button class="recolor-btn" type="button" data-recolor-path="logos/nvf-cross-mark.svg" data-recolor-name="Cross Mark" data-recolor-slots='[{"label":"Cross Dark","hex":"#569c33"},{"label":"Cross Bright","hex":"#74c933"}]'>Recolor</button></div></div></div>
     </div>
 
     <p class="sub" style="margin-top:34px;">Horizontal Wordmark Variants</p>
     <p class="lede" style="margin-bottom:34px;font-size:16px;">All flat, no cross. Vary by whether the wordmark is single-color or keeps the green leaf accent.</p>
     <div class="logos">
-      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-horizontal-black.svg" alt="Horizontal wordmark, all black"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; All Black</div><div class="lg__p">logos/nvf-horizontal-black &middot; light bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-horizontal-black.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-horizontal-black.png" download>PNG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-horizontal-black.svg" alt="Horizontal wordmark, all black"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; All Black</div><div class="lg__p">logos/nvf-horizontal-black &middot; light bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-horizontal-black.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-horizontal-black.png" download>PNG</a><button class="recolor-btn" type="button" data-recolor-path="logos/nvf-horizontal-black.svg" data-recolor-name="Horizontal &middot; All Black" data-recolor-slots='[{"label":"New Vision Text","hex":"#231f20"},{"label":"Fellowship Text &amp; Leaf","hex":"#000000"}]'>Recolor</button></div></div></div>
       <div class="lg"><div class="lg__v lg__v--l"><img src="logos/nvf-horizontal-color.png" alt="Horizontal wordmark, black text with green leaf"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; Black Text</div><div class="lg__p">logos/nvf-horizontal-color &middot; light bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-horizontal-color.png" download>PNG</a></div></div></div>
-      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-horizontal-white.svg" alt="Horizontal wordmark, white text with green leaf"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; White Text</div><div class="lg__p">logos/nvf-horizontal-white &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-horizontal-white.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-horizontal-white-text.png" download>PNG</a></div></div></div>
-      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-horizontal-all-white.svg" alt="Horizontal wordmark, all white"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; All White</div><div class="lg__p">logos/nvf-horizontal-all-white &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-horizontal-all-white.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-horizontal-all-white.png" download>PNG</a></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-horizontal-white.svg" alt="Horizontal wordmark, white text with green leaf"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; White Text</div><div class="lg__p">logos/nvf-horizontal-white &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-horizontal-white.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-horizontal-white-text.png" download>PNG</a><button class="recolor-btn" type="button" data-recolor-path="logos/nvf-horizontal-white.svg" data-recolor-name="Horizontal &middot; White Text" data-recolor-slots='[{"label":"Wordmark","hex":"#ffffff"},{"label":"Leaf Dark","hex":"#569c33"},{"label":"Leaf Bright","hex":"#74c933"}]'>Recolor</button></div></div></div>
+      <div class="lg"><div class="lg__v lg__v--d"><img src="logos/nvf-horizontal-all-white.svg" alt="Horizontal wordmark, all white"></div><div class="lg__b"><div class="lg__n">Horizontal &middot; All White</div><div class="lg__p">logos/nvf-horizontal-all-white &middot; dark bg</div><div class="dl-row"><a class="dl-btn" href="logos/nvf-horizontal-all-white.svg" download>SVG</a><a class="dl-btn" href="logos/nvf-horizontal-all-white.png" download>PNG</a><button class="recolor-btn" type="button" data-recolor-path="logos/nvf-horizontal-all-white.svg" data-recolor-name="Horizontal &middot; All White" data-recolor-slots='[{"label":"Mark","hex":"#ffffff"}]'>Recolor</button></div></div></div>
     </div>
   </div>
 </section>
@@ -677,11 +703,27 @@ footer a{color:var(--green-bright);border-bottom-color:rgba(116,202,51,.3)}
     <img src="logos/nvf-horizontal-white.svg" alt="New Vision Fellowship">
     <p>1135 West Academy Street, Madison, NC &middot; <a href="mailto:info@nvf.life">info@nvf.life</a> &middot; 336.427.6264 &middot; <a href="https://nvf.life">nvf.life</a></p>
     <p style="font-size:13.5px;color:#9c9384;max-width:64ch;margin-top:14px;">Brand steward: Pastor Jeremy Parker and/or the church&rsquo;s Ministry Leadership Team. Original New Vision Fellowship brand assets are &copy; 2026 New Vision Fellowship, provided for authorized NVF ministry use. See <code>governance</code> in brand-kit.json for the full permitted-use policy.</p>
-    <p class="fmeta">Multiply God&rsquo;s glory on the earth &middot; Brand Kit v2026.09.5 &middot; Reviewed 2026-09-30</p>
+    <p class="fmeta">Multiply God&rsquo;s glory on the earth &middot; Brand Kit v2026.09.6 &middot; Reviewed 2026-09-30</p>
   </div>
 </footer>
 
 <div id="copy-status" role="status" aria-live="polite" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;"></div>
+
+<div class="recolor-backdrop" id="recolorBackdrop" hidden role="dialog" aria-modal="true" aria-labelledby="recolorTitle">
+  <div class="recolor-modal">
+    <div class="recolor-modal__head">
+      <h3 class="recolor-modal__title" id="recolorTitle">Recolor Logo</h3>
+      <button class="recolor-modal__close" type="button" id="recolorClose">Close &times;</button>
+    </div>
+    <div class="recolor-modal__preview" id="recolorPreview"></div>
+    <div id="recolorSlots"></div>
+    <div class="recolor-modal__actions">
+      <button class="dl-btn" type="button" id="recolorDownloadSvg" style="border:1px solid var(--line);background:#fff;cursor:pointer;">Download SVG</button>
+      <button class="dl-btn" type="button" id="recolorDownloadPng" style="border:1px solid var(--line);background:#fff;cursor:pointer;">Download PNG</button>
+      <button class="copy-btn" type="button" id="recolorReset" style="margin-left:auto;">Reset to Default</button>
+    </div>
+  </div>
+</div>
 
 <div id="ai-instructions" hidden>New Vision Fellowship — AI Brand Instructions
 
@@ -692,7 +734,7 @@ Colors: Primary green #5f9a32 and Bright green #74ca33 are the canonical applica
 
 Typography: Archivo for all headings/labels/UI, Source Serif 4 for body copy, Kaushan Script for a single warm accent per piece only.
 
-Logos: Use files from logos/, sub-brands/, initiatives/ exactly as supplied. Never redraw, trace, distort, rotate, crop, or AI-recreate a logo's shape. Recoloring a logo's flat color fields is allowed within reason when the artwork calls for it — shape, proportions, and composition must stay untouched. If a needed format doesn't exist, ask for it — don't approximate it.
+Logos: Use files from logos/, sub-brands/, initiatives/ exactly as supplied. Never redraw, trace, distort, rotate, crop, or AI-recreate a logo's shape. Recoloring a logo's flat color fields is allowed within reason when the artwork calls for it — shape, proportions, and composition must stay untouched. Some logos carry recolor_slots in brand-kit.json (a label plus current hex per flat-color region) — substitute a new hex for one of those directly in the SVG source to produce a recolored variant, rather than guessing which fill is which. If a needed format doesn't exist, ask for it — don't approximate it.
 
 Voice: Warm, direct, unhurried, plainspoken. Invite, never pressure or hype. Be specific — real names, numbers, next steps. See the voice object for full do/don't lists.
 
@@ -757,6 +799,178 @@ Human review required before publishing: doctrinal claims, crisis communication,
       copyText(el.textContent.trim(), btn, 'AI brand instructions');
       return;
     }
+  });
+})();
+</script>
+
+<script>
+(function(){
+  var backdrop = document.getElementById('recolorBackdrop');
+  var titleEl = document.getElementById('recolorTitle');
+  var previewEl = document.getElementById('recolorPreview');
+  var slotsEl = document.getElementById('recolorSlots');
+  var closeBtn = document.getElementById('recolorClose');
+  var resetBtn = document.getElementById('recolorReset');
+  var dlSvgBtn = document.getElementById('recolorDownloadSvg');
+  var dlPngBtn = document.getElementById('recolorDownloadPng');
+  var currentSvgEl = null;
+  var currentSlots = [];
+  var currentAssetName = '';
+  var lastFocused = null;
+
+  function hexEq(a, b){ return a && b && a.toLowerCase() === b.toLowerCase(); }
+
+  function findMatches(root, hex){
+    var out = [];
+    var all = root.querySelectorAll('*');
+    for (var i = 0; i < all.length; i++){
+      var el = all[i];
+      var style = el.getAttribute('style');
+      if (!style) continue;
+      var m = style.match(/fill:\s*(#[0-9a-fA-F]{6})/i);
+      if (m && hexEq(m[1], hex)) out.push(el);
+    }
+    return out;
+  }
+
+  function setElementFill(el, hex){
+    var style = el.getAttribute('style') || '';
+    if (/fill:\s*#[0-9a-fA-F]{6}/i.test(style)) {
+      style = style.replace(/fill:\s*#[0-9a-fA-F]{6}/i, 'fill:' + hex);
+    } else {
+      style = style + (style && !style.trim().endsWith(';') ? ';' : '') + 'fill:' + hex;
+    }
+    el.setAttribute('style', style);
+  }
+
+  function buildSlotRow(slot){
+    var row = document.createElement('div');
+    row.className = 'recolor-slot';
+    var label = document.createElement('div');
+    label.className = 'recolor-slot__label';
+    label.textContent = slot.label;
+    var colorInput = document.createElement('input');
+    colorInput.type = 'color';
+    colorInput.className = 'recolor-slot__color';
+    colorInput.value = slot.hex;
+    colorInput.setAttribute('aria-label', 'Pick ' + slot.label + ' color');
+    var hexInput = document.createElement('input');
+    hexInput.type = 'text';
+    hexInput.className = 'recolor-slot__hex';
+    hexInput.value = slot.hex;
+    hexInput.setAttribute('aria-label', slot.label + ' hex value');
+    hexInput.maxLength = 7;
+
+    function apply(newHex){
+      slot.currentHex = newHex;
+      slot.elements.forEach(function(el){ setElementFill(el, newHex); });
+    }
+    colorInput.addEventListener('input', function(){
+      hexInput.value = colorInput.value;
+      apply(colorInput.value);
+    });
+    hexInput.addEventListener('change', function(){
+      var v = hexInput.value.trim();
+      if (!/^#[0-9a-fA-F]{6}$/.test(v)) { hexInput.value = slot.currentHex; return; }
+      colorInput.value = v;
+      apply(v);
+    });
+    slot.colorInput = colorInput;
+    slot.hexInput = hexInput;
+
+    row.appendChild(label);
+    row.appendChild(colorInput);
+    row.appendChild(hexInput);
+    return row;
+  }
+
+  window.openRecolorModal = async function(path, slotsData, name, triggerBtn){
+    lastFocused = triggerBtn || document.activeElement;
+    currentAssetName = name;
+    var res = await fetch(path);
+    var text = await res.text();
+    var parser = new DOMParser();
+    var doc = parser.parseFromString(text, 'image/svg+xml');
+    currentSvgEl = doc.documentElement;
+
+    currentSlots = slotsData.map(function(s){ return { label: s.label, hex: s.hex, defaultHex: s.hex, currentHex: s.hex, elements: [] }; });
+    currentSlots.forEach(function(slot){ slot.elements = findMatches(currentSvgEl, slot.defaultHex); });
+
+    previewEl.innerHTML = '';
+    previewEl.appendChild(currentSvgEl);
+    slotsEl.innerHTML = '';
+    currentSlots.forEach(function(slot){ slotsEl.appendChild(buildSlotRow(slot)); });
+
+    titleEl.textContent = 'Recolor: ' + name;
+    backdrop.hidden = false;
+    closeBtn.focus();
+    document.addEventListener('keydown', onKeydown);
+  };
+
+  function closeModal(){
+    backdrop.hidden = true;
+    document.removeEventListener('keydown', onKeydown);
+    if (lastFocused && lastFocused.focus) lastFocused.focus();
+  }
+  function onKeydown(e){ if (e.key === 'Escape') closeModal(); }
+
+  closeBtn.addEventListener('click', closeModal);
+  backdrop.addEventListener('click', function(e){ if (e.target === backdrop) closeModal(); });
+
+  resetBtn.addEventListener('click', function(){
+    currentSlots.forEach(function(slot){
+      slot.colorInput.value = slot.defaultHex;
+      slot.hexInput.value = slot.defaultHex;
+      slot.currentHex = slot.defaultHex;
+      slot.elements.forEach(function(el){ setElementFill(el, slot.defaultHex); });
+    });
+  });
+
+  function serializeCurrentSvg(){
+    return '<?xml version="1.0" encoding="UTF-8"?>\n' + new XMLSerializer().serializeToString(currentSvgEl);
+  }
+  function triggerDownload(blob, filename){
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url; a.download = filename;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 2000);
+  }
+  function safeName(){
+    return currentAssetName.replace(/[^a-z0-9]+/gi, '-').toLowerCase().replace(/^-+|-+$/g, '');
+  }
+
+  dlSvgBtn.addEventListener('click', function(){
+    var svgText = serializeCurrentSvg();
+    triggerDownload(new Blob([svgText], {type: 'image/svg+xml'}), safeName() + '-custom.svg');
+  });
+
+  dlPngBtn.addEventListener('click', function(){
+    var svgText = serializeCurrentSvg();
+    var blob = new Blob([svgText], {type: 'image/svg+xml'});
+    var url = URL.createObjectURL(blob);
+    var img = new Image();
+    img.onload = function(){
+      var maxDim = 2048;
+      var scale = maxDim / Math.max(img.naturalWidth, img.naturalHeight);
+      var w = Math.round(img.naturalWidth * scale), h = Math.round(img.naturalHeight * scale);
+      var canvas = document.createElement('canvas');
+      canvas.width = w; canvas.height = h;
+      var ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, w, h);
+      ctx.drawImage(img, 0, 0, w, h);
+      URL.revokeObjectURL(url);
+      canvas.toBlob(function(pngBlob){ triggerDownload(pngBlob, safeName() + '-custom.png'); }, 'image/png');
+    };
+    img.src = url;
+  });
+
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('.recolor-btn');
+    if (!btn) return;
+    var slots;
+    try { slots = JSON.parse(btn.getAttribute('data-recolor-slots')); } catch(err) { return; }
+    window.openRecolorModal(btn.getAttribute('data-recolor-path'), slots, btn.getAttribute('data-recolor-name'), btn);
   });
 })();
 </script>
