@@ -1,7 +1,7 @@
 {
   "$schema": "https://branding.nvf.life/brand-kit.schema.json",
   "schema_version": "2.0.0",
-  "version": "2026.09.3",
+  "version": "2026.09.4",
   "base_url": "https://branding.nvf.life",
   "updated": "2026-09-30",
 
@@ -317,10 +317,10 @@
         { "variant": "white", "path": "sub-brands/the-kiln-white.png", "format": "png", "use_on": "dark backgrounds", "ideal_background": "dark", "width": 1920, "height": 819, "transparent": true, "scalable": false, "max_print_width_in": 6.40, "available_formats": ["svg", "png"], "note": "White wordmark, red icon outline and flame retained." }
       ] },
     { "id": "the_mill",       "name": "The Mill",        "audience": "College & Young Career — through age 25",       "website": "https://nvf.life/young-adults", "assets": [
-        { "variant": "color", "path": "sub-brands/the-mill.svg", "format": "svg", "use_on": "light backgrounds", "ideal_background": "light", "width": 276, "height": 113, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "Dark/black text, color icon." },
-        { "variant": "color", "path": "sub-brands/the-mill.png", "format": "png", "use_on": "light backgrounds", "ideal_background": "light", "width": 2048, "height": 840, "transparent": true, "scalable": false, "max_print_width_in": 6.83, "available_formats": ["svg", "png"], "note": "Dark/black text, color icon." },
-        { "variant": "white", "path": "sub-brands/the-mill-white.svg", "format": "svg", "use_on": "dark backgrounds", "ideal_background": "dark", "width": 278, "height": 113, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "White wordmark, color icon retained." },
-        { "variant": "white", "path": "sub-brands/the-mill-white.png", "format": "png", "use_on": "dark backgrounds", "ideal_background": "dark", "width": 2048, "height": 834, "transparent": true, "scalable": false, "max_print_width_in": 6.83, "available_formats": ["svg", "png"], "note": "White wordmark, color icon retained." }
+        { "variant": "color", "path": "sub-brands/the-mill.svg", "format": "svg", "use_on": "light backgrounds", "ideal_background": "light", "width": 276, "height": 113, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "Dark/black text, color icon. True knockout — negative space in the wheel icon is genuinely transparent, not a white/black fill." },
+        { "variant": "color", "path": "sub-brands/the-mill.png", "format": "png", "use_on": "light backgrounds", "ideal_background": "light", "width": 1920, "height": 788, "transparent": true, "scalable": false, "max_print_width_in": 6.40, "available_formats": ["svg", "png"], "note": "Dark/black text, color icon. True knockout — negative space in the wheel icon is genuinely transparent, not a white/black fill." },
+        { "variant": "white", "path": "sub-brands/the-mill-white.svg", "format": "svg", "use_on": "dark backgrounds", "ideal_background": "dark", "width": 278, "height": 113, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "White wordmark, color icon retained. True knockout — negative space in the wheel icon is genuinely transparent, not a white/black fill." },
+        { "variant": "white", "path": "sub-brands/the-mill-white.png", "format": "png", "use_on": "dark backgrounds", "ideal_background": "dark", "width": 1920, "height": 781, "transparent": true, "scalable": false, "max_print_width_in": 6.40, "available_formats": ["svg", "png"], "note": "White wordmark, color icon retained. True knockout — negative space in the wheel icon is genuinely transparent, not a white/black fill." }
       ] },
     { "id": "titus_2_women",  "name": "Titus 2 Women",   "audience": "Women's Ministry — all ages",                   "website": "https://nvf.life/women",        "assets": [
         { "variant": "color", "path": "sub-brands/titus-2-women.png", "format": "png", "use_on": "light backgrounds", "ideal_background": "light", "width": 2048, "height": 1581, "transparent": true, "scalable": false, "max_print_width_in": 6.83, "available_formats": ["png"], "note": "Dark/black text and icon. No SVG source currently exists for this variant — the source file is a raster image wrapped in an SVG shell, not real vector art, so request a genuine vector rather than using or tracing it." },
