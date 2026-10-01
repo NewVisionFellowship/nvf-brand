@@ -1,10 +1,9 @@
 {
   "$schema": "https://branding.nvf.life/brand-kit.schema.json",
   "schema_version": "2.0.0",
-  "version": "2026.09.6",
+  "version": "2026.09.7",
   "base_url": "https://branding.nvf.life",
   "updated": "2026-09-30",
-
   "brand": {
     "name": "New Vision Fellowship",
     "short_name": "New Vision",
@@ -20,7 +19,6 @@
       "Triad Church Network"
     ]
   },
-
   "locations": [
     {
       "type": "campus",
@@ -32,7 +30,6 @@
       "phone": "336.427.6264"
     }
   ],
-
   "core_values": [
     "Jesus takes center stage",
     "God's Word grounds us",
@@ -40,30 +37,87 @@
     "The gospel transforms how we live",
     "People matter to God and to us"
   ],
-
   "frameworks": {
     "on_ramps": {
       "description": "The four on-ramps to a fuller faith, drawn from Acts 2:41-47. Present in this order.",
-      "order": ["gather", "give", "group", "go"],
+      "order": [
+        "gather",
+        "give",
+        "group",
+        "go"
+      ],
       "items": [
-        { "id": "gather", "name": "Gather", "color": "#5d8a3e", "summary": "We gather to worship by attending one service and serving during one — Attend One, Serve One.", "url": "https://nvf.life/serve" },
-        { "id": "give", "name": "Give", "color": "#b3852b", "summary": "Generosity keeps the mission multiplying — and it is first a heart issue.", "url": "https://nvf.life/give" },
-        { "id": "group", "name": "Group", "color": "#347b6f", "summary": "God designed the Christian life to thrive as believers share life together.", "url": "https://nvf.life/life-groups" },
-        { "id": "go", "name": "Go", "color": "#ae5230", "summary": "Multiplication spreads from our neighborhoods to the nations.", "url": "https://nvf.life/one" }
+        {
+          "id": "gather",
+          "name": "Gather",
+          "color": "#5d8a3e",
+          "summary": "We gather to worship by attending one service and serving during one — Attend One, Serve One.",
+          "url": "https://nvf.life/serve"
+        },
+        {
+          "id": "give",
+          "name": "Give",
+          "color": "#b3852b",
+          "summary": "Generosity keeps the mission multiplying — and it is first a heart issue.",
+          "url": "https://nvf.life/give"
+        },
+        {
+          "id": "group",
+          "name": "Group",
+          "color": "#347b6f",
+          "summary": "God designed the Christian life to thrive as believers share life together.",
+          "url": "https://nvf.life/life-groups"
+        },
+        {
+          "id": "go",
+          "name": "Go",
+          "color": "#ae5230",
+          "summary": "Multiplication spreads from our neighborhoods to the nations.",
+          "url": "https://nvf.life/one"
+        }
       ]
     },
     "clay_stages": {
       "description": "Clay in the Potter's Hands — our picture of personal spiritual growth, from Isaiah 64:8. Five ordered stages, each multiplying something.",
       "items": [
-        { "id": "found",   "name": "Found",   "color": "#5d8a3e", "stage": "Community to Crowd",        "multiplies": "magnifiers of His name" },
-        { "id": "formed",  "name": "Formed",  "color": "#4f7e54", "stage": "Crowd to Changed",          "multiplies": "models of His character" },
-        { "id": "fired",   "name": "Fired",   "color": "#347b6f", "stage": "Changed to Committed",      "multiplies": "members of His family" },
-        { "id": "filled",  "name": "Filled",  "color": "#b3852b", "stage": "Committed to Commissioned", "multiplies": "ministers of His grace" },
-        { "id": "flowing", "name": "Flowing", "color": "#ae5230", "stage": "Commissioned to Carrying",  "multiplies": "messengers of His love" }
+        {
+          "id": "found",
+          "name": "Found",
+          "color": "#5d8a3e",
+          "stage": "Community to Crowd",
+          "multiplies": "magnifiers of His name"
+        },
+        {
+          "id": "formed",
+          "name": "Formed",
+          "color": "#4f7e54",
+          "stage": "Crowd to Changed",
+          "multiplies": "models of His character"
+        },
+        {
+          "id": "fired",
+          "name": "Fired",
+          "color": "#347b6f",
+          "stage": "Changed to Committed",
+          "multiplies": "members of His family"
+        },
+        {
+          "id": "filled",
+          "name": "Filled",
+          "color": "#b3852b",
+          "stage": "Committed to Commissioned",
+          "multiplies": "ministers of His grace"
+        },
+        {
+          "id": "flowing",
+          "name": "Flowing",
+          "color": "#ae5230",
+          "stage": "Commissioned to Carrying",
+          "multiplies": "messengers of His love"
+        }
       ]
     }
   },
-
   "color_system": {
     "palette": {
       "primary": {
@@ -73,8 +127,16 @@
         "text_on": "#221f1b",
         "usage": "Primary brand green on light backgrounds. This is the canonical application-palette green — used for layouts, backgrounds, accents, CSS tokens, website styling, and newly created branded materials. It is deliberately distinct from the green(s) embedded in official logo artwork (see logos.lockups colors and the note below) — the two do not need to match exactly. Rules, large kickers, accents, buttons, icon fills. As a text color it only reaches WCAG AA at large-text sizes (see color_system.accessibility) — for small text and labels use Green Deep instead, and when this green is a solid background behind text, set the text in Ink (#221f1b), not white.",
         "tones": [
-          { "name": "Green Deep",   "hex": "#42701f", "usage": "Small text, links, and labels on light backgrounds where #5f9a32 lacks contrast. Passes WCAG AA for normal text on Paper." },
-          { "name": "Green Bright", "hex": "#74ca33", "usage": "Accent green for DARK backgrounds only. Canonical application-palette green for dark backgrounds — see the note above about logo artwork carrying its own, separate green. Never on paper — fails contrast badly at any text size on light backgrounds." }
+          {
+            "name": "Green Deep",
+            "hex": "#42701f",
+            "usage": "Small text, links, and labels on light backgrounds where #5f9a32 lacks contrast. Passes WCAG AA for normal text on Paper."
+          },
+          {
+            "name": "Green Bright",
+            "hex": "#74ca33",
+            "usage": "Accent green for DARK backgrounds only. Canonical application-palette green for dark backgrounds — see the note above about logo artwork carrying its own, separate green. Never on paper — fails contrast badly at any text size on light backgrounds."
+          }
         ]
       },
       "secondary": {
@@ -84,7 +146,11 @@
         "text_on": "#ffffff",
         "usage": "Muted supporting green. Scripture rules, eyebrow labels, the road motif.",
         "tones": [
-          { "name": "Olive Deep", "hex": "#37461f", "usage": "Dark green panels and contrast columns with white text." }
+          {
+            "name": "Olive Deep",
+            "hex": "#37461f",
+            "usage": "Dark green panels and contrast columns with white text."
+          }
         ]
       },
       "neutral_dark": {
@@ -94,7 +160,11 @@
         "text_on": "#faf7f1",
         "usage": "Dark backgrounds — covers, section dividers, action slides. See color_system.rules for the pure-black policy.",
         "tones": [
-          { "name": "Charcoal Lift", "hex": "#2d2823", "usage": "Raised surfaces on dark backgrounds." }
+          {
+            "name": "Charcoal Lift",
+            "hex": "#2d2823",
+            "usage": "Raised surfaces on dark backgrounds."
+          }
         ]
       },
       "neutral_light": {
@@ -104,77 +174,329 @@
         "text_on": "#221f1b",
         "usage": "Primary light background. Warm off-white. See color_system.rules for the pure-white policy.",
         "tones": [
-          { "name": "Paper Card", "hex": "#f1ece2", "usage": "Cards, wells, and inset panels on light backgrounds." },
-          { "name": "Paper Deep", "hex": "#e9e2d5", "usage": "Third-level surface for layering." }
+          {
+            "name": "Paper Card",
+            "hex": "#f1ece2",
+            "usage": "Cards, wells, and inset panels on light backgrounds."
+          },
+          {
+            "name": "Paper Deep",
+            "hex": "#e9e2d5",
+            "usage": "Third-level surface for layering."
+          }
         ]
       }
     },
-
     "text": {
-      "ink":      { "hex": "#221f1b", "usage": "Primary body and heading text on light backgrounds." },
-      "ink_soft": { "hex": "#4a443d", "usage": "Secondary and supporting body text." },
-      "on_dark":  { "hex": "#d9d2c6", "usage": "Body text on charcoal backgrounds." },
-      "metadata":         { "hex": "#6d675b", "usage": "Small uppercase labels, tags, and swatch metadata on light backgrounds (Paper, Paper Card, or white) where ink_soft reads as too heavy. Passes WCAG AA for normal text against all three." },
-      "metadata_on_dark": { "hex": "#9a8f81", "usage": "Small uppercase labels and metadata on Charcoal backgrounds where on_dark reads as too heavy. Passes WCAG AA for normal text against Charcoal." }
+      "ink": {
+        "hex": "#221f1b",
+        "usage": "Primary body and heading text on light backgrounds."
+      },
+      "ink_soft": {
+        "hex": "#4a443d",
+        "usage": "Secondary and supporting body text."
+      },
+      "on_dark": {
+        "hex": "#d9d2c6",
+        "usage": "Body text on charcoal backgrounds."
+      },
+      "metadata": {
+        "hex": "#6d675b",
+        "usage": "Small uppercase labels, tags, and swatch metadata on light backgrounds (Paper, Paper Card, or white) where ink_soft reads as too heavy. Passes WCAG AA for normal text against all three."
+      },
+      "metadata_on_dark": {
+        "hex": "#9a8f81",
+        "usage": "Small uppercase labels and metadata on Charcoal backgrounds where on_dark reads as too heavy. Passes WCAG AA for normal text against Charcoal."
+      }
     },
-
     "lines": {
-      "hairline":      { "hex": "#e1dacc", "usage": "Dividers and card borders on light backgrounds." },
-      "hairline_dark": { "hex": "#433d36", "usage": "Dividers on dark backgrounds." }
+      "hairline": {
+        "hex": "#e1dacc",
+        "usage": "Dividers and card borders on light backgrounds."
+      },
+      "hairline_dark": {
+        "hex": "#433d36",
+        "usage": "Dividers on dark backgrounds."
+      }
     },
-
     "accents": {
       "description": "Four earthy, green-anchored accent colors used to differentiate categories and sections. They happen to color-code the On-Ramps framework (frameworks.on_ramps) in Gather/Give/Group/Go order, but should be referred to by color name — Moss, Teal, Ochre, Terracotta — everywhere outside that specific framework. Never introduce a fifth.",
-      "moss":       { "name": "Moss Green", "hex": "#5d8a3e", "text_on": null, "usage": "As a solid background, neither white nor Ink passes WCAG AA for normal-size text (both land around 4.0:1). Safe for large text (18pt+/14pt bold+, roughly 24px+), for the swatch name treatment, or as a border, rule, icon, or other decorative/non-text element. For normal-size text, use Moss Deep instead — either as the text color on a light background, or set small text inside a light chip rather than directly on the Moss fill.", "tones": [ { "name": "Moss Deep", "hex": "#4a6e31", "usage": "Small text, labels, and links on light backgrounds where Moss (#5d8a3e) lacks contrast. Passes WCAG AA for normal text on Paper." } ] },
-      "teal":       { "name": "Muted Teal", "hex": "#347b6f", "text_on": "#ffffff", "usage": "Passes WCAG AA for normal text both as a background with white text and as a text color on Paper." },
-      "ochre":      { "name": "Ochre",      "hex": "#b3852b", "text_on": "#221f1b", "usage": "As a solid background, Ink passes WCAG AA for normal text; white does not (3.3:1) and is large-text only. As a text color on light backgrounds, Ochre itself fails normal-text contrast — use Ochre Deep instead.", "tones": [ { "name": "Ochre Deep", "hex": "#7d5d1e", "usage": "Small text, labels, and links on light backgrounds where Ochre (#b3852b) lacks contrast. Passes WCAG AA for normal text on Paper." } ] },
-      "terracotta": { "name": "Terracotta", "hex": "#ae5230", "text_on": "#ffffff", "usage": "Passes WCAG AA for normal text both as a background with white text and as a text color on Paper." }
+      "moss": {
+        "name": "Moss Green",
+        "hex": "#5d8a3e",
+        "text_on": null,
+        "usage": "As a solid background, neither white nor Ink passes WCAG AA for normal-size text (both land around 4.0:1). Safe for large text (18pt+/14pt bold+, roughly 24px+), for the swatch name treatment, or as a border, rule, icon, or other decorative/non-text element. For normal-size text, use Moss Deep instead — either as the text color on a light background, or set small text inside a light chip rather than directly on the Moss fill.",
+        "tones": [
+          {
+            "name": "Moss Deep",
+            "hex": "#4a6e31",
+            "usage": "Small text, labels, and links on light backgrounds where Moss (#5d8a3e) lacks contrast. Passes WCAG AA for normal text on Paper."
+          }
+        ]
+      },
+      "teal": {
+        "name": "Muted Teal",
+        "hex": "#347b6f",
+        "text_on": "#ffffff",
+        "usage": "Passes WCAG AA for normal text both as a background with white text and as a text color on Paper."
+      },
+      "ochre": {
+        "name": "Ochre",
+        "hex": "#b3852b",
+        "text_on": "#221f1b",
+        "usage": "As a solid background, Ink passes WCAG AA for normal text; white does not (3.3:1) and is large-text only. As a text color on light backgrounds, Ochre itself fails normal-text contrast — use Ochre Deep instead.",
+        "tones": [
+          {
+            "name": "Ochre Deep",
+            "hex": "#7d5d1e",
+            "usage": "Small text, labels, and links on light backgrounds where Ochre (#b3852b) lacks contrast. Passes WCAG AA for normal text on Paper."
+          }
+        ]
+      },
+      "terracotta": {
+        "name": "Terracotta",
+        "hex": "#ae5230",
+        "text_on": "#ffffff",
+        "usage": "Passes WCAG AA for normal text both as a background with white text and as a text color on Paper."
+      }
     },
-
     "interactive": {
       "description": "For on-screen product UI only — logged-in app-like screens, buttons, links, hover states, and small badges on very dark backgrounds, as used on my.nvf.life. Print, booklets, announcement graphics, and other static compositions should keep using the palette and accents above, not these. This tier exists because tiny interactive elements need more lightness and chroma than a printed page does to stay legible and tappable against a near-black screen.",
-      "surface_dark": { "name": "UI Charcoal",             "hex": "#1b1815", "usage": "Primary dark background for app-like screens — a touch darker than Charcoal for extra contrast against the brighter interactive greens below." },
-      "link":         { "name": "Interactive Green",       "hex": "#93d86a", "text_on": "#15240a", "usage": "Links and secondary interactive text on dark UI." },
-      "button":       { "name": "Interactive Green, Bold", "hex": "#7fd142", "text_on": "#15240a", "usage": "Primary buttons and other high-emphasis controls on dark UI." },
-      "alert":        { "name": "Alert Red",                "hex": "#a94442", "text_on": "#ffffff", "usage": "Errors, destructive actions, and required-field warnings. The only red in the system — reserve it for real alerts, never decoration." },
-      "badge_teal":   { "name": "Badge Teal",               "hex": "#45a394", "usage": "Small tags and badges on dark UI, where Muted Teal needs more lift to read at tiny sizes." },
-      "badge_ochre":  { "name": "Badge Ochre",              "hex": "#cf9f3f", "usage": "Small tags and badges on dark UI, where Ochre needs more lift to read at tiny sizes." }
+      "surface_dark": {
+        "name": "UI Charcoal",
+        "hex": "#1b1815",
+        "usage": "Primary dark background for app-like screens — a touch darker than Charcoal for extra contrast against the brighter interactive greens below."
+      },
+      "link": {
+        "name": "Interactive Green",
+        "hex": "#93d86a",
+        "text_on": "#15240a",
+        "usage": "Links and secondary interactive text on dark UI."
+      },
+      "button": {
+        "name": "Interactive Green, Bold",
+        "hex": "#7fd142",
+        "text_on": "#15240a",
+        "usage": "Primary buttons and other high-emphasis controls on dark UI."
+      },
+      "alert": {
+        "name": "Alert Red",
+        "hex": "#a94442",
+        "text_on": "#ffffff",
+        "usage": "Errors, destructive actions, and required-field warnings. The only red in the system — reserve it for real alerts, never decoration."
+      },
+      "badge_teal": {
+        "name": "Badge Teal",
+        "hex": "#45a394",
+        "usage": "Small tags and badges on dark UI, where Muted Teal needs more lift to read at tiny sizes."
+      },
+      "badge_ochre": {
+        "name": "Badge Ochre",
+        "hex": "#cf9f3f",
+        "usage": "Small tags and badges on dark UI, where Ochre needs more lift to read at tiny sizes."
+      }
     },
-
     "accessibility": {
       "description": "Verified WCAG 2.1 AA contrast ratios (4.5:1 normal text, 3:1 large text — 18pt/24px+ regular or 14pt/18.66px+ bold) for every meaningful text/background pairing in this system. 'normal' means safe for body copy, small labels, and small uppercase tracked text. 'large_only' means safe only at large-text sizes — do not use for body copy, captions, or small labels. 'decorative_only' means the pairing does not clear even the large-text minimum and must not carry any text — border, rule, icon, or fill use only. Standard is WCAG 2.1 Level AA.",
       "pairings": [
-        { "foreground": "#221f1b", "background": "#5f9a32", "ratio": 4.81, "classification": "normal", "note": "Ink text on Primary Green background." },
-        { "foreground": "#ffffff", "background": "#5f9a32", "ratio": 3.41, "classification": "large_only", "note": "White text on Primary Green background — headings/kickers at large sizes only." },
-        { "foreground": "#42701f", "background": "#faf7f1", "ratio": 5.50, "classification": "normal", "note": "Green Deep as text on Paper." },
-        { "foreground": "#74ca33", "background": "#24201d", "ratio": 7.88, "classification": "normal", "note": "Green Bright as text on Charcoal." },
-        { "foreground": "#74ca33", "background": "#faf7f1", "ratio": 1.92, "classification": "prohibited", "note": "Green Bright on Paper. Fails even the large-text minimum — never use on light backgrounds, per color_system.rules." },
-        { "foreground": "#ffffff", "background": "#4a5d2f", "ratio": 7.25, "classification": "normal", "note": "White text on Olive background." },
-        { "foreground": "#ffffff", "background": "#37461f", "ratio": 10.20, "classification": "normal", "note": "White text on Olive Deep background." },
-        { "foreground": "#faf7f1", "background": "#24201d", "ratio": 15.11, "classification": "normal", "note": "Paper text on Charcoal background." },
-        { "foreground": "#221f1b", "background": "#faf7f1", "ratio": 15.35, "classification": "normal", "note": "Ink text on Paper background." },
-        { "foreground": "#4a443d", "background": "#faf7f1", "ratio": 8.99, "classification": "normal", "note": "Ink Soft on Paper." },
-        { "foreground": "#4a443d", "background": "#f1ece2", "ratio": 8.16, "classification": "normal", "note": "Ink Soft on Paper Card." },
-        { "foreground": "#d9d2c6", "background": "#24201d", "ratio": 10.76, "classification": "normal", "note": "text.on_dark on Charcoal." },
-        { "foreground": "#6d675b", "background": "#faf7f1", "ratio": 5.25, "classification": "normal", "note": "text.metadata on Paper." },
-        { "foreground": "#6d675b", "background": "#f1ece2", "ratio": 4.77, "classification": "normal", "note": "text.metadata on Paper Card." },
-        { "foreground": "#6d675b", "background": "#ffffff", "ratio": 5.61, "classification": "normal", "note": "text.metadata on white (used inside light swatch cards)." },
-        { "foreground": "#9a8f81", "background": "#24201d", "ratio": 5.09, "classification": "normal", "note": "text.metadata_on_dark on Charcoal." },
-        { "foreground": "#ffffff", "background": "#5d8a3e", "ratio": 4.06, "classification": "large_only", "note": "White text on Moss background." },
-        { "foreground": "#221f1b", "background": "#5d8a3e", "ratio": 4.04, "classification": "large_only", "note": "Ink text on Moss background — neither light nor dark text clears the normal-text minimum on Moss. Use Moss only for large text, the swatch/name treatment, or as a border, rule, icon, or decorative fill." },
-        { "foreground": "#4a6e31", "background": "#faf7f1", "ratio": 5.51, "classification": "normal", "note": "Moss Deep as text on Paper." },
-        { "foreground": "#ffffff", "background": "#347b6f", "ratio": 4.99, "classification": "normal", "note": "White text on Teal background." },
-        { "foreground": "#347b6f", "background": "#faf7f1", "ratio": 4.67, "classification": "normal", "note": "Teal as text on Paper." },
-        { "foreground": "#ffffff", "background": "#b3852b", "ratio": 3.33, "classification": "large_only", "note": "White text on Ochre background — large text only." },
-        { "foreground": "#221f1b", "background": "#b3852b", "ratio": 4.93, "classification": "normal", "note": "Ink text on Ochre background — the correct default pairing." },
-        { "foreground": "#b3852b", "background": "#faf7f1", "ratio": 3.11, "classification": "large_only", "note": "Ochre as text on Paper — large text only; use Ochre Deep for normal text." },
-        { "foreground": "#7d5d1e", "background": "#faf7f1", "ratio": 5.68, "classification": "normal", "note": "Ochre Deep as text on Paper." },
-        { "foreground": "#ffffff", "background": "#ae5230", "ratio": 5.19, "classification": "normal", "note": "White text on Terracotta background." },
-        { "foreground": "#ae5230", "background": "#faf7f1", "ratio": 4.85, "classification": "normal", "note": "Terracotta as text on Paper." },
-        { "foreground": "#e1dacc", "background": "#faf7f1", "ratio": 1.30, "classification": "decorative_only", "note": "Hairline — dividers and card borders only, never text." }
+        {
+          "foreground": "#221f1b",
+          "background": "#5f9a32",
+          "ratio": 4.81,
+          "classification": "normal",
+          "note": "Ink text on Primary Green background."
+        },
+        {
+          "foreground": "#ffffff",
+          "background": "#5f9a32",
+          "ratio": 3.41,
+          "classification": "large_only",
+          "note": "White text on Primary Green background — headings/kickers at large sizes only."
+        },
+        {
+          "foreground": "#42701f",
+          "background": "#faf7f1",
+          "ratio": 5.5,
+          "classification": "normal",
+          "note": "Green Deep as text on Paper."
+        },
+        {
+          "foreground": "#74ca33",
+          "background": "#24201d",
+          "ratio": 7.88,
+          "classification": "normal",
+          "note": "Green Bright as text on Charcoal."
+        },
+        {
+          "foreground": "#74ca33",
+          "background": "#faf7f1",
+          "ratio": 1.92,
+          "classification": "prohibited",
+          "note": "Green Bright on Paper. Fails even the large-text minimum — never use on light backgrounds, per color_system.rules."
+        },
+        {
+          "foreground": "#ffffff",
+          "background": "#4a5d2f",
+          "ratio": 7.25,
+          "classification": "normal",
+          "note": "White text on Olive background."
+        },
+        {
+          "foreground": "#ffffff",
+          "background": "#37461f",
+          "ratio": 10.2,
+          "classification": "normal",
+          "note": "White text on Olive Deep background."
+        },
+        {
+          "foreground": "#faf7f1",
+          "background": "#24201d",
+          "ratio": 15.11,
+          "classification": "normal",
+          "note": "Paper text on Charcoal background."
+        },
+        {
+          "foreground": "#221f1b",
+          "background": "#faf7f1",
+          "ratio": 15.35,
+          "classification": "normal",
+          "note": "Ink text on Paper background."
+        },
+        {
+          "foreground": "#4a443d",
+          "background": "#faf7f1",
+          "ratio": 8.99,
+          "classification": "normal",
+          "note": "Ink Soft on Paper."
+        },
+        {
+          "foreground": "#4a443d",
+          "background": "#f1ece2",
+          "ratio": 8.16,
+          "classification": "normal",
+          "note": "Ink Soft on Paper Card."
+        },
+        {
+          "foreground": "#d9d2c6",
+          "background": "#24201d",
+          "ratio": 10.76,
+          "classification": "normal",
+          "note": "text.on_dark on Charcoal."
+        },
+        {
+          "foreground": "#6d675b",
+          "background": "#faf7f1",
+          "ratio": 5.25,
+          "classification": "normal",
+          "note": "text.metadata on Paper."
+        },
+        {
+          "foreground": "#6d675b",
+          "background": "#f1ece2",
+          "ratio": 4.77,
+          "classification": "normal",
+          "note": "text.metadata on Paper Card."
+        },
+        {
+          "foreground": "#6d675b",
+          "background": "#ffffff",
+          "ratio": 5.61,
+          "classification": "normal",
+          "note": "text.metadata on white (used inside light swatch cards)."
+        },
+        {
+          "foreground": "#9a8f81",
+          "background": "#24201d",
+          "ratio": 5.09,
+          "classification": "normal",
+          "note": "text.metadata_on_dark on Charcoal."
+        },
+        {
+          "foreground": "#ffffff",
+          "background": "#5d8a3e",
+          "ratio": 4.06,
+          "classification": "large_only",
+          "note": "White text on Moss background."
+        },
+        {
+          "foreground": "#221f1b",
+          "background": "#5d8a3e",
+          "ratio": 4.04,
+          "classification": "large_only",
+          "note": "Ink text on Moss background — neither light nor dark text clears the normal-text minimum on Moss. Use Moss only for large text, the swatch/name treatment, or as a border, rule, icon, or decorative fill."
+        },
+        {
+          "foreground": "#4a6e31",
+          "background": "#faf7f1",
+          "ratio": 5.51,
+          "classification": "normal",
+          "note": "Moss Deep as text on Paper."
+        },
+        {
+          "foreground": "#ffffff",
+          "background": "#347b6f",
+          "ratio": 4.99,
+          "classification": "normal",
+          "note": "White text on Teal background."
+        },
+        {
+          "foreground": "#347b6f",
+          "background": "#faf7f1",
+          "ratio": 4.67,
+          "classification": "normal",
+          "note": "Teal as text on Paper."
+        },
+        {
+          "foreground": "#ffffff",
+          "background": "#b3852b",
+          "ratio": 3.33,
+          "classification": "large_only",
+          "note": "White text on Ochre background — large text only."
+        },
+        {
+          "foreground": "#221f1b",
+          "background": "#b3852b",
+          "ratio": 4.93,
+          "classification": "normal",
+          "note": "Ink text on Ochre background — the correct default pairing."
+        },
+        {
+          "foreground": "#b3852b",
+          "background": "#faf7f1",
+          "ratio": 3.11,
+          "classification": "large_only",
+          "note": "Ochre as text on Paper — large text only; use Ochre Deep for normal text."
+        },
+        {
+          "foreground": "#7d5d1e",
+          "background": "#faf7f1",
+          "ratio": 5.68,
+          "classification": "normal",
+          "note": "Ochre Deep as text on Paper."
+        },
+        {
+          "foreground": "#ffffff",
+          "background": "#ae5230",
+          "ratio": 5.19,
+          "classification": "normal",
+          "note": "White text on Terracotta background."
+        },
+        {
+          "foreground": "#ae5230",
+          "background": "#faf7f1",
+          "ratio": 4.85,
+          "classification": "normal",
+          "note": "Terracotta as text on Paper."
+        },
+        {
+          "foreground": "#e1dacc",
+          "background": "#faf7f1",
+          "ratio": 1.3,
+          "classification": "decorative_only",
+          "note": "Hairline — dividers and card borders only, never text."
+        }
       ]
     },
-
     "rules": [
       "Never use pure black or pure white as general background colors. Use Charcoal and Paper instead. Pure black or white may remain where it is part of approved, unmodified logo artwork or required one-color reproduction.",
       "On light backgrounds use Brand Leaf Green (#5f9a32) or Green Deep (#42701f). On dark backgrounds switch to Green Bright (#74ca33). These are the canonical application-palette greens — distinct from, and not required to match, whatever green is embedded in a given piece of official logo artwork.",
@@ -185,12 +507,18 @@
       "Before pairing any text color with any background color, check color_system.accessibility.pairings. Never place normal-size text in a pairing classified large_only or prohibited. If a pairing you need is not listed, calculate the WCAG 2.1 contrast ratio rather than guessing."
     ]
   },
-
   "typography": {
     "display": {
       "family": "Archivo",
       "source": "https://fonts.google.com/specimen/Archivo",
-      "weights": [400, 500, 600, 700, 800, 900],
+      "weights": [
+        400,
+        500,
+        600,
+        700,
+        800,
+        900
+      ],
       "default_weight": 800,
       "usage": "All headings, titles, labels, kickers, numbers, and UI. Tight letter-spacing (-0.01em to -0.028em) on large headings; wide tracking (0.12em to 0.34em) on small uppercase labels."
     },
@@ -198,28 +526,68 @@
       "family": "Source Serif 4",
       "fallback": "Georgia, serif",
       "source": "https://fonts.google.com/specimen/Source+Serif+4",
-      "weights": [400, 500, 600],
+      "weights": [
+        400,
+        500,
+        600
+      ],
       "default_weight": 400,
       "usage": "All long-form and body copy. Line-height approximately 1.4 to 1.6. Apply text-wrap: pretty."
     },
     "script": {
       "family": "Kaushan Script",
       "source": "https://fonts.google.com/specimen/Kaushan+Script",
-      "weights": [400],
+      "weights": [
+        400
+      ],
       "usage": "Warm human accents only — a greeting, a value name, a caption lead-in such as 'We are…'. Never for body copy or critical information. One flourish per composition."
     },
     "display_alternates": {
       "description": "Used only in the On-Ramp cover lockup, set in Canva. Not required for general brand work.",
-      "families": ["Tan St. Canard", "Breathing", "DM Sans"]
+      "families": [
+        "Tan St. Canard",
+        "Breathing",
+        "DM Sans"
+      ]
     },
     "scale": {
-      "hero":     { "size_px": 188, "weight": 900, "family": "Archivo" },
-      "title":    { "size_px": 132, "weight": 900, "family": "Archivo" },
-      "section":  { "size_px": 104, "weight": 900, "family": "Archivo" },
-      "subhead":  { "size_px": 52,  "weight": 800, "family": "Archivo" },
-      "lead":     { "size_px": 56,  "weight": 500, "family": "Source Serif 4" },
-      "body":     { "size_px": 46,  "weight": 400, "family": "Source Serif 4" },
-      "kicker":   { "size_px": 36,  "weight": 800, "family": "Archivo", "transform": "uppercase", "letter_spacing": "0.26em" },
+      "hero": {
+        "size_px": 188,
+        "weight": 900,
+        "family": "Archivo"
+      },
+      "title": {
+        "size_px": 132,
+        "weight": 900,
+        "family": "Archivo"
+      },
+      "section": {
+        "size_px": 104,
+        "weight": 900,
+        "family": "Archivo"
+      },
+      "subhead": {
+        "size_px": 52,
+        "weight": 800,
+        "family": "Archivo"
+      },
+      "lead": {
+        "size_px": 56,
+        "weight": 500,
+        "family": "Source Serif 4"
+      },
+      "body": {
+        "size_px": 46,
+        "weight": 400,
+        "family": "Source Serif 4"
+      },
+      "kicker": {
+        "size_px": 36,
+        "weight": 800,
+        "family": "Archivo",
+        "transform": "uppercase",
+        "letter_spacing": "0.26em"
+      },
       "note": "Sizes are expressed for a 1920x1080 canvas. Scale proportionally for other media. For print, body copy sits between 12pt and 15pt."
     },
     "minimums": {
@@ -229,14 +597,24 @@
     },
     "license_note": "Fonts are provided by their respective sources. Follow the source's current terms when downloading or distributing them. See each family's source field above for its direct Google Fonts page."
   },
-
   "radius": {
-    "sm": { "value": "6px",  "usage": "Small images and inline thumbnails." },
-    "md": { "value": "10px", "usage": "Cards, wells, and inset panels. The default." },
-    "lg": { "value": "20px", "usage": "Large panels on projected or oversized media." },
-    "pill": { "value": "60px", "usage": "Chips and tags." }
+    "sm": {
+      "value": "6px",
+      "usage": "Small images and inline thumbnails."
+    },
+    "md": {
+      "value": "10px",
+      "usage": "Cards, wells, and inset panels. The default."
+    },
+    "lg": {
+      "value": "20px",
+      "usage": "Large panels on projected or oversized media."
+    },
+    "pill": {
+      "value": "60px",
+      "usage": "Chips and tags."
+    }
   },
-
   "logos": {
     "lockups": [
       {
@@ -245,14 +623,210 @@
         "description": "NEW VISION above FELLOWSHIP with the leaf mark. The primary logo. Prefer this for covers, title cards, and anywhere with vertical room.",
         "primary": true,
         "assets": [
-          { "variant": "black_text", "path": "logos/nvf-stacked-color.svg", "format": "svg", "use_on": "light backgrounds", "ideal_background": "light", "colors": ["#231f20", "#569c33", "#74c933"], "width": 563, "height": 232, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "recolor_slots": [ { "label": "Wordmark", "hex": "#231f20" }, { "label": "Leaf Dark", "hex": "#569c33" }, { "label": "Leaf Bright", "hex": "#74c933" } ], "note": "The default logo. Charcoal wordmark with the green leaf mark." },
-          { "variant": "black_text", "path": "logos/nvf-stacked-color.png", "format": "png", "use_on": "light backgrounds", "ideal_background": "light", "colors": ["#231f20", "#569c33", "#74c933"], "width": 2048, "height": 844, "transparent": true, "scalable": false, "max_print_width_in": 6.83, "available_formats": ["svg", "png"], "note": "Transparent PNG rendered deterministically from nvf-stacked-color.svg at up to 2048px. Prefer the SVG; use this only where the tool or format cannot accept vector art." },
-          { "variant": "white_text", "path": "logos/nvf-stacked-color-dark.svg", "format": "svg", "use_on": "dark backgrounds", "ideal_background": "dark", "colors": ["#ffffff", "#569c33", "#74c933"], "width": 563, "height": 232, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "recolor_slots": [ { "label": "Wordmark", "hex": "#ffffff" }, { "label": "Leaf Dark", "hex": "#569c33" }, { "label": "Leaf Bright", "hex": "#74c933" } ], "note": "Two-color lockup with a white wordmark, for charcoal and photographic backgrounds." },
-          { "variant": "white_text", "path": "logos/nvf-stacked-color-dark.png", "format": "png", "use_on": "dark backgrounds", "ideal_background": "dark", "colors": ["#ffffff", "#569c33", "#74c933"], "width": 2048, "height": 844, "transparent": true, "scalable": false, "max_print_width_in": 6.83, "available_formats": ["svg", "png"], "note": "Transparent PNG rendered deterministically from nvf-stacked-color-dark.svg at up to 2048px. Prefer the SVG; use this only where the tool or format cannot accept vector art." },
-          { "variant": "all_white", "path": "logos/nvf-stacked-white.svg", "format": "svg", "use_on": "dark backgrounds", "ideal_background": "dark", "colors": ["#ffffff"], "width": 563, "height": 232, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "recolor_slots": [ { "label": "Mark", "hex": "#ffffff" } ], "note": "Single-color white. Use where the green leaf would not reproduce." },
-          { "variant": "all_white", "path": "logos/nvf-stacked-white.png", "format": "png", "use_on": "dark backgrounds", "ideal_background": "dark", "colors": ["#ffffff"], "width": 2048, "height": 844, "transparent": true, "scalable": false, "max_print_width_in": 6.83, "available_formats": ["svg", "png"], "note": "Transparent PNG rendered deterministically from nvf-stacked-white.svg at up to 2048px. Prefer the SVG; use this only where the tool or format cannot accept vector art." },
-          { "variant": "all_black", "path": "logos/nvf-stacked-black.svg", "format": "svg", "use_on": "single-color print", "ideal_background": "light", "colors": ["#231f20"], "width": 563, "height": 232, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "recolor_slots": [ { "label": "Mark", "hex": "#231f20" } ], "note": "Single-color charcoal. One-ink print and faxable documents." },
-          { "variant": "all_black", "path": "logos/nvf-stacked-black.png", "format": "png", "use_on": "single-color print", "ideal_background": "light", "colors": ["#231f20"], "width": 2048, "height": 844, "transparent": true, "scalable": false, "max_print_width_in": 6.83, "available_formats": ["svg", "png"], "note": "Transparent PNG rendered deterministically from nvf-stacked-black.svg at up to 2048px. Prefer the SVG; use this only where the tool or format cannot accept vector art." }
+          {
+            "variant": "black_text",
+            "path": "logos/nvf-stacked-color.svg",
+            "format": "svg",
+            "use_on": "light backgrounds",
+            "ideal_background": "light",
+            "colors": [
+              "#231f20",
+              "#569c33",
+              "#74c933"
+            ],
+            "width": 563,
+            "height": 232,
+            "transparent": true,
+            "scalable": true,
+            "available_formats": [
+              "svg",
+              "png"
+            ],
+            "recolor_slots": [
+              {
+                "label": "Wordmark",
+                "hex": "#231f20"
+              },
+              {
+                "label": "Leaf Dark",
+                "hex": "#569c33"
+              },
+              {
+                "label": "Leaf Bright",
+                "hex": "#74c933"
+              }
+            ],
+            "note": "The default logo. Charcoal wordmark with the green leaf mark."
+          },
+          {
+            "variant": "black_text",
+            "path": "logos/nvf-stacked-color.png",
+            "format": "png",
+            "use_on": "light backgrounds",
+            "ideal_background": "light",
+            "colors": [
+              "#231f20",
+              "#569c33",
+              "#74c933"
+            ],
+            "width": 2048,
+            "height": 844,
+            "transparent": true,
+            "scalable": false,
+            "max_print_width_in": 6.83,
+            "available_formats": [
+              "svg",
+              "png"
+            ],
+            "note": "Transparent PNG rendered deterministically from nvf-stacked-color.svg at up to 2048px. Prefer the SVG; use this only where the tool or format cannot accept vector art."
+          },
+          {
+            "variant": "white_text",
+            "path": "logos/nvf-stacked-color-dark.svg",
+            "format": "svg",
+            "use_on": "dark backgrounds",
+            "ideal_background": "dark",
+            "colors": [
+              "#ffffff",
+              "#569c33",
+              "#74c933"
+            ],
+            "width": 563,
+            "height": 232,
+            "transparent": true,
+            "scalable": true,
+            "available_formats": [
+              "svg",
+              "png"
+            ],
+            "recolor_slots": [
+              {
+                "label": "Wordmark",
+                "hex": "#ffffff"
+              },
+              {
+                "label": "Leaf Dark",
+                "hex": "#569c33"
+              },
+              {
+                "label": "Leaf Bright",
+                "hex": "#74c933"
+              }
+            ],
+            "note": "Two-color lockup with a white wordmark, for charcoal and photographic backgrounds."
+          },
+          {
+            "variant": "white_text",
+            "path": "logos/nvf-stacked-color-dark.png",
+            "format": "png",
+            "use_on": "dark backgrounds",
+            "ideal_background": "dark",
+            "colors": [
+              "#ffffff",
+              "#569c33",
+              "#74c933"
+            ],
+            "width": 2048,
+            "height": 844,
+            "transparent": true,
+            "scalable": false,
+            "max_print_width_in": 6.83,
+            "available_formats": [
+              "svg",
+              "png"
+            ],
+            "note": "Transparent PNG rendered deterministically from nvf-stacked-color-dark.svg at up to 2048px. Prefer the SVG; use this only where the tool or format cannot accept vector art."
+          },
+          {
+            "variant": "all_white",
+            "path": "logos/nvf-stacked-white.svg",
+            "format": "svg",
+            "use_on": "dark backgrounds",
+            "ideal_background": "dark",
+            "colors": [
+              "#ffffff"
+            ],
+            "width": 563,
+            "height": 232,
+            "transparent": true,
+            "scalable": true,
+            "available_formats": [
+              "svg",
+              "png"
+            ],
+            "recolor_slots": [
+              {
+                "label": "Mark",
+                "hex": "#ffffff"
+              }
+            ],
+            "note": "Single-color white. Use where the green leaf would not reproduce."
+          },
+          {
+            "variant": "all_white",
+            "path": "logos/nvf-stacked-white.png",
+            "format": "png",
+            "use_on": "dark backgrounds",
+            "ideal_background": "dark",
+            "colors": [
+              "#ffffff"
+            ],
+            "width": 2048,
+            "height": 844,
+            "transparent": true,
+            "scalable": false,
+            "max_print_width_in": 6.83,
+            "available_formats": [
+              "svg",
+              "png"
+            ],
+            "note": "Transparent PNG rendered deterministically from nvf-stacked-white.svg at up to 2048px. Prefer the SVG; use this only where the tool or format cannot accept vector art."
+          },
+          {
+            "variant": "all_black",
+            "path": "logos/nvf-stacked-black.svg",
+            "format": "svg",
+            "use_on": "single-color print",
+            "ideal_background": "light",
+            "colors": [
+              "#231f20"
+            ],
+            "width": 563,
+            "height": 232,
+            "transparent": true,
+            "scalable": true,
+            "available_formats": [
+              "svg",
+              "png"
+            ],
+            "recolor_slots": [
+              {
+                "label": "Mark",
+                "hex": "#231f20"
+              }
+            ],
+            "note": "Single-color charcoal. One-ink print and faxable documents."
+          },
+          {
+            "variant": "all_black",
+            "path": "logos/nvf-stacked-black.png",
+            "format": "png",
+            "use_on": "single-color print",
+            "ideal_background": "light",
+            "colors": [
+              "#231f20"
+            ],
+            "width": 2048,
+            "height": 844,
+            "transparent": true,
+            "scalable": false,
+            "max_print_width_in": 6.83,
+            "available_formats": [
+              "svg",
+              "png"
+            ],
+            "note": "Transparent PNG rendered deterministically from nvf-stacked-black.svg at up to 2048px. Prefer the SVG; use this only where the tool or format cannot accept vector art."
+          }
         ]
       },
       {
@@ -261,13 +835,180 @@
         "description": "Single-line wordmark. Use in narrow horizontal spaces — headers, footers, corner marks, email signatures.",
         "primary": false,
         "assets": [
-          { "variant": "all_black", "path": "logos/nvf-horizontal-black.svg", "format": "svg", "use_on": "light backgrounds", "ideal_background": "light", "colors": ["#000000", "#231f20"], "width": 1625, "height": 74, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "recolor_slots": [ { "label": "New Vision Text", "hex": "#231f20" }, { "label": "Fellowship Text & Leaf", "hex": "#000000" } ], "note": "Single-color dark wordmark. No green. Uses two near-black fills (#231f20 for \"New Vision\", #000000 for \"Fellowship\" and the leaf icon) — both are approved as supplied; see color_system.rules for the pure-black policy." },
-          { "variant": "all_black", "path": "logos/nvf-horizontal-black.png", "format": "png", "use_on": "light backgrounds", "ideal_background": "light", "colors": ["#000000", "#231f20"], "width": 2048, "height": 93, "transparent": true, "scalable": false, "max_print_width_in": 6.83, "available_formats": ["svg", "png"], "note": "Transparent PNG rendered deterministically from nvf-horizontal-black.svg at up to 2048px. Prefer the SVG; use this only where the tool or format cannot accept vector art." },
-          { "variant": "white_text", "path": "logos/nvf-horizontal-white.svg", "format": "svg", "use_on": "dark backgrounds", "ideal_background": "dark", "colors": ["#ffffff", "#569c33", "#74c933"], "width": 1625, "height": 74, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "recolor_slots": [ { "label": "Wordmark", "hex": "#ffffff" }, { "label": "Leaf Dark", "hex": "#569c33" }, { "label": "Leaf Bright", "hex": "#74c933" } ], "note": "White wordmark with the green leaf mark retained." },
-          { "variant": "white_text", "path": "logos/nvf-horizontal-white-text.png", "format": "png", "use_on": "dark backgrounds", "ideal_background": "dark", "colors": ["#ffffff", "#569c33", "#74c933"], "width": 1625, "height": 74, "transparent": true, "scalable": false, "max_print_width_in": 5.42, "available_formats": ["svg", "png"], "note": "Same design as the White Text SVG above, in PNG for raster-only contexts. Prefer the SVG; use this only where the tool or format cannot accept vector art." },
-          { "variant": "black_text", "path": "logos/nvf-horizontal-color.png", "format": "png", "use_on": "light backgrounds", "ideal_background": "light", "colors": ["#231f20", "#569c33", "#74c933"], "width": 1625, "height": 74, "transparent": true, "scalable": false, "max_print_width_in": 5.42, "available_formats": ["png"], "note": "Black wordmark with the green leaf mark retained. No SVG source currently exists for this variant — request one rather than tracing the PNG." },
-          { "variant": "all_white", "path": "logos/nvf-horizontal-all-white.svg", "format": "svg", "use_on": "dark backgrounds", "ideal_background": "dark", "colors": ["#ffffff"], "width": 1625, "height": 74, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "recolor_slots": [ { "label": "Mark", "hex": "#ffffff" } ], "note": "Single-color white. No green." },
-          { "variant": "all_white", "path": "logos/nvf-horizontal-all-white.png", "format": "png", "use_on": "dark backgrounds", "ideal_background": "dark", "colors": ["#ffffff"], "width": 2048, "height": 93, "transparent": true, "scalable": false, "max_print_width_in": 6.83, "available_formats": ["svg", "png"], "note": "Transparent PNG rendered deterministically from nvf-horizontal-all-white.svg at up to 2048px. Prefer the SVG; use this only where the tool or format cannot accept vector art." }
+          {
+            "variant": "all_black",
+            "path": "logos/nvf-horizontal-black.svg",
+            "format": "svg",
+            "use_on": "light backgrounds",
+            "ideal_background": "light",
+            "colors": [
+              "#000000",
+              "#231f20"
+            ],
+            "width": 1625,
+            "height": 74,
+            "transparent": true,
+            "scalable": true,
+            "available_formats": [
+              "svg",
+              "png"
+            ],
+            "recolor_slots": [
+              {
+                "label": "New Vision Text",
+                "hex": "#231f20"
+              },
+              {
+                "label": "Fellowship Text & Leaf",
+                "hex": "#000000"
+              }
+            ],
+            "note": "Single-color dark wordmark. No green. Uses two near-black fills (#231f20 for \"New Vision\", #000000 for \"Fellowship\" and the leaf icon) — both are approved as supplied; see color_system.rules for the pure-black policy."
+          },
+          {
+            "variant": "all_black",
+            "path": "logos/nvf-horizontal-black.png",
+            "format": "png",
+            "use_on": "light backgrounds",
+            "ideal_background": "light",
+            "colors": [
+              "#000000",
+              "#231f20"
+            ],
+            "width": 2048,
+            "height": 93,
+            "transparent": true,
+            "scalable": false,
+            "max_print_width_in": 6.83,
+            "available_formats": [
+              "svg",
+              "png"
+            ],
+            "note": "Transparent PNG rendered deterministically from nvf-horizontal-black.svg at up to 2048px. Prefer the SVG; use this only where the tool or format cannot accept vector art."
+          },
+          {
+            "variant": "white_text",
+            "path": "logos/nvf-horizontal-white.svg",
+            "format": "svg",
+            "use_on": "dark backgrounds",
+            "ideal_background": "dark",
+            "colors": [
+              "#ffffff",
+              "#569c33",
+              "#74c933"
+            ],
+            "width": 1625,
+            "height": 74,
+            "transparent": true,
+            "scalable": true,
+            "available_formats": [
+              "svg",
+              "png"
+            ],
+            "recolor_slots": [
+              {
+                "label": "Wordmark",
+                "hex": "#ffffff"
+              },
+              {
+                "label": "Leaf Dark",
+                "hex": "#569c33"
+              },
+              {
+                "label": "Leaf Bright",
+                "hex": "#74c933"
+              }
+            ],
+            "note": "White wordmark with the green leaf mark retained."
+          },
+          {
+            "variant": "white_text",
+            "path": "logos/nvf-horizontal-white-text.png",
+            "format": "png",
+            "use_on": "dark backgrounds",
+            "ideal_background": "dark",
+            "colors": [
+              "#ffffff",
+              "#569c33",
+              "#74c933"
+            ],
+            "width": 1625,
+            "height": 74,
+            "transparent": true,
+            "scalable": false,
+            "max_print_width_in": 5.42,
+            "available_formats": [
+              "svg",
+              "png"
+            ],
+            "note": "Same design as the White Text SVG above, in PNG for raster-only contexts. Prefer the SVG; use this only where the tool or format cannot accept vector art."
+          },
+          {
+            "variant": "black_text",
+            "path": "logos/nvf-horizontal-color.png",
+            "format": "png",
+            "use_on": "light backgrounds",
+            "ideal_background": "light",
+            "colors": [
+              "#231f20",
+              "#569c33",
+              "#74c933"
+            ],
+            "width": 1625,
+            "height": 74,
+            "transparent": true,
+            "scalable": false,
+            "max_print_width_in": 5.42,
+            "available_formats": [
+              "png"
+            ],
+            "note": "Black wordmark with the green leaf mark retained. No SVG source currently exists for this variant — request one rather than tracing the PNG."
+          },
+          {
+            "variant": "all_white",
+            "path": "logos/nvf-horizontal-all-white.svg",
+            "format": "svg",
+            "use_on": "dark backgrounds",
+            "ideal_background": "dark",
+            "colors": [
+              "#ffffff"
+            ],
+            "width": 1625,
+            "height": 74,
+            "transparent": true,
+            "scalable": true,
+            "available_formats": [
+              "svg",
+              "png"
+            ],
+            "recolor_slots": [
+              {
+                "label": "Mark",
+                "hex": "#ffffff"
+              }
+            ],
+            "note": "Single-color white. No green."
+          },
+          {
+            "variant": "all_white",
+            "path": "logos/nvf-horizontal-all-white.png",
+            "format": "png",
+            "use_on": "dark backgrounds",
+            "ideal_background": "dark",
+            "colors": [
+              "#ffffff"
+            ],
+            "width": 2048,
+            "height": 93,
+            "transparent": true,
+            "scalable": false,
+            "max_print_width_in": 6.83,
+            "available_formats": [
+              "svg",
+              "png"
+            ],
+            "note": "Transparent PNG rendered deterministically from nvf-horizontal-all-white.svg at up to 2048px. Prefer the SVG; use this only where the tool or format cannot accept vector art."
+          }
         ]
       },
       {
@@ -276,7 +1017,26 @@
         "description": "The two-leaf icon alone. Use as a small decorative accent, favicon, or avatar — never as a substitute for the full logo in primary placements.",
         "primary": false,
         "assets": [
-          { "variant": "color", "path": "logos/nvf-leaf-mark.png", "format": "png", "use_on": "any background", "ideal_background": "any", "colors": ["#569c33", "#74c933"], "width": 358, "height": 317, "transparent": true, "scalable": false, "max_print_width_in": 1.19, "available_formats": ["png"], "note": "No SVG source currently exists for this asset — request one rather than tracing the PNG." }
+          {
+            "variant": "color",
+            "path": "logos/nvf-leaf-mark.png",
+            "format": "png",
+            "use_on": "any background",
+            "ideal_background": "any",
+            "colors": [
+              "#569c33",
+              "#74c933"
+            ],
+            "width": 358,
+            "height": 317,
+            "transparent": true,
+            "scalable": false,
+            "max_print_width_in": 1.19,
+            "available_formats": [
+              "png"
+            ],
+            "note": "No SVG source currently exists for this asset — request one rather than tracing the PNG."
+          }
         ]
       },
       {
@@ -285,8 +1045,56 @@
         "description": "The cross alone, in the same two-green pinwheel treatment as the rest of the mark. Use sparingly, the same way as the leaf mark — a small decorative accent, favicon, or a muted background element — never as a substitute for the full logo.",
         "primary": false,
         "assets": [
-          { "variant": "color", "path": "logos/nvf-cross-mark.svg", "format": "svg", "use_on": "any background", "ideal_background": "any", "colors": ["#569c33", "#74c933"], "width": 417, "height": 706, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "recolor_slots": [ { "label": "Cross Dark", "hex": "#569c33" }, { "label": "Cross Bright", "hex": "#74c933" } ] },
-          { "variant": "color", "path": "logos/nvf-cross-mark.png", "format": "png", "use_on": "any background", "ideal_background": "any", "colors": ["#569c33", "#74c933"], "width": 1210, "height": 2048, "transparent": true, "scalable": false, "max_print_width_in": 4.03, "available_formats": ["svg", "png"], "note": "Transparent PNG rendered deterministically from nvf-cross-mark.svg at up to 2048px. Prefer the SVG; use this only where the tool or format cannot accept vector art." }
+          {
+            "variant": "color",
+            "path": "logos/nvf-cross-mark.svg",
+            "format": "svg",
+            "use_on": "any background",
+            "ideal_background": "any",
+            "colors": [
+              "#569c33",
+              "#74c933"
+            ],
+            "width": 417,
+            "height": 706,
+            "transparent": true,
+            "scalable": true,
+            "available_formats": [
+              "svg",
+              "png"
+            ],
+            "recolor_slots": [
+              {
+                "label": "Cross Dark",
+                "hex": "#569c33"
+              },
+              {
+                "label": "Cross Bright",
+                "hex": "#74c933"
+              }
+            ]
+          },
+          {
+            "variant": "color",
+            "path": "logos/nvf-cross-mark.png",
+            "format": "png",
+            "use_on": "any background",
+            "ideal_background": "any",
+            "colors": [
+              "#569c33",
+              "#74c933"
+            ],
+            "width": 1210,
+            "height": 2048,
+            "transparent": true,
+            "scalable": false,
+            "max_print_width_in": 4.03,
+            "available_formats": [
+              "svg",
+              "png"
+            ],
+            "note": "Transparent PNG rendered deterministically from nvf-cross-mark.svg at up to 2048px. Prefer the SVG; use this only where the tool or format cannot accept vector art."
+          }
         ]
       }
     ],
@@ -302,74 +1110,885 @@
       "For the horizontal wordmark: all_black and all_white are single-color, no green — use where the design needs one flat ink. white_text and black_text both keep the green leaf mark, differing only in the wordmark color for light vs. dark backgrounds."
     ]
   },
-
   "sub_brands": [
-    { "id": "the_wheel",      "name": "The Wheel",       "audience": "Children's Ministry — birth through 5th grade", "website": "https://nvf.life/kids",          "assets": [
-        { "variant": "color", "path": "sub-brands/the-wheel.svg", "format": "svg", "use_on": "light backgrounds", "ideal_background": "light", "colors": ["#fa6a1e", "#0b187d", "#000000"], "width": 981, "height": 297, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "Black wordmark, color icon and accents." },
-        { "variant": "color", "path": "sub-brands/the-wheel.png", "format": "png", "use_on": "light backgrounds", "ideal_background": "light", "width": 1920, "height": 581, "transparent": true, "scalable": false, "max_print_width_in": 6.40, "available_formats": ["svg", "png"], "note": "Black wordmark, color icon and accents." },
-        { "variant": "white", "path": "sub-brands/the-wheel-white.svg", "format": "svg", "use_on": "dark backgrounds", "ideal_background": "dark", "width": 981, "height": 297, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "White wordmark, color icon and accents retained." },
-        { "variant": "white", "path": "sub-brands/the-wheel-white.png", "format": "png", "use_on": "dark backgrounds", "ideal_background": "dark", "width": 1920, "height": 581, "transparent": true, "scalable": false, "max_print_width_in": 6.40, "available_formats": ["svg", "png"], "note": "White wordmark, color icon and accents retained." }
-      ] },
-    { "id": "the_kiln",       "name": "The Kiln",        "audience": "Student Ministry — grades 6 through 12",        "website": "https://nvf.life/students",      "assets": [
-        { "variant": "color", "path": "sub-brands/the-kiln.svg", "format": "svg", "use_on": "light backgrounds", "ideal_background": "light", "colors": ["#000000", "#ed1c24"], "width": 869, "height": 371, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "Black wordmark, red icon outline and flame." },
-        { "variant": "color", "path": "sub-brands/the-kiln.png", "format": "png", "use_on": "light backgrounds", "ideal_background": "light", "width": 1920, "height": 820, "transparent": true, "scalable": false, "max_print_width_in": 6.40, "available_formats": ["svg", "png"], "note": "Black wordmark, red icon outline and flame." },
-        { "variant": "white", "path": "sub-brands/the-kiln-white.svg", "format": "svg", "use_on": "dark backgrounds", "ideal_background": "dark", "width": 869, "height": 371, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "White wordmark, red icon outline and flame retained." },
-        { "variant": "white", "path": "sub-brands/the-kiln-white.png", "format": "png", "use_on": "dark backgrounds", "ideal_background": "dark", "width": 1920, "height": 819, "transparent": true, "scalable": false, "max_print_width_in": 6.40, "available_formats": ["svg", "png"], "note": "White wordmark, red icon outline and flame retained." }
-      ] },
-    { "id": "the_mill",       "name": "The Mill",        "audience": "College & Young Career — through age 25",       "website": "https://nvf.life/young-adults", "assets": [
-        { "variant": "color", "path": "sub-brands/the-mill.svg", "format": "svg", "use_on": "light backgrounds", "ideal_background": "light", "width": 276, "height": 113, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "Dark/black text, color icon. True knockout — negative space in the wheel icon is genuinely transparent, not a white/black fill." },
-        { "variant": "color", "path": "sub-brands/the-mill.png", "format": "png", "use_on": "light backgrounds", "ideal_background": "light", "width": 1920, "height": 788, "transparent": true, "scalable": false, "max_print_width_in": 6.40, "available_formats": ["svg", "png"], "note": "Dark/black text, color icon. True knockout — negative space in the wheel icon is genuinely transparent, not a white/black fill." },
-        { "variant": "white", "path": "sub-brands/the-mill-white.svg", "format": "svg", "use_on": "dark backgrounds", "ideal_background": "dark", "width": 278, "height": 113, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "White wordmark, color icon retained. True knockout — negative space in the wheel icon is genuinely transparent, not a white/black fill." },
-        { "variant": "white", "path": "sub-brands/the-mill-white.png", "format": "png", "use_on": "dark backgrounds", "ideal_background": "dark", "width": 1920, "height": 781, "transparent": true, "scalable": false, "max_print_width_in": 6.40, "available_formats": ["svg", "png"], "note": "White wordmark, color icon retained. True knockout — negative space in the wheel icon is genuinely transparent, not a white/black fill." }
-      ] },
-    { "id": "titus_2_women",  "name": "Titus 2 Women",   "audience": "Women's Ministry — all ages",                   "website": "https://nvf.life/women",        "assets": [
-        { "variant": "color", "path": "sub-brands/titus-2-women.png", "format": "png", "use_on": "light backgrounds", "ideal_background": "light", "width": 2048, "height": 1581, "transparent": true, "scalable": false, "max_print_width_in": 6.83, "available_formats": ["png"], "note": "Dark/black text and icon. No SVG source currently exists for this variant — the source file is a raster image wrapped in an SVG shell, not real vector art, so request a genuine vector rather than using or tracing it." },
-        { "variant": "white", "path": "sub-brands/titus-2-women-white.png", "format": "png", "use_on": "dark backgrounds", "ideal_background": "dark", "width": 2048, "height": 1581, "transparent": true, "scalable": false, "max_print_width_in": 6.83, "available_formats": ["png"], "note": "White text and icon. No SVG source currently exists for this variant — the source file is a raster image wrapped in an SVG shell, not real vector art, so request a genuine vector rather than using or tracing it." }
-      ] },
-    { "id": "men_of_vision",  "name": "Men of Vision",   "audience": "Men's Ministry — all ages",                     "website": "https://nvf.life/men",          "assets": [
-        { "variant": "color", "path": "sub-brands/men-of-vision.png", "format": "png", "use_on": "light backgrounds", "ideal_background": "light", "colors": ["#808080", "#c9a961"], "width": 1976, "height": 2048, "transparent": true, "scalable": false, "max_print_width_in": 6.59, "available_formats": ["png"], "note": "Gray text, gold shield/cross icon. No SVG source currently exists for this variant — the source file is a raster image wrapped in an SVG shell, not real vector art, so request a genuine vector rather than using or tracing it." },
-        { "variant": "white", "path": "sub-brands/men-of-vision-white.png", "format": "png", "use_on": "dark backgrounds", "ideal_background": "dark", "colors": ["#ffffff", "#c9a961"], "width": 1976, "height": 2048, "transparent": true, "scalable": false, "max_print_width_in": 6.59, "available_formats": ["png"], "note": "White text, gold shield/cross icon. No SVG source currently exists for this variant — the source file is a raster image wrapped in an SVG shell, not real vector art, so request a genuine vector rather than using or tracing it." }
-      ] },
-    { "id": "vintage_visions","name": "Vintage Visions",  "audience": "Senior Ministry — senior-focused, not senior-exclusive", "website": "https://nvf.life/seniors", "assets": [
-        { "variant": "color", "path": "sub-brands/vintage-visions.svg", "format": "svg", "use_on": "light backgrounds", "ideal_background": "light", "colors": ["#569c33", "#211e1e"], "width": 357, "height": 105, "transparent": true, "scalable": true, "available_formats": ["svg", "png"] },
-        { "variant": "color", "path": "sub-brands/vintage-visions.png", "format": "png", "use_on": "light backgrounds", "ideal_background": "light", "width": 600, "height": 177, "transparent": true, "scalable": false, "max_print_width_in": 2.00, "available_formats": ["svg", "png"] },
-        { "variant": "white", "path": "sub-brands/vintage-visions-white.svg", "format": "svg", "use_on": "dark backgrounds", "ideal_background": "dark", "width": 357, "height": 105, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "White banner text, green leaf accent retained." },
-        { "variant": "white", "path": "sub-brands/vintage-visions-white.png", "format": "png", "use_on": "dark backgrounds", "ideal_background": "dark", "width": 1921, "height": 567, "transparent": true, "scalable": false, "max_print_width_in": 6.40, "available_formats": ["svg", "png"], "note": "White banner text, green leaf accent retained." }
-      ] },
-    { "id": "melding_moms",   "name": "Melding Moms",     "audience": "Moms of school-aged children", "assets": [
-        { "variant": "color", "path": "sub-brands/melding-moms-color.svg", "format": "svg", "use_on": "light backgrounds", "ideal_background": "light", "colors": ["#569c33", "#74c933", "#000000"], "width": 326, "height": 128, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "Black text, green accent." },
-        { "variant": "color", "path": "sub-brands/melding-moms-color.png", "format": "png", "use_on": "light backgrounds", "ideal_background": "light", "width": 1960, "height": 792, "transparent": true, "scalable": false, "max_print_width_in": 6.53, "available_formats": ["svg", "png"], "note": "Black text, green accent." },
-        { "variant": "white", "path": "sub-brands/melding-moms-white.svg", "format": "svg", "use_on": "dark backgrounds", "ideal_background": "dark", "colors": ["#569c33", "#74c933", "#ffffff"], "width": 326, "height": 128, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "White text, green accent." },
-        { "variant": "white", "path": "sub-brands/melding-moms-white.png", "format": "png", "use_on": "dark backgrounds", "ideal_background": "dark", "width": 1920, "height": 752, "transparent": true, "scalable": false, "max_print_width_in": 6.40, "available_formats": ["svg", "png"], "note": "White text, green accent." }
-      ] }
+    {
+      "id": "the_wheel",
+      "name": "The Wheel",
+      "audience": "Children's Ministry — birth through 5th grade",
+      "website": "https://nvf.life/kids",
+      "assets": [
+        {
+          "variant": "color",
+          "path": "sub-brands/the-wheel.svg",
+          "format": "svg",
+          "use_on": "light backgrounds",
+          "ideal_background": "light",
+          "colors": [
+            "#fa6a1e",
+            "#0b187d",
+            "#ffffff",
+            "#000000"
+          ],
+          "width": 981,
+          "height": 297,
+          "transparent": true,
+          "scalable": true,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "Black wordmark, color icon and accents.",
+          "recolor_slots": [
+            {
+              "label": "Pot Icon & Script",
+              "hex": "#fa6a1e"
+            },
+            {
+              "label": "Swirl & Ministry Text",
+              "hex": "#0b187d"
+            },
+            {
+              "label": "Swirl Highlight",
+              "hex": "#ffffff"
+            },
+            {
+              "label": "Wordmark",
+              "hex": "#000000"
+            }
+          ]
+        },
+        {
+          "variant": "color",
+          "path": "sub-brands/the-wheel.png",
+          "format": "png",
+          "use_on": "light backgrounds",
+          "ideal_background": "light",
+          "width": 1920,
+          "height": 581,
+          "transparent": true,
+          "scalable": false,
+          "max_print_width_in": 6.4,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "Black wordmark, color icon and accents."
+        },
+        {
+          "variant": "white",
+          "path": "sub-brands/the-wheel-white.svg",
+          "format": "svg",
+          "use_on": "dark backgrounds",
+          "ideal_background": "dark",
+          "width": 981,
+          "height": 297,
+          "transparent": true,
+          "scalable": true,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "White wordmark, color icon and accents retained.",
+          "colors": [
+            "#fa6a1e",
+            "#0b187d",
+            "#ffffff"
+          ],
+          "recolor_slots": [
+            {
+              "label": "Pot Icon & Script",
+              "hex": "#fa6a1e"
+            },
+            {
+              "label": "Swirl & Ministry Text",
+              "hex": "#0b187d"
+            },
+            {
+              "label": "Wordmark & Swirl Highlight",
+              "hex": "#ffffff"
+            }
+          ]
+        },
+        {
+          "variant": "white",
+          "path": "sub-brands/the-wheel-white.png",
+          "format": "png",
+          "use_on": "dark backgrounds",
+          "ideal_background": "dark",
+          "width": 1920,
+          "height": 581,
+          "transparent": true,
+          "scalable": false,
+          "max_print_width_in": 6.4,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "White wordmark, color icon and accents retained."
+        }
+      ]
+    },
+    {
+      "id": "the_kiln",
+      "name": "The Kiln",
+      "audience": "Student Ministry — grades 6 through 12",
+      "website": "https://nvf.life/students",
+      "assets": [
+        {
+          "variant": "color",
+          "path": "sub-brands/the-kiln.svg",
+          "format": "svg",
+          "use_on": "light backgrounds",
+          "ideal_background": "light",
+          "colors": [
+            "#ed1c24",
+            "#000000",
+            "#ffffff",
+            "#ff6a00",
+            "#ff2a2a"
+          ],
+          "width": 869,
+          "height": 371,
+          "transparent": true,
+          "scalable": true,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "Black wordmark, red icon outline and flame.",
+          "recolor_slots": [
+            {
+              "label": "Kiln Outline & Text",
+              "hex": "#ed1c24"
+            },
+            {
+              "label": "Kiln Cap & Word",
+              "hex": "#000000"
+            },
+            {
+              "label": "Kiln Interior",
+              "hex": "#ffffff"
+            },
+            {
+              "label": "Flame Outer",
+              "hex": "#ff6a00"
+            },
+            {
+              "label": "Flame Inner",
+              "hex": "#ff2a2a"
+            }
+          ]
+        },
+        {
+          "variant": "color",
+          "path": "sub-brands/the-kiln.png",
+          "format": "png",
+          "use_on": "light backgrounds",
+          "ideal_background": "light",
+          "width": 1920,
+          "height": 820,
+          "transparent": true,
+          "scalable": false,
+          "max_print_width_in": 6.4,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "Black wordmark, red icon outline and flame."
+        },
+        {
+          "variant": "white",
+          "path": "sub-brands/the-kiln-white.svg",
+          "format": "svg",
+          "use_on": "dark backgrounds",
+          "ideal_background": "dark",
+          "width": 869,
+          "height": 371,
+          "transparent": true,
+          "scalable": true,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "White wordmark, red icon outline and flame retained.",
+          "colors": [
+            "#ed1c24",
+            "#ffffff",
+            "#ff6a00",
+            "#ff2a2a"
+          ],
+          "recolor_slots": [
+            {
+              "label": "Kiln Outline & Text",
+              "hex": "#ed1c24"
+            },
+            {
+              "label": "Kiln Cap & Word",
+              "hex": "#ffffff"
+            },
+            {
+              "label": "Flame Outer",
+              "hex": "#ff6a00"
+            },
+            {
+              "label": "Flame Inner",
+              "hex": "#ff2a2a"
+            }
+          ]
+        },
+        {
+          "variant": "white",
+          "path": "sub-brands/the-kiln-white.png",
+          "format": "png",
+          "use_on": "dark backgrounds",
+          "ideal_background": "dark",
+          "width": 1920,
+          "height": 819,
+          "transparent": true,
+          "scalable": false,
+          "max_print_width_in": 6.4,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "White wordmark, red icon outline and flame retained."
+        }
+      ]
+    },
+    {
+      "id": "the_mill",
+      "name": "The Mill",
+      "audience": "College & Young Career — through age 25",
+      "website": "https://nvf.life/young-adults",
+      "assets": [
+        {
+          "variant": "color",
+          "path": "sub-brands/the-mill.svg",
+          "format": "svg",
+          "use_on": "light backgrounds",
+          "ideal_background": "light",
+          "width": 276,
+          "height": 113,
+          "transparent": true,
+          "scalable": true,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "True knockout — the mask-cutout shapes in this file (#ffffff) are structural and not directly painted; only the four listed colors are visible and safe to recolor.",
+          "colors": [
+            "#000000",
+            "#5ce1e6",
+            "#d38d5f",
+            "#c83737",
+            "#ffffff"
+          ],
+          "recolor_slots": [
+            {
+              "label": "Word & Wheel Spokes",
+              "hex": "#000000"
+            },
+            {
+              "label": "Wave & Subtitle",
+              "hex": "#5ce1e6"
+            },
+            {
+              "label": "Script & Wheel Blades",
+              "hex": "#d38d5f"
+            },
+            {
+              "label": "Barn & Ministry Text",
+              "hex": "#c83737"
+            }
+          ]
+        },
+        {
+          "variant": "color",
+          "path": "sub-brands/the-mill.png",
+          "format": "png",
+          "use_on": "light backgrounds",
+          "ideal_background": "light",
+          "width": 1920,
+          "height": 788,
+          "transparent": true,
+          "scalable": false,
+          "max_print_width_in": 6.4,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "Dark/black text, color icon. True knockout — negative space in the wheel icon is genuinely transparent, not a white/black fill."
+        },
+        {
+          "variant": "white",
+          "path": "sub-brands/the-mill-white.svg",
+          "format": "svg",
+          "use_on": "dark backgrounds",
+          "ideal_background": "dark",
+          "width": 278,
+          "height": 113,
+          "transparent": true,
+          "scalable": true,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "True knockout — the mask-cutout shapes in this file (#000000) are structural and not directly painted; only the four listed colors are visible and safe to recolor.",
+          "colors": [
+            "#ffffff",
+            "#5ce1e6",
+            "#d38d5f",
+            "#c83737",
+            "#000000"
+          ],
+          "recolor_slots": [
+            {
+              "label": "Word & Wheel Spokes",
+              "hex": "#ffffff"
+            },
+            {
+              "label": "Wave & Subtitle",
+              "hex": "#5ce1e6"
+            },
+            {
+              "label": "Script & Wheel Blades",
+              "hex": "#d38d5f"
+            },
+            {
+              "label": "Barn & Ministry Text",
+              "hex": "#c83737"
+            }
+          ]
+        },
+        {
+          "variant": "white",
+          "path": "sub-brands/the-mill-white.png",
+          "format": "png",
+          "use_on": "dark backgrounds",
+          "ideal_background": "dark",
+          "width": 1920,
+          "height": 781,
+          "transparent": true,
+          "scalable": false,
+          "max_print_width_in": 6.4,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "White wordmark, color icon retained. True knockout — negative space in the wheel icon is genuinely transparent, not a white/black fill."
+        }
+      ]
+    },
+    {
+      "id": "titus_2_women",
+      "name": "Titus 2 Women",
+      "audience": "Women's Ministry — all ages",
+      "website": "https://nvf.life/women",
+      "assets": [
+        {
+          "variant": "color",
+          "path": "sub-brands/titus-2-women.png",
+          "format": "png",
+          "use_on": "light backgrounds",
+          "ideal_background": "light",
+          "width": 2048,
+          "height": 1581,
+          "transparent": true,
+          "scalable": false,
+          "max_print_width_in": 6.83,
+          "available_formats": [
+            "png"
+          ],
+          "note": "Dark/black text and icon. No SVG source currently exists for this variant — the source file is a raster image wrapped in an SVG shell, not real vector art, so request a genuine vector rather than using or tracing it."
+        },
+        {
+          "variant": "white",
+          "path": "sub-brands/titus-2-women-white.png",
+          "format": "png",
+          "use_on": "dark backgrounds",
+          "ideal_background": "dark",
+          "width": 2048,
+          "height": 1581,
+          "transparent": true,
+          "scalable": false,
+          "max_print_width_in": 6.83,
+          "available_formats": [
+            "png"
+          ],
+          "note": "White text and icon. No SVG source currently exists for this variant — the source file is a raster image wrapped in an SVG shell, not real vector art, so request a genuine vector rather than using or tracing it."
+        }
+      ]
+    },
+    {
+      "id": "men_of_vision",
+      "name": "Men of Vision",
+      "audience": "Men's Ministry — all ages",
+      "website": "https://nvf.life/men",
+      "assets": [
+        {
+          "variant": "color",
+          "path": "sub-brands/men-of-vision.png",
+          "format": "png",
+          "use_on": "light backgrounds",
+          "ideal_background": "light",
+          "colors": [
+            "#808080",
+            "#c9a961"
+          ],
+          "width": 1976,
+          "height": 2048,
+          "transparent": true,
+          "scalable": false,
+          "max_print_width_in": 6.59,
+          "available_formats": [
+            "png"
+          ],
+          "note": "Gray text, gold shield/cross icon. No SVG source currently exists for this variant — the source file is a raster image wrapped in an SVG shell, not real vector art, so request a genuine vector rather than using or tracing it."
+        },
+        {
+          "variant": "white",
+          "path": "sub-brands/men-of-vision-white.png",
+          "format": "png",
+          "use_on": "dark backgrounds",
+          "ideal_background": "dark",
+          "colors": [
+            "#ffffff",
+            "#c9a961"
+          ],
+          "width": 1976,
+          "height": 2048,
+          "transparent": true,
+          "scalable": false,
+          "max_print_width_in": 6.59,
+          "available_formats": [
+            "png"
+          ],
+          "note": "White text, gold shield/cross icon. No SVG source currently exists for this variant — the source file is a raster image wrapped in an SVG shell, not real vector art, so request a genuine vector rather than using or tracing it."
+        }
+      ]
+    },
+    {
+      "id": "vintage_visions",
+      "name": "Vintage Visions",
+      "audience": "Senior Ministry — senior-focused, not senior-exclusive",
+      "website": "https://nvf.life/seniors",
+      "assets": [
+        {
+          "variant": "color",
+          "path": "sub-brands/vintage-visions.svg",
+          "format": "svg",
+          "use_on": "light backgrounds",
+          "ideal_background": "light",
+          "colors": [
+            "#569c33",
+            "#000000",
+            "#74c933",
+            "#211e1e"
+          ],
+          "width": 357,
+          "height": 105,
+          "transparent": true,
+          "scalable": true,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "recolor_slots": [
+            {
+              "label": "Script V & Banner",
+              "hex": "#569c33"
+            },
+            {
+              "label": "Wordmark & Details",
+              "hex": "#000000"
+            },
+            {
+              "label": "Leaf Accents",
+              "hex": "#74c933"
+            }
+          ]
+        },
+        {
+          "variant": "color",
+          "path": "sub-brands/vintage-visions.png",
+          "format": "png",
+          "use_on": "light backgrounds",
+          "ideal_background": "light",
+          "width": 600,
+          "height": 177,
+          "transparent": true,
+          "scalable": false,
+          "max_print_width_in": 2.0,
+          "available_formats": [
+            "svg",
+            "png"
+          ]
+        },
+        {
+          "variant": "white",
+          "path": "sub-brands/vintage-visions-white.svg",
+          "format": "svg",
+          "use_on": "dark backgrounds",
+          "ideal_background": "dark",
+          "width": 357,
+          "height": 105,
+          "transparent": true,
+          "scalable": true,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "White banner text, green leaf accent retained.",
+          "colors": [
+            "#569c33",
+            "#ffffff",
+            "#74c933",
+            "#211e1e"
+          ],
+          "recolor_slots": [
+            {
+              "label": "Script V & Banner",
+              "hex": "#569c33"
+            },
+            {
+              "label": "Wordmark & Details",
+              "hex": "#ffffff"
+            },
+            {
+              "label": "Leaf Accents",
+              "hex": "#74c933"
+            }
+          ]
+        },
+        {
+          "variant": "white",
+          "path": "sub-brands/vintage-visions-white.png",
+          "format": "png",
+          "use_on": "dark backgrounds",
+          "ideal_background": "dark",
+          "width": 1921,
+          "height": 567,
+          "transparent": true,
+          "scalable": false,
+          "max_print_width_in": 6.4,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "White banner text, green leaf accent retained."
+        }
+      ]
+    },
+    {
+      "id": "melding_moms",
+      "name": "Melding Moms",
+      "audience": "Moms of school-aged children",
+      "assets": [
+        {
+          "variant": "color",
+          "path": "sub-brands/melding-moms-color.svg",
+          "format": "svg",
+          "use_on": "light backgrounds",
+          "ideal_background": "light",
+          "colors": [
+            "#000000",
+            "#74c933",
+            "#569c33"
+          ],
+          "width": 326,
+          "height": 128,
+          "transparent": true,
+          "scalable": true,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "Black text, green accent.",
+          "recolor_slots": [
+            {
+              "label": "Wordmark",
+              "hex": "#000000"
+            },
+            {
+              "label": "Heart & Hand Icon",
+              "hex": "#74c933"
+            },
+            {
+              "label": "Moms Script",
+              "hex": "#569c33"
+            }
+          ]
+        },
+        {
+          "variant": "color",
+          "path": "sub-brands/melding-moms-color.png",
+          "format": "png",
+          "use_on": "light backgrounds",
+          "ideal_background": "light",
+          "width": 1960,
+          "height": 792,
+          "transparent": true,
+          "scalable": false,
+          "max_print_width_in": 6.53,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "Black text, green accent."
+        },
+        {
+          "variant": "white",
+          "path": "sub-brands/melding-moms-white.svg",
+          "format": "svg",
+          "use_on": "dark backgrounds",
+          "ideal_background": "dark",
+          "colors": [
+            "#ffffff",
+            "#74c933",
+            "#569c33"
+          ],
+          "width": 326,
+          "height": 128,
+          "transparent": true,
+          "scalable": true,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "White text, green accent.",
+          "recolor_slots": [
+            {
+              "label": "Wordmark",
+              "hex": "#ffffff"
+            },
+            {
+              "label": "Heart & Hand Icon",
+              "hex": "#74c933"
+            },
+            {
+              "label": "Moms Script",
+              "hex": "#569c33"
+            }
+          ]
+        },
+        {
+          "variant": "white",
+          "path": "sub-brands/melding-moms-white.png",
+          "format": "png",
+          "use_on": "dark backgrounds",
+          "ideal_background": "dark",
+          "width": 1920,
+          "height": 752,
+          "transparent": true,
+          "scalable": false,
+          "max_print_width_in": 6.4,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "White text, green accent."
+        }
+      ]
+    }
   ],
-
   "initiatives": [
-    { "id": "life_groups",   "name": "Life Groups",     "description": "Small groups sharing life together — 8-16 people meeting weekly in host homes across three 10-week trimesters, to Connect, Reflect, and Protect.", "website": "https://nvf.life/life-groups", "assets": [
-        { "variant": "color", "path": "initiatives/life-groups.png", "format": "png", "use_on": "light backgrounds", "ideal_background": "light", "width": 2048, "height": 790, "transparent": true, "scalable": false, "max_print_width_in": 6.83, "available_formats": ["png"], "note": "Dark/black wordmark, color leaf icon. No SVG source currently exists for this variant — the source file is a raster image wrapped in an SVG shell, not real vector art, so request a genuine vector rather than using or tracing it." },
-        { "variant": "white", "path": "initiatives/life-groups-white.png", "format": "png", "use_on": "dark backgrounds", "ideal_background": "dark", "width": 2048, "height": 790, "transparent": true, "scalable": false, "max_print_width_in": 6.83, "available_formats": ["png"], "note": "White wordmark, color leaf icon. No SVG source currently exists for this variant — the source file is a raster image wrapped in an SVG shell, not real vector art, so request a genuine vector rather than using or tracing it." }
-      ] },
-    { "id": "love_my_neighbor_day", "name": "Love My Neighbor Day", "description": "An annual day of servant evangelism — neighborhood kids and families learn to show God's love to their neighbors through practical service, modeled on the Good Samaritan.", "assets": [
-        { "variant": "dark", "path": "initiatives/love-my-neighbor-day-dark.svg", "format": "svg", "use_on": "light backgrounds", "ideal_background": "light", "width": 375, "height": 375, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "Dark-colored artwork." },
-        { "variant": "dark", "path": "initiatives/love-my-neighbor-day-dark.png", "format": "png", "use_on": "light backgrounds", "ideal_background": "light", "width": 1000, "height": 1000, "transparent": true, "scalable": false, "max_print_width_in": 3.33, "available_formats": ["svg", "png"], "note": "Dark-colored artwork." },
-        { "variant": "light", "path": "initiatives/love-my-neighbor-day-light.svg", "format": "svg", "use_on": "dark backgrounds", "ideal_background": "dark", "width": 375, "height": 375, "transparent": true, "scalable": true, "available_formats": ["svg", "png"], "note": "Light-colored artwork." },
-        { "variant": "light", "path": "initiatives/love-my-neighbor-day-light.png", "format": "png", "use_on": "dark backgrounds", "ideal_background": "dark", "width": 1000, "height": 1000, "transparent": true, "scalable": false, "max_print_width_in": 3.33, "available_formats": ["svg", "png"], "note": "Light-colored artwork." }
-      ] }
+    {
+      "id": "life_groups",
+      "name": "Life Groups",
+      "description": "Small groups sharing life together — 8-16 people meeting weekly in host homes across three 10-week trimesters, to Connect, Reflect, and Protect.",
+      "website": "https://nvf.life/life-groups",
+      "assets": [
+        {
+          "variant": "color",
+          "path": "initiatives/life-groups.png",
+          "format": "png",
+          "use_on": "light backgrounds",
+          "ideal_background": "light",
+          "width": 2048,
+          "height": 790,
+          "transparent": true,
+          "scalable": false,
+          "max_print_width_in": 6.83,
+          "available_formats": [
+            "png"
+          ],
+          "note": "Dark/black wordmark, color leaf icon. No SVG source currently exists for this variant — the source file is a raster image wrapped in an SVG shell, not real vector art, so request a genuine vector rather than using or tracing it."
+        },
+        {
+          "variant": "white",
+          "path": "initiatives/life-groups-white.png",
+          "format": "png",
+          "use_on": "dark backgrounds",
+          "ideal_background": "dark",
+          "width": 2048,
+          "height": 790,
+          "transparent": true,
+          "scalable": false,
+          "max_print_width_in": 6.83,
+          "available_formats": [
+            "png"
+          ],
+          "note": "White wordmark, color leaf icon. No SVG source currently exists for this variant — the source file is a raster image wrapped in an SVG shell, not real vector art, so request a genuine vector rather than using or tracing it."
+        }
+      ]
+    },
+    {
+      "id": "love_my_neighbor_day",
+      "name": "Love My Neighbor Day",
+      "description": "An annual day of servant evangelism — neighborhood kids and families learn to show God's love to their neighbors through practical service, modeled on the Good Samaritan.",
+      "assets": [
+        {
+          "variant": "dark",
+          "path": "initiatives/love-my-neighbor-day-dark.svg",
+          "format": "svg",
+          "use_on": "light backgrounds",
+          "ideal_background": "light",
+          "width": 375,
+          "height": 375,
+          "transparent": true,
+          "scalable": true,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "Dark-colored artwork.",
+          "colors": [
+            "#0cc0df",
+            "#000000"
+          ],
+          "recolor_slots": [
+            {
+              "label": "House & Wordmark",
+              "hex": "#0cc0df"
+            },
+            {
+              "label": "Background House",
+              "hex": "#000000"
+            }
+          ]
+        },
+        {
+          "variant": "dark",
+          "path": "initiatives/love-my-neighbor-day-dark.png",
+          "format": "png",
+          "use_on": "light backgrounds",
+          "ideal_background": "light",
+          "width": 1000,
+          "height": 1000,
+          "transparent": true,
+          "scalable": false,
+          "max_print_width_in": 3.33,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "Dark-colored artwork."
+        },
+        {
+          "variant": "light",
+          "path": "initiatives/love-my-neighbor-day-light.svg",
+          "format": "svg",
+          "use_on": "dark backgrounds",
+          "ideal_background": "dark",
+          "width": 375,
+          "height": 375,
+          "transparent": true,
+          "scalable": true,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "Light-colored artwork.",
+          "colors": [
+            "#0cc0df",
+            "#ffffff"
+          ],
+          "recolor_slots": [
+            {
+              "label": "House & Wordmark",
+              "hex": "#0cc0df"
+            },
+            {
+              "label": "Background House",
+              "hex": "#ffffff"
+            }
+          ]
+        },
+        {
+          "variant": "light",
+          "path": "initiatives/love-my-neighbor-day-light.png",
+          "format": "png",
+          "use_on": "dark backgrounds",
+          "ideal_background": "dark",
+          "width": 1000,
+          "height": 1000,
+          "transparent": true,
+          "scalable": false,
+          "max_print_width_in": 3.33,
+          "available_formats": [
+            "svg",
+            "png"
+          ],
+          "note": "Light-colored artwork."
+        }
+      ]
+    }
   ],
-
   "outside_partnerships": {
     "description": "Organizations and initiatives New Vision participates in, supports, or has adopted for our own context — unlike sub_brands and initiatives above, we did not design these or their creative. Text and links only: use each organization's own official logo and brand assets from its resources link rather than reproducing them here.",
     "items": [
-      { "id": "sbc", "name": "Southern Baptist Convention", "description": "Our denominational convention.", "website": "https://www.sbc.net", "resources": "https://branding.sbc.net/brand/sbc/" },
-      { "id": "imb", "name": "International Mission Board (IMB)", "description": "The SBC's international missions-sending agency.", "website": "https://www.imb.org", "resources": "https://www.imb.org/brand/" },
-      { "id": "namb", "name": "North American Mission Board (NAMB)", "description": "The SBC's North American missions and church-planting agency — originator of Who's Your One.", "website": "https://www.namb.net", "resources": "https://marketing.namb.net/design-guidelines/namb/" },
-      { "id": "nc_baptists", "name": "NC Baptists", "description": "Our state Baptist convention — originator of ServeNC.", "website": "https://ncbaptist.org", "resources": "https://ncbaptist.org/brand-guide/" },
-      { "id": "triad_church_network", "name": "Triad Church Network", "description": "A local network of churches we partner with in the Triad region.", "website": "https://triadchurchnetwork.com" },
-      { "id": "whos_your_one", "name": "Who's Your One?", "from": "North American Mission Board (NAMB)", "description": "Identify one person in your circles who is far from God — pray for them, share the gospel, and invite them to church. We participate and shape the approach for our context; we did not design this initiative or its creative.", "website": "https://www.whosyourone.com", "resources": "https://www.whosyourone.com/resource/whos-your-one-logo/" },
-      { "id": "servenc", "name": "ServeNC", "from": "NC Baptists", "description": "A statewide day of coordinated community service projects. We participate and adapt it locally; NC Baptists design the creative.", "website": "https://ncbaptist.org/servenc/", "resources": "https://ncbaptist.org/resource/servenc/" }
+      {
+        "id": "sbc",
+        "name": "Southern Baptist Convention",
+        "description": "Our denominational convention.",
+        "website": "https://www.sbc.net",
+        "resources": "https://branding.sbc.net/brand/sbc/"
+      },
+      {
+        "id": "imb",
+        "name": "International Mission Board (IMB)",
+        "description": "The SBC's international missions-sending agency.",
+        "website": "https://www.imb.org",
+        "resources": "https://www.imb.org/brand/"
+      },
+      {
+        "id": "namb",
+        "name": "North American Mission Board (NAMB)",
+        "description": "The SBC's North American missions and church-planting agency — originator of Who's Your One.",
+        "website": "https://www.namb.net",
+        "resources": "https://marketing.namb.net/design-guidelines/namb/"
+      },
+      {
+        "id": "nc_baptists",
+        "name": "NC Baptists",
+        "description": "Our state Baptist convention — originator of ServeNC.",
+        "website": "https://ncbaptist.org",
+        "resources": "https://ncbaptist.org/brand-guide/"
+      },
+      {
+        "id": "triad_church_network",
+        "name": "Triad Church Network",
+        "description": "A local network of churches we partner with in the Triad region.",
+        "website": "https://triadchurchnetwork.com"
+      },
+      {
+        "id": "whos_your_one",
+        "name": "Who's Your One?",
+        "from": "North American Mission Board (NAMB)",
+        "description": "Identify one person in your circles who is far from God — pray for them, share the gospel, and invite them to church. We participate and shape the approach for our context; we did not design this initiative or its creative.",
+        "website": "https://www.whosyourone.com",
+        "resources": "https://www.whosyourone.com/resource/whos-your-one-logo/"
+      },
+      {
+        "id": "servenc",
+        "name": "ServeNC",
+        "from": "NC Baptists",
+        "description": "A statewide day of coordinated community service projects. We participate and adapt it locally; NC Baptists design the creative.",
+        "website": "https://ncbaptist.org/servenc/",
+        "resources": "https://ncbaptist.org/resource/servenc/"
+      }
     ]
   },
-
   "governance": {
     "brand_steward": "Pastor Jeremy Parker and/or the church's Ministry Leadership Team",
     "contact_phone": "336.427.6264",
@@ -404,11 +2023,18 @@
     "approval_contact": "Pastor Jeremy Parker and/or the Ministry Leadership Team.",
     "copyright": "Unless otherwise identified, original New Vision Fellowship brand assets are © 2026 New Vision Fellowship and are provided for authorized NVF ministry use. Third-party names, logos, fonts, and partner marks remain the property of their respective owners and are governed by their owners' terms."
   },
-
   "voice": {
     "summary": "New Vision sounds warm, grounded, and hopeful. We are inviting people into something bigger than themselves, so we open doors rather than push. Grace and truth are not rivals — we say hard things kindly and clearly, never hedging them into vagueness. Plain language carries profound ideas. Concrete detail earns trust where superlatives do not. Every piece points to one clear next step.",
     "statement": "Write like a trusted friend who is a little further down the road: warm, direct, unhurried. Invite people in — never recruit, pressure, or hype. Use plain words for deep things, and say hard truths kindly and clearly. Be specific: real names, real numbers, real next steps. Write to 'you' in active voice, mostly short sentences, with one warm flourish per piece.",
-    "tone": ["warm", "pastoral", "grounded", "hopeful", "plainspoken", "unhurried", "teaching"],
+    "tone": [
+      "warm",
+      "pastoral",
+      "grounded",
+      "hopeful",
+      "plainspoken",
+      "unhurried",
+      "teaching"
+    ],
     "do": [
       "Write to 'you' in active voice",
       "Choose the shorter, plainer word; explain any church term a guest would not know",
@@ -442,7 +2068,6 @@
       "If you can find us, you can worship with us."
     ]
   },
-
   "ai_content_rules": {
     "description": "Rules for any AI agent drafting New Vision copy, on top of the voice object above. These protect against confidently-wrong output — invented facts read as authoritative and are hard to catch after the fact.",
     "never_invent": [
@@ -473,7 +2098,6 @@
       "Potentially misleading AI imagery — see ai_imagery"
     ]
   },
-
   "brand_elements": {
     "kicker_lockup": {
       "description": "The recurring section-header motif. A small uppercase green kicker, then a large Archivo title, then a short rule bar.",
@@ -501,23 +2125,36 @@
       "spec": "A vertical spine with a gradient from primary green to olive, the year on the left in Archivo 900 green, and alternating filled and outlined dots on the line. Dots sit above the spine."
     }
   },
-
   "photography": {
     "description": "Direction for any photograph, video still, or AI-generated image produced for New Vision — booklets, announcements, web, or anything else. Independent of any single project.",
     "mood": "Warm, cinematic, editorial — grounded, hopeful, and premium, like a well-made print piece. Never garish, clip-arty, or corporate-stock.",
     "lighting": "Golden-hour warmth and soft natural light, with a gentle film grain. Slightly desaturated, warm-leaning color grade. Charcoal shadows, never crushed to pure black. Cinematic but understated — no HDR, no harsh contrast.",
     "motifs": [
-      { "name": "Road", "note": "A winding or open road, the journey of faith. See brand_elements.road_motif for the graphic treatment — the same idea applies to photography." },
-      { "name": "Leaf and new growth", "note": "A single leaf or a fresh sprout, echoing the leaf mark. Visual shorthand for growth." },
-      { "name": "Pottery and clay", "note": "Earthen vessels, hands shaping or holding clay, kiln-fired pottery. Our picture of formation, from Isaiah 64:8 — see frameworks.clay_stages. The vessel and the material carry the meaning; a literal potter's wheel in motion is not required." },
-      { "name": "Hands", "note": "Open, giving, or raised in worship." },
-      { "name": "Community", "note": "People gathered, walking together, going out into neighborhoods and nations — Acts 2:41-47." }
+      {
+        "name": "Road",
+        "note": "A winding or open road, the journey of faith. See brand_elements.road_motif for the graphic treatment — the same idea applies to photography."
+      },
+      {
+        "name": "Leaf and new growth",
+        "note": "A single leaf or a fresh sprout, echoing the leaf mark. Visual shorthand for growth."
+      },
+      {
+        "name": "Pottery and clay",
+        "note": "Earthen vessels, hands shaping or holding clay, kiln-fired pottery. Our picture of formation, from Isaiah 64:8 — see frameworks.clay_stages. The vessel and the material carry the meaning; a literal potter's wheel in motion is not required."
+      },
+      {
+        "name": "Hands",
+        "note": "Open, giving, or raised in worship."
+      },
+      {
+        "name": "Community",
+        "note": "People gathered, walking together, going out into neighborhoods and nations — Acts 2:41-47."
+      }
     ],
     "composition": "Clean and minimal, generous negative space, a strong focal subject at shallow depth of field. When a shot will carry a text overlay, keep roughly one third of the frame open and darker for it — see brand_elements.image_veil for the treatment that finishes the job.",
     "subject_tone": "Real, candid, diverse, and intergenerational people — never stocky, staged, or generic stock photography of people who are not our people. Authentic worship, service, and hospitality. Reverent and joyful, never cheesy.",
     "one_liner": "Warm, cinematic, editorial photography in a charcoal-and-green palette — golden light, open roads, growing and shaped things, and authentic community — with minimalist composition and room for clean modern type."
   },
-
   "ai_imagery": {
     "description": "Rules specific to AI-generated or materially AI-altered imagery, on top of the general photography direction above.",
     "internal_record": "Keep an internal record whenever final, published imagery is AI-generated or materially AI-altered — what was generated, and for what piece.",
@@ -531,12 +2168,14 @@
     ],
     "style_direction": "Any AI-generated image must still follow the photography object above for mood, lighting, motifs, composition, and subject tone — AI imagery is not a separate visual style."
   },
-
   "digital_signage": {
     "description": "A high-impact, read-from-a-distance visual language — bold type, dark charcoal backgrounds, a photo, minimal clutter. Born on the roadside digital sign, but the same mood, typography, motifs, and motion also carry to Sunday-morning presentation slides (1920x1080) and, for some announcements, Facebook/Instagram posts. It is not the definitive design for slides or social — just one strong, on-brand option for them. Shares the mood, palette, and subject_tone of the photography object above, but with its own typography and motion rules specific to this family of high-impact formats. Not for print or general web.",
     "extended_dark_shades": {
       "description": "Additional near-black tones for high-contrast, read-from-a-distance use. Use alongside Charcoal (#24201d), not as a replacement for it in other contexts.",
-      "colors": ["#171411", "#0f0e0c"]
+      "colors": [
+        "#171411",
+        "#0f0e0c"
+      ]
     },
     "typography": "Archivo at its heaviest weight (900) is the default, mostly uppercase with tight line spacing and strong left alignment — do not use thin weights for main text. When a design calls for an even more condensed, distance-legible headline than Archivo provides, approved alternates are Anton, Bebas Neue, League Spartan, Montserrat ExtraBold, Oswald Heavy, or a Druk-style condensed face — used sparingly, not as a replacement for Archivo elsewhere in the brand. Off-white text on dark; green reserved for emphasis words only. Accent text may use small uppercase tracked-out labels, or — sparingly — a single warm handwritten phrase in Kaushan Script.",
     "layout": {
@@ -557,7 +2196,6 @@
     },
     "one_liner": "A bold, high-impact ministry-values look using authentic church photography, large readable typography, dark charcoal backgrounds, green brand accents, subtle leaf motifs, and cinematic editorial motion — born on the roadside sign, at home on Sunday slides and select social posts too — communicating clarity, warmth, conviction, mission, and community."
   },
-
   "usage": {
     "do": [
       "Use warm neutrals, confident large headings, and generous whitespace",
@@ -576,13 +2214,14 @@
       "No tight, cramped layouts"
     ]
   },
-
   "print": {
     "description": "There is no single fixed trim size, bleed, resolution, or color mode for New Vision print work — those depend on the specific piece and the specific printer. Past versions of this file listed one project's numbers (Letter-size, 350 DPI, CMYK) as if they were universal; they were not.",
-    "body_copy_pt": { "min": 12, "max": 15 },
+    "body_copy_pt": {
+      "min": 12,
+      "max": 15
+    },
     "note": "Before sending any file to print, ask the printer for that job's trim size, bleed, minimum resolution, color mode, and accepted file format, and design to those numbers. Do not assume 350 DPI, CMYK, or Letter trim unless the printer for that specific job confirms them."
   },
-
   "rules": [
     "Start with this file. It is the single machine-readable source of truth for New Vision Fellowship's brand. See $schema / schema_version for the file's structure, and governance.brand_steward for who to ask when something here is unclear or missing.",
     "Resolve every asset path against base_url. All paths are relative to the repository root.",
